@@ -1,0 +1,77 @@
+[
+  {
+    "id": 5,
+    "containerId": "CAVU0001000",
+    "characteristics_size": "20ft",
+    "characteristics_type": "NORMAL",
+    "containerVersion": "1",
+    "characteristics_maxPayload": "1",
+    "characteristics_builtYear": "2022",
+    "updatedAt": "2022-08-05T16:01:38.374Z",
+    "createdAt": "2022-08-05T16:01:38.374Z",
+    "volume": 1,
+    "characteristics_tare": 1,
+    "inspectionDate": "2022-06-09T00:00:00.000Z",
+    "cscCertNo": "1",
+    "cscCertDate": "2022-06-01T00:00:00.000Z",
+    "characteristics_grade": "",
+    "cscCertLink": null,
+    "electronicsCharging": false,
+    "insurance": "",
+    "insuranceDate": null,
+    "cameraExt": false,
+    "cameraInt": false,
+    "lastChangedBy": "2ecc3895-c41d-4cfd-ac40-0cb9dba703ff",
+    "floorType": "",
+    "doorType": "",
+    "containerpanelprofiles": [
+      {
+        "id": 5,
+        "panelProfileId": "9c17ed1c-327f-4c81-8052-71b9bc1ff97c",
+        "containerId": "CAVU0001000",
+        "createdAt": "2022-08-05T16:01:38.895Z",
+        "leftPanel": "",
+        "rightPanel": "",
+        "roofPanel": "",
+        "endPanel": "",
+        "updatedAt": "2022-08-05T16:01:38.895Z"
+      }
+    ],
+    "containersensorsprofiles": [
+      {
+        "id": 5,
+        "containerId": "CAVU0001000",
+        "sensorsProfileId": "969b5527-c970-453b-9a23-ebe8eba4dff8",
+        "createdAt": "2022-08-05T16:01:38.925Z",
+        "aelerBoardId": "aeler-dev-1651084562",
+        "kizyBoardId": "",
+        "nexxiotBoardId": "",
+        "source": "aeler",
+        "updatedAt": "2022-08-05T16:01:38.925Z",
+        "dateFittedAeler": "2022-07-21T00:00:00.000Z",
+        "dateFittedKizy": null,
+        "dateFittedNexxiot": null
+      }
+    ],
+    "containerboardpairingprofiles": [
+      {
+        "boardPairingProfileId": "idTest",
+        "containerId": "containerIdTest",
+        "boardId": "boardIdTest",
+        "boardSource": "aeler",
+        "createdAt": "2022-07-20T16:04:13.590Z",
+        "updatedAt": "2022-07-20T16:04:13.590Z",
+        "installDate": "2022-07-20T16:04:13.590Z",
+        "removalDate": "2022-07-20T16:04:13.590Z",
+        "installComments": "installComments",
+        "removalComments": "removalComments",
+        "installTechnicianId": "installTechnicianId",
+        "removalTechnicianId": "removalTechnicianId",
+        "installLocationId": "installLocationIdTest",
+        "removalLocationId": "removalLocationIdTest",
+        "installLocationName": "installLocationNameTest",
+        "removalLocationName": "removalLocationNameTest"
+      }
+    ]
+  }
+]

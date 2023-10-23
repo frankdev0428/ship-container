@@ -1,0 +1,17 @@
+{
+  "AELER_AUTH_URL": "https://auth.aeler.com/auth",
+  "AELER_AUTH_REALM": "aeler-ecosystem-demo",
+  "AELER_AUTH_CLIENTID": "aeler-ecosystem-front",
+  "AELER_API_URL": "https://demo.aeler.com/eq/api",
+  "PLACES_API_URL": "https://demo.aeler.com/places",
+  "CUSTOMERS_API_URL": "https://demo.aeler.com/customers/api",
+
+  "AELER_BOARDS_API_URL": "https://demo.aeler.com/boards/aeler",
+  "NEXXIOT_BOARDS_API_URL": "https://demo.aeler.com/boards/nexxiot",
+  "KIZY_BOARDS_API_URL": "https://demo.aeler.com/boards/kizy",
+  "AELER_REACT_GA_ID": "G-HLCGD6XHLE",
+  "FF_ENABLE_LOGOUT": "false",
+  "FF_ENABLE_MOVES": "false",
+  "FF_ENABLE_AUTH": "true",
+  "FF_ENABLE_MOCK": "false"
+}

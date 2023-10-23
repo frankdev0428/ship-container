@@ -1,0 +1,81 @@
+image: cypress/browsers:node16.14.2-slim-chrome100-ff99-edge
+
+definitions:
+  caches:
+    npm: $HOME/.npm
+    cypress: $HOME/.cache/Cypress
+  services:
+    docker:
+      memory: 3072 # Raised to prevent docker from crashing
+
+  buildFleetManagerFrontUpdateECR: &buildFleetManagerFrontUpdateECR
+    name: "aeler-front-fm: build + updateECR"
+    image: atlassian/pipelines-awscli:1.16.98 # aws ecr get-login not available after this version
+    caches:
+      - docker
+    services:
+      - docker
+    script:
+      - $(aws ecr get-login --no-include-email --region $AWS_DEFAULT_REGION --registry-ids $AWS_ACCOUNT_ID)
+
+      # Build application and push to ecr
+      - WORKDIR=./
+      - DOCKER_URI=aeler-front-fm # This needs to match the registry on aws
+      - DOCKER_FILE=Dockerfile
+      - REGISTRY_SERVER=$AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com
+      - REGISTRY=$REGISTRY_SERVER/$DOCKER_URI
+      - TAG_FROM_BRANCH=$(./scripts/utils/sanitize-docker-tag.sh $BITBUCKET_BRANCH)
+      - echo "Branch $BITBUCKET_BRANCH -- tag -- $TAG_FROM_BRANCH"
+      - echo "Building $DOCKER_URI"
+      - cd $WORKDIR
+      - >-
+        docker build
+        -t $REGISTRY
+        -f $DOCKER_FILE .
+        --build-arg REACT_APP_AELER_AUTH_BASE_URL=$REACT_APP_AELER_AUTH_BASE_URL
+        --build-arg REACT_APP_AELER_AUTH_CLIENT_ID=$REACT_APP_AELER_AUTH_CLIENT_ID
+        --build-arg REACT_APP_AELER_AUTH_REALM=$REACT_APP_AELER_AUTH_REALM
+        --build-arg REACT_APP_AELERAPI_URL=$REACT_APP_AELERAPI_URL
+        --build-arg SKIP_PREFLIGHT_CHECK=true
+      - docker tag $REGISTRY $REGISTRY:${TAG_FROM_BRANCH:-missing_branch}
+      - docker tag $REGISTRY $REGISTRY:${TAG_FROM_BRANCH:-missing_branch}-${BITBUCKET_COMMIT:0:7}-$(date +%s)
+      - echo "Pushing $DOCKER_URI to aws"
+      - docker push --all-tags $REGISTRY
+      - cd -
+
+  ui-tests: &ui-tests
+    name: "UI Tests - Chrome"
+    caches:
+      - cypress
+      - node
+    script:    
+      - npm ci          
+      - npm run start:standalone & npx wait-on http://localhost:3001
+      - npx cypress run --browser chrome
+
+pipelines:
+  pull-requests:
+    '**':
+      - parallel:
+        - step:
+            name: "Test FleetManagerFront: Build"
+            script:
+              - docker build -t aeler-front-fm:$BITBUCKET_COMMIT .
+            caches: 
+              - docker
+            services:
+              - docker
+
+  branches:
+    master:
+      - step:
+          <<: *buildFleetManagerFrontUpdateECR   
+          deployment: aeler-front-fm-prod
+      - step:
+          <<: *ui-tests          
+    release/*:
+      - step:
+          <<: *buildFleetManagerFrontUpdateECR   
+          deployment: aeler-front-fm-prod
+      - step:
+          <<: *ui-tests          

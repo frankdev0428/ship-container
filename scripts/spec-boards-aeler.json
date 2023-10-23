@@ -1,0 +1,1773 @@
+{
+  "swagger": "2.0",
+  "host": "staging.aeler.com",
+  "basePath": "/",
+  "schemes": [
+    "https"
+  ],
+  "info": {
+    "title": "Aeler demo",
+    "version": "1.0.0"
+  },
+  "securityDefinitions": {
+    "jwt": {
+      "type": "apiKey",
+      "name": "Authorization",
+      "in": "header"
+    }
+  },
+  "tags": [],
+  "paths": {
+    "/boards": {
+      "get": {
+        "summary": "Get boards",
+        "operationId": "getBoards",
+        "tags": [
+          "boards"
+        ],
+        "security": [
+          {
+            "jwt": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "schema": {
+              "$ref": "#/definitions/Model1"
+            },
+            "description": "The persisted data"
+          },
+          "400": {
+            "description": "Bad request",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "500": {
+            "description": "Internal error",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Post board ",
+        "operationId": "postBoards",
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/PostAelerBoardQuery"
+            }
+          }
+        ],
+        "tags": [
+          "boards"
+        ],
+        "security": [
+          {
+            "jwt": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "schema": {
+              "$ref": "#/definitions/PostAelerBoardQuery"
+            },
+            "description": "The persisted data"
+          },
+          "400": {
+            "description": "Bad request",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "404": {
+            "description": "The board does not exist",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "500": {
+            "description": "Internal error",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          }
+        }
+      },
+      "delete": {
+        "summary": "Delete a board",
+        "operationId": "deleteBoards",
+        "parameters": [
+          {
+            "type": "string",
+            "description": "A board identifier",
+            "name": "boardId",
+            "in": "query",
+            "required": true
+          }
+        ],
+        "tags": [
+          "boards"
+        ],
+        "security": [
+          {
+            "jwt": []
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "Board successfully deleted"
+          },
+          "400": {
+            "description": "Bad request",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "500": {
+            "description": "Internal error",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          }
+        }
+      }
+    },
+    "/boards/data": {
+      "get": {
+        "summary": "Get container position from IoT + AELER and dokobox data",
+        "operationId": "getBoardsData",
+        "parameters": [
+          {
+            "type": "string",
+            "description": "Board ID",
+            "name": "boardId",
+            "in": "query",
+            "required": true
+          },
+          {
+            "type": "string",
+            "description": "type",
+            "name": "type",
+            "in": "query"
+          },
+          {
+            "type": "string",
+            "description": "From data",
+            "name": "from",
+            "in": "query"
+          },
+          {
+            "type": "string",
+            "description": "To data",
+            "name": "to",
+            "in": "query"
+          },
+          {
+            "type": "number",
+            "description": "include max and min, defaults to false",
+            "name": "includeStats",
+            "in": "query"
+          },
+          {
+            "type": "number",
+            "description": "onclude all ts types, defaults to false",
+            "name": "includeAllTsTypes",
+            "in": "query"
+          }
+        ],
+        "tags": [
+          "boards"
+        ],
+        "security": [
+          {
+            "jwt": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "schema": {
+              "$ref": "#/definitions/Model2"
+            },
+            "description": "The persisted data"
+          },
+          "400": {
+            "description": "Bad request",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "500": {
+            "description": "Internal error",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Post board data",
+        "operationId": "postBoardsData",
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/Board"
+            }
+          }
+        ],
+        "tags": [
+          "boards"
+        ],
+        "security": [
+          {
+            "jwt": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "schema": {
+              "$ref": "#/definitions/Model4"
+            },
+            "description": "The persisted data"
+          },
+          "400": {
+            "description": "Bad request",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "500": {
+            "description": "Internal error",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "MsgSensorsUpdatedAt": {
+      "type": "object",
+      "properties": {
+        "temperature": {
+          "type": "number",
+          "description": "temperature inside the container"
+        },
+        "externalTemperature": {
+          "type": "number",
+          "description": "temperature outside the container"
+        },
+        "humidity": {
+          "type": "number",
+          "description": "humidity inside the container"
+        },
+        "externalHumidity": {
+          "type": "number",
+          "description": "humidity outside the container"
+        },
+        "pressure": {
+          "type": "number",
+          "description": "pressure inside the container"
+        },
+        "externalPressure": {
+          "type": "number",
+          "description": "pressure outside the container"
+        },
+        "door": {
+          "type": "number",
+          "description": "First door sensor - 1 is closed 0 is open"
+        },
+        "doorBackup": {
+          "type": "number",
+          "description": "Second door sensor, redundant - 1 is closed 0 is open"
+        },
+        "iaq": {
+          "type": "number",
+          "description": "Indoor air quality"
+        },
+        "ngm3TVOC": {
+          "type": "number",
+          "description": "Total Volatile Organic Compounds"
+        },
+        "ppmeCO2": {
+          "type": "number",
+          "description": "parts per million carbon dioxide"
+        },
+        "ppbEtOH": {
+          "type": "number",
+          "description": "parts per million ethanol"
+        },
+        "oaqNO2": {
+          "type": "number",
+          "description": "outdoor air quality"
+        },
+        "oaqO3": {
+          "type": "number",
+          "description": "outdoor air qualiry ozone"
+        },
+        "probNO2": {
+          "type": "number",
+          "description": "probability of nitrogen dioxide"
+        },
+        "ppbNO2": {
+          "type": "number",
+          "description": "parts per billion nitrogen dioxide"
+        },
+        "ppb03": {
+          "type": "number",
+          "description": "parts per billion ozone"
+        },
+        "centiLux": {
+          "type": "number",
+          "description": "internal light sensor"
+        },
+        "centiLuxExternal": {
+          "type": "number",
+          "description": "external light sensor"
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time"
+        }
+      },
+      "required": [
+        "updatedAt"
+      ]
+    },
+    "Coordinates": {
+      "type": "array",
+      "description": "A tuple containing the longitude and the latitude",
+      "example": [
+        [
+          7.65499738,
+          45.97249611
+        ]
+      ],
+      "minItems": 2,
+      "maxItems": 2,
+      "items": {
+        "type": "number"
+      }
+    },
+    "MsgPositionUpdatedAt": {
+      "type": "object",
+      "properties": {
+        "position": {
+          "$ref": "#/definitions/Coordinates"
+        },
+        "day": {
+          "type": "number",
+          "description": "Day (1-31) of UTC time"
+        },
+        "hmsl": {
+          "type": "number",
+          "description": "Height above mean sea level in mm"
+        },
+        "hacc": {
+          "type": "number",
+          "description": "Horizontal accuracy estimate in mm"
+        },
+        "gspeed": {
+          "type": "number",
+          "description": "Ground Speed (2-D) in mm/s"
+        },
+        "heading": {
+          "type": "number",
+          "description": "Heading in degrees"
+        },
+        "fixtype": {
+          "type": "number",
+          "description": "GNSSfix Type: 0: no fix; 2: 2D-fix; 3: 3D-fix"
+        },
+        "distance": {
+          "type": "number",
+          "description": "Ground distance since last reset in m"
+        },
+        "year": {
+          "type": "number",
+          "description": "Year (1-65635) of UTC time"
+        },
+        "month": {
+          "type": "number",
+          "description": "Month (1-12) of UTC time"
+        },
+        "hour": {
+          "type": "number",
+          "description": "Hour (0-23) of UTC time"
+        },
+        "minute": {
+          "type": "number",
+          "description": "Minute (0-59) of UTC time"
+        },
+        "second": {
+          "type": "number",
+          "description": "Second (0-60) of UTC time"
+        },
+        "numsv": {
+          "type": "number",
+          "description": "Number of satellites used in Nav Solution"
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time"
+        }
+      },
+      "required": [
+        "position",
+        "day",
+        "hmsl",
+        "hacc",
+        "gspeed",
+        "heading",
+        "fixtype",
+        "distance",
+        "year",
+        "month",
+        "hour",
+        "minute",
+        "second",
+        "numsv",
+        "updatedAt"
+      ]
+    },
+    "shockEvent": {
+      "type": "object",
+      "properties": {
+        "x": {
+          "type": "number"
+        },
+        "y": {
+          "type": "number"
+        },
+        "z": {
+          "type": "number"
+        },
+        "magnitude": {
+          "type": "number"
+        },
+        "eventType": {
+          "type": "number"
+        }
+      }
+    },
+    "lightEvent": {
+      "type": "object",
+      "properties": {
+        "devId": {
+          "type": "number"
+        },
+        "status": {
+          "type": "number"
+        },
+        "centiLuxExternal": {
+          "type": "number"
+        },
+        "eventType": {
+          "type": "number"
+        }
+      }
+    },
+    "doorEvent": {
+      "type": "object",
+      "properties": {
+        "inputPortRegister": {
+          "type": "number",
+          "description": "unparsed Port values"
+        },
+        "eventPinCursor": {
+          "type": "number",
+          "description": "port pin cursor (debugging)"
+        },
+        "door": {
+          "type": "number",
+          "description": "First door sensor - 1 is closed 0 is open"
+        },
+        "doorBackup": {
+          "type": "number",
+          "description": "Second door sensor, redundant - 1 is closed 0 is open"
+        },
+        "doorStatus": {
+          "type": "string",
+          "enum": [
+            "opened",
+            "closed"
+          ]
+        }
+      }
+    },
+    "lteServiceEvent": {
+      "type": "object",
+      "properties": {
+        "fsmState": {
+          "type": "number"
+        },
+        "eventID": {
+          "type": "number"
+        },
+        "metadata": {
+          "type": "number"
+        }
+      }
+    },
+    "MsgEventsUpdatedAt": {
+      "type": "object",
+      "properties": {
+        "shockEvent": {
+          "$ref": "#/definitions/shockEvent"
+        },
+        "lightEvent": {
+          "$ref": "#/definitions/lightEvent"
+        },
+        "doorEvent": {
+          "$ref": "#/definitions/doorEvent"
+        },
+        "lteServiceEvent": {
+          "$ref": "#/definitions/lteServiceEvent"
+        },
+        "eventSubTypeName": {
+          "type": "string",
+          "description": "the subtype of the event in question: e.g. accelEvntAVecm for accelerometer events"
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time"
+        }
+      },
+      "required": [
+        "updatedAt"
+      ]
+    },
+    "MsgPowerBudgetUpdatedAt": {
+      "type": "object",
+      "properties": {
+        "tSleepSeconds": {
+          "type": "number"
+        },
+        "nWakeForCom": {
+          "type": "number"
+        },
+        "targetAutonomy": {
+          "type": "number"
+        },
+        "powerCtrlMode": {
+          "type": "number"
+        },
+        "batterySoCfromVoC": {
+          "type": "number"
+        },
+        "batterySoCfromCoulomb": {
+          "type": "number"
+        },
+        "batterySoH": {
+          "type": "number"
+        },
+        "projectedAutonomy": {
+          "type": "number"
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time"
+        }
+      },
+      "required": [
+        "updatedAt"
+      ]
+    },
+    "MsgBatteryManagerUpdatedAt": {
+      "type": "object",
+      "properties": {
+        "charger": {
+          "type": "number"
+        },
+        "system": {
+          "type": "number"
+        },
+        "supply": {
+          "type": "number"
+        },
+        "ts0": {
+          "type": "number"
+        },
+        "ts1": {
+          "type": "number"
+        },
+        "ts2": {
+          "type": "number"
+        },
+        "ts3": {
+          "type": "number"
+        },
+        "chargerFaults": {
+          "type": "number"
+        },
+        "fwVersion": {
+          "type": "number"
+        },
+        "bootCRC": {
+          "type": "number"
+        },
+        "cfgCRC": {
+          "type": "number"
+        },
+        "tBat": {
+          "type": "number"
+        },
+        "powerOut": {
+          "type": "number"
+        },
+        "powerIn": {
+          "type": "number"
+        },
+        "efficiency": {
+          "type": "number"
+        },
+        "iOut": {
+          "type": "number"
+        },
+        "iIn": {
+          "type": "number"
+        },
+        "vBat": {
+          "type": "number"
+        },
+        "vIn": {
+          "type": "number"
+        },
+        "vInr": {
+          "type": "number"
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time"
+        }
+      },
+      "required": [
+        "updatedAt"
+      ]
+    },
+    "BoardBatteryStatus": {
+      "type": "object",
+      "properties": {
+        "mostRecentPowerBudgetTime": {
+          "type": "string",
+          "format": "date-time",
+          "description": "most recent of X battery / powerout data points"
+        },
+        "oldestPowerBudgetTime": {
+          "type": "string",
+          "format": "date-time",
+          "description": "oldest of X battery / powerout data points"
+        },
+        "mostRecentBatteryPercentageValue": {
+          "type": "number",
+          "description": "battery data point value at dateEnd"
+        },
+        "oldestBatteryPercentageValue": {
+          "type": "number",
+          "description": "battery data point value at dateStart"
+        },
+        "mostRecentPowerBudgetTimeReceived": {
+          "type": "string",
+          "format": "date-time",
+          "description": "dateOfLatestMessageIncoming, the time received of most recent message"
+        },
+        "mostRecentBatteryManagerTimeReceived": {
+          "type": "string",
+          "format": "date-time",
+          "description": "dateOfLatestMessageIncoming, the time received of most recent message"
+        },
+        "nPointsPowerBudget": {
+          "type": "number",
+          "description": "number of battery data points within dateStart-dateEnd"
+        },
+        "nPointsBatteryManager": {
+          "type": "number",
+          "description": "number of powerOut data points within dateStart-dateEnd"
+        },
+        "powerOutMeanValue": {
+          "type": "number",
+          "description": "mean powerOut (charging by solarpanel) over date range"
+        }
+      },
+      "required": [
+        "mostRecentPowerBudgetTime",
+        "oldestPowerBudgetTime",
+        "mostRecentBatteryPercentageValue",
+        "oldestBatteryPercentageValue",
+        "mostRecentPowerBudgetTimeReceived",
+        "mostRecentBatteryManagerTimeReceived",
+        "nPointsPowerBudget",
+        "nPointsBatteryManager",
+        "powerOutMeanValue"
+      ]
+    },
+    "LatestMessageDate": {
+      "type": "object",
+      "properties": {
+        "messageDate": {
+          "type": "string",
+          "format": "date-time",
+          "description": "date at which the message was RECORDED"
+        },
+        "messageType": {
+          "type": "string",
+          "description": "type of message"
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time"
+        }
+      },
+      "required": [
+        "messageDate",
+        "messageType",
+        "updatedAt"
+      ]
+    },
+    "ExtendedBoard": {
+      "type": "object",
+      "properties": {
+        "boardId": {
+          "type": "string"
+        },
+        "source": {
+          "type": "string",
+          "description": "nexxiot, aeler, kizy, etc"
+        },
+        "containerId": {
+          "type": "string",
+          "description": "Container name associated to device"
+        },
+        "buildDate": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Board build date"
+        },
+        "hwVersion": {
+          "type": "string",
+          "description": "Board hardware version"
+        },
+        "fwVersion": {
+          "type": "string",
+          "description": "Board firmware version"
+        },
+        "hwMinorRevision": {
+          "type": "string",
+          "description": "Board hardware minor revision"
+        },
+        "fwMinorRevision": {
+          "type": "string",
+          "description": "Board firmware minor revision"
+        },
+        "hasGps": {
+          "type": "boolean",
+          "description": "hasGps"
+        },
+        "hasShock": {
+          "type": "boolean",
+          "description": "hasShock"
+        },
+        "hasTempExt": {
+          "type": "boolean",
+          "description": "hasTempExt"
+        },
+        "hasTempInt": {
+          "type": "boolean",
+          "description": "hasTempInt"
+        },
+        "hasHumExt": {
+          "type": "boolean",
+          "description": "hasHumpExt"
+        },
+        "hasHumInt": {
+          "type": "boolean",
+          "description": "hasHumpInt"
+        },
+        "hasPressureExt": {
+          "type": "boolean",
+          "description": "hasPressureExt"
+        },
+        "hasPressureInt": {
+          "type": "boolean",
+          "description": "hasPressureInt"
+        },
+        "hasGases": {
+          "type": "boolean",
+          "description": "hasGases"
+        },
+        "hasLightInt": {
+          "type": "boolean",
+          "description": "hasLightInt"
+        },
+        "hasLightExt": {
+          "type": "boolean",
+          "description": "hasLightExt"
+        },
+        "hasDoor": {
+          "type": "boolean",
+          "description": "hasDoor"
+        },
+        "hasRFID": {
+          "type": "boolean",
+          "description": "hasRFID"
+        },
+        "sensors": {
+          "$ref": "#/definitions/MsgSensorsUpdatedAt"
+        },
+        "gps": {
+          "$ref": "#/definitions/MsgPositionUpdatedAt"
+        },
+        "events": {
+          "$ref": "#/definitions/MsgEventsUpdatedAt"
+        },
+        "powerBudget": {
+          "$ref": "#/definitions/MsgPowerBudgetUpdatedAt"
+        },
+        "batteryManager": {
+          "$ref": "#/definitions/MsgBatteryManagerUpdatedAt"
+        },
+        "boardBatteryStatus": {
+          "$ref": "#/definitions/BoardBatteryStatus"
+        },
+        "latestMessageDate": {
+          "$ref": "#/definitions/LatestMessageDate"
+        }
+      },
+      "required": [
+        "boardId"
+      ]
+    },
+    "Model1": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ExtendedBoard"
+      }
+    },
+    "errors": {
+      "type": "array",
+      "description": "Error messages",
+      "items": {
+        "type": "string"
+      }
+    },
+    "Failure": {
+      "type": "object",
+      "description": "An error due to a wrong request or an internal error when processing the request",
+      "properties": {
+        "errors": {
+          "$ref": "#/definitions/errors"
+        }
+      },
+      "required": [
+        "errors"
+      ]
+    },
+    "sensorValues": {
+      "type": "object",
+      "properties": {
+        "temperature": {
+          "type": "number",
+          "description": "temperature inside the container"
+        },
+        "externalTemperature": {
+          "type": "number",
+          "description": "temperature outside the container"
+        },
+        "humidity": {
+          "type": "number",
+          "description": "humidity inside the container"
+        },
+        "externalHumidity": {
+          "type": "number",
+          "description": "humidity outside the container"
+        },
+        "pressure": {
+          "type": "number",
+          "description": "pressure inside the container"
+        },
+        "externalPressure": {
+          "type": "number",
+          "description": "pressure outside the container"
+        },
+        "door": {
+          "type": "number",
+          "description": "First door sensor - 1 is closed 0 is open"
+        },
+        "doorBackup": {
+          "type": "number",
+          "description": "Second door sensor, redundant - 1 is closed 0 is open"
+        },
+        "iaq": {
+          "type": "number",
+          "description": "Indoor air quality"
+        },
+        "ngm3TVOC": {
+          "type": "number",
+          "description": "Total Volatile Organic Compounds"
+        },
+        "ppmeCO2": {
+          "type": "number",
+          "description": "parts per million carbon dioxide"
+        },
+        "ppbEtOH": {
+          "type": "number",
+          "description": "parts per million ethanol"
+        },
+        "oaqNO2": {
+          "type": "number",
+          "description": "outdoor air quality"
+        },
+        "oaqO3": {
+          "type": "number",
+          "description": "outdoor air qualiry ozone"
+        },
+        "probNO2": {
+          "type": "number",
+          "description": "probability of nitrogen dioxide"
+        },
+        "ppbNO2": {
+          "type": "number",
+          "description": "parts per billion nitrogen dioxide"
+        },
+        "ppb03": {
+          "type": "number",
+          "description": "parts per billion ozone"
+        },
+        "centiLux": {
+          "type": "number",
+          "description": "internal light sensor"
+        },
+        "centiLuxExternal": {
+          "type": "number",
+          "description": "external light sensor"
+        }
+      }
+    },
+    "positionValues": {
+      "type": "object",
+      "properties": {
+        "position": {
+          "$ref": "#/definitions/Coordinates"
+        },
+        "day": {
+          "type": "number",
+          "description": "Day (1-31) of UTC time"
+        },
+        "hmsl": {
+          "type": "number",
+          "description": "Height above mean sea level in mm"
+        },
+        "hacc": {
+          "type": "number",
+          "description": "Horizontal accuracy estimate in mm"
+        },
+        "gspeed": {
+          "type": "number",
+          "description": "Ground Speed (2-D) in mm/s"
+        },
+        "heading": {
+          "type": "number",
+          "description": "Heading in degrees"
+        },
+        "fixtype": {
+          "type": "number",
+          "description": "GNSSfix Type: 0: no fix; 2: 2D-fix; 3: 3D-fix"
+        },
+        "distance": {
+          "type": "number",
+          "description": "Ground distance since last reset in m"
+        },
+        "year": {
+          "type": "number",
+          "description": "Year (1-65635) of UTC time"
+        },
+        "month": {
+          "type": "number",
+          "description": "Month (1-12) of UTC time"
+        },
+        "hour": {
+          "type": "number",
+          "description": "Hour (0-23) of UTC time"
+        },
+        "minute": {
+          "type": "number",
+          "description": "Minute (0-59) of UTC time"
+        },
+        "second": {
+          "type": "number",
+          "description": "Second (0-60) of UTC time"
+        },
+        "numsv": {
+          "type": "number",
+          "description": "Number of satellites used in Nav Solution"
+        }
+      },
+      "required": [
+        "position",
+        "day",
+        "hmsl",
+        "hacc",
+        "gspeed",
+        "heading",
+        "fixtype",
+        "distance",
+        "year",
+        "month",
+        "hour",
+        "minute",
+        "second",
+        "numsv"
+      ]
+    },
+    "eventValues": {
+      "type": "object",
+      "properties": {
+        "shockEvent": {
+          "$ref": "#/definitions/shockEvent"
+        },
+        "lightEvent": {
+          "$ref": "#/definitions/lightEvent"
+        },
+        "doorEvent": {
+          "$ref": "#/definitions/doorEvent"
+        },
+        "lteServiceEvent": {
+          "$ref": "#/definitions/lteServiceEvent"
+        },
+        "eventSubTypeName": {
+          "type": "string",
+          "description": "the subtype of the event in question: e.g. accelEvntAVecm for accelerometer events"
+        }
+      }
+    },
+    "accelerometerValues": {
+      "type": "object",
+      "properties": {
+        "outX": {
+          "type": "number",
+          "description": "Signed axis acceleration value for X-axis"
+        },
+        "outY": {
+          "type": "number",
+          "description": "Signed axis acceleration value for Y-axis"
+        },
+        "outZ": {
+          "type": "number",
+          "description": "Signed axis acceleration value for Z-axis"
+        },
+        "whoAmI": {
+          "type": "number"
+        },
+        "status": {
+          "type": "number"
+        },
+        "fifoSamples": {
+          "type": "number"
+        },
+        "statusDup": {
+          "type": "number"
+        },
+        "wakeUpSrc": {
+          "type": "number"
+        },
+        "tapSrc": {
+          "type": "number"
+        },
+        "sixdSrc": {
+          "type": "number"
+        },
+        "allIntSrc": {
+          "type": "number"
+        }
+      }
+    },
+    "ambientSensorValues": {
+      "type": "object",
+      "properties": {
+        "devId": {
+          "type": "number"
+        },
+        "status": {
+          "type": "number"
+        },
+        "temp": {
+          "type": "number"
+        },
+        "humidity": {
+          "type": "number"
+        },
+        "press": {
+          "type": "number"
+        },
+        "iaq": {
+          "type": "number"
+        },
+        "tvoc": {
+          "type": "number"
+        },
+        "etoh1": {
+          "type": "number"
+        },
+        "etoh2": {
+          "type": "number"
+        },
+        "oaqNO2orFast": {
+          "type": "number"
+        },
+        "oaqO3orEPA": {
+          "type": "number"
+        },
+        "probNO2": {
+          "type": "number"
+        },
+        "ppbNO2": {
+          "type": "number"
+        },
+        "ppbO3": {
+          "type": "number"
+        }
+      }
+    },
+    "lightSensorValues": {
+      "type": "object",
+      "properties": {
+        "devId": {
+          "type": "number"
+        },
+        "status": {
+          "type": "number"
+        },
+        "lux": {
+          "type": "number"
+        }
+      }
+    },
+    "batteryManagerValues": {
+      "type": "object",
+      "properties": {
+        "charger": {
+          "type": "number"
+        },
+        "system": {
+          "type": "number"
+        },
+        "supply": {
+          "type": "number"
+        },
+        "ts0": {
+          "type": "number"
+        },
+        "ts1": {
+          "type": "number"
+        },
+        "ts2": {
+          "type": "number"
+        },
+        "ts3": {
+          "type": "number"
+        },
+        "chargerFaults": {
+          "type": "number"
+        },
+        "fwVersion": {
+          "type": "number"
+        },
+        "bootCRC": {
+          "type": "number"
+        },
+        "cfgCRC": {
+          "type": "number"
+        },
+        "tBat": {
+          "type": "number"
+        },
+        "powerOut": {
+          "type": "number"
+        },
+        "powerIn": {
+          "type": "number"
+        },
+        "efficiency": {
+          "type": "number"
+        },
+        "iOut": {
+          "type": "number"
+        },
+        "iIn": {
+          "type": "number"
+        },
+        "vBat": {
+          "type": "number"
+        },
+        "vIn": {
+          "type": "number"
+        },
+        "vInr": {
+          "type": "number"
+        }
+      }
+    },
+    "powerBudgetValues": {
+      "type": "object",
+      "properties": {
+        "tSleepSeconds": {
+          "type": "number"
+        },
+        "nWakeForCom": {
+          "type": "number"
+        },
+        "targetAutonomy": {
+          "type": "number"
+        },
+        "powerCtrlMode": {
+          "type": "number"
+        },
+        "batterySoCfromVoC": {
+          "type": "number"
+        },
+        "batterySoCfromCoulomb": {
+          "type": "number"
+        },
+        "batterySoH": {
+          "type": "number"
+        },
+        "projectedAutonomy": {
+          "type": "number"
+        }
+      }
+    },
+    "coreOutputGpiosValues": {
+      "type": "object",
+      "properties": {
+        "outputCtrl": {
+          "type": "number"
+        }
+      }
+    },
+    "coreInputGpiosValues": {
+      "type": "object",
+      "properties": {
+        "llwuPx": {
+          "type": "number"
+        }
+      }
+    },
+    "gpioExpanderValues": {
+      "type": "object",
+      "properties": {
+        "inputPortRegister": {
+          "type": "number"
+        },
+        "outputPortRegister": {
+          "type": "number"
+        },
+        "polarityInversionRegister": {
+          "type": "number"
+        },
+        "expanderConfigRegister": {
+          "type": "number"
+        }
+      }
+    },
+    "coulombCounterValues": {
+      "type": "object",
+      "properties": {
+        "statusRegister": {
+          "type": "number"
+        },
+        "controlRegister": {
+          "type": "number"
+        },
+        "fsmState": {
+          "type": "number"
+        },
+        "eventID": {
+          "type": "number"
+        },
+        "metadata": {
+          "type": "number"
+        },
+        "accumulatedCharge": {
+          "type": "number"
+        },
+        "voltage": {
+          "type": "number"
+        },
+        "current": {
+          "type": "number"
+        },
+        "temperature": {
+          "type": "number"
+        }
+      }
+    },
+    "lteServiceValues": {
+      "type": "object",
+      "properties": {
+        "fsmState": {
+          "type": "number"
+        },
+        "eventID": {
+          "type": "number"
+        },
+        "metadata": {
+          "type": "number"
+        },
+        "vid": {
+          "type": "number"
+        },
+        "pid": {
+          "type": "number"
+        },
+        "bcdDevice": {
+          "type": "number"
+        },
+        "iccid": {
+          "type": "number"
+        },
+        "signalStrength": {
+          "type": "number"
+        },
+        "modemState": {
+          "type": "number"
+        },
+        "cid": {
+          "type": "number"
+        },
+        "lac": {
+          "type": "number"
+        },
+        "mcc": {
+          "type": "number"
+        },
+        "mnc": {
+          "type": "number"
+        },
+        "tac": {
+          "type": "number"
+        }
+      }
+    },
+    "systemMonitorServiceValues": {
+      "type": "object",
+      "properties": {
+        "containerId": {
+          "type": "number"
+        },
+        "avgCpu": {
+          "type": "number"
+        },
+        "minCpu": {
+          "type": "number"
+        },
+        "maxCpu": {
+          "type": "number"
+        },
+        "avgMem": {
+          "type": "number"
+        },
+        "minMem": {
+          "type": "number"
+        },
+        "maxMem": {
+          "type": "number"
+        },
+        "statusUptime": {
+          "type": "number"
+        }
+      }
+    },
+    "allValues": {
+      "type": "object",
+      "properties": {
+        "sensors": {
+          "$ref": "#/definitions/sensorValues"
+        },
+        "gps": {
+          "$ref": "#/definitions/positionValues"
+        },
+        "events": {
+          "$ref": "#/definitions/eventValues"
+        },
+        "accelerometer": {
+          "$ref": "#/definitions/accelerometerValues"
+        },
+        "ambientSensor": {
+          "$ref": "#/definitions/ambientSensorValues"
+        },
+        "lightSensor": {
+          "$ref": "#/definitions/lightSensorValues"
+        },
+        "batteryManager": {
+          "$ref": "#/definitions/batteryManagerValues"
+        },
+        "powerBudget": {
+          "$ref": "#/definitions/powerBudgetValues"
+        },
+        "coreOutputGpios": {
+          "$ref": "#/definitions/coreOutputGpiosValues"
+        },
+        "coreInputGpios": {
+          "$ref": "#/definitions/coreInputGpiosValues"
+        },
+        "gpioExpander": {
+          "$ref": "#/definitions/gpioExpanderValues"
+        },
+        "coulombCounter": {
+          "$ref": "#/definitions/coulombCounterValues"
+        },
+        "lteService": {
+          "$ref": "#/definitions/lteServiceValues"
+        },
+        "systemMonitorService": {
+          "$ref": "#/definitions/systemMonitorServiceValues"
+        },
+        "subType": {
+          "type": "string",
+          "description": "tsSubType",
+          "enum": [
+            "sensorArrayHw0101",
+            "accelerometerXYZ",
+            "accelerometerXYZT",
+            "accelerometer2Status",
+            "accelerometer2GeneralCfg",
+            "accelerometer2FeaturesCfg",
+            "accelerometerEvent",
+            "accelerometer2EventDebug",
+            "ambientTHStatus",
+            "ambientTHData",
+            "ambientTPStatus",
+            "ambientTPData",
+            "ambientTPStatusAndData",
+            "ambientIaqStatus",
+            "ambientIaqData",
+            "ambientOaqStatus",
+            "ambientOaqData",
+            "ambientTPGeneralCfg",
+            "ambientTPFeaturesCfg",
+            "ambientTHEvent",
+            "light2Data",
+            "light2Event",
+            "bms2Status",
+            "bms2Telemetry",
+            "bms2StatusAndTelem",
+            "bms2Config",
+            "powerBudgetStatus",
+            "powerSupplyCtrl",
+            "imx7UlpLlwupx",
+            "gpioExp8InputPortReg",
+            "gpioExp8OutputPortReg",
+            "gpioExp8PolarityReg",
+            "gpioExp8ConfigReg",
+            "gpioExp8RegsDump",
+            "gpioExp16InputPortReg",
+            "gpioExp16OutputPortReg",
+            "gpioExp16PolarityReg",
+            "gpioExp16ConfigReg",
+            "gpioExp16RegsDump",
+            "gpioExp16InputPortEvent",
+            "coulombCounterStatus",
+            "coulombCounterReads",
+            "gnssLogEntry",
+            "lteServiceEvent",
+            "lteServiceModemInfo",
+            "lteServiceSimInfo",
+            "lteServiceStatus",
+            "lteServiceLocationInfo",
+            "lteServiceEvents",
+            "sysMonMetrics",
+            "sysMonHealthCheck",
+            "errorReportGeneric",
+            "testStructure1",
+            "productVersion"
+          ]
+        }
+      }
+    },
+    "TimedSample": {
+      "type": "object",
+      "properties": {
+        "time": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "timeReceived": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "values": {
+          "$ref": "#/definitions/allValues"
+        }
+      },
+      "required": [
+        "time",
+        "timeReceived",
+        "values"
+      ]
+    },
+    "data": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/TimedSample"
+      }
+    },
+    "DailyStreamBase": {
+      "type": "object",
+      "properties": {
+        "boardId": {
+          "type": "string"
+        },
+        "day": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "type": {
+          "type": "string",
+          "description": "tsType",
+          "enum": [
+            "events",
+            "sensors",
+            "gps",
+            "accelerometer",
+            "ambientSensor",
+            "lightSensor",
+            "batteryManager",
+            "powerBudget",
+            "coreOutputGpios",
+            "coreInputGpios",
+            "gpioExpander",
+            "coulombCounter",
+            "lteService",
+            "systemMonitorService"
+          ]
+        },
+        "data": {
+          "$ref": "#/definitions/data"
+        }
+      },
+      "required": [
+        "boardId",
+        "day",
+        "type",
+        "data"
+      ]
+    },
+    "Model2": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/DailyStreamBase"
+      }
+    },
+    "PostAelerBoardQuery": {
+      "type": "object",
+      "properties": {
+        "boardId": {
+          "type": "string"
+        },
+        "source": {
+          "type": "string",
+          "description": "nexxiot, aeler, kizy, etc"
+        },
+        "containerId": {
+          "type": "string",
+          "description": "Container name associated to device"
+        },
+        "buildDate": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Board build date"
+        },
+        "hwVersion": {
+          "type": "string",
+          "description": "Board hardware version"
+        },
+        "fwVersion": {
+          "type": "string",
+          "description": "Board firmware version"
+        },
+        "hwMinorRevision": {
+          "type": "string",
+          "description": "Board hardware minor revision"
+        },
+        "fwMinorRevision": {
+          "type": "string",
+          "description": "Board firmware minor revision"
+        },
+        "hasGps": {
+          "type": "boolean",
+          "description": "hasGps"
+        },
+        "hasShock": {
+          "type": "boolean",
+          "description": "hasShock"
+        },
+        "hasTempExt": {
+          "type": "boolean",
+          "description": "hasTempExt"
+        },
+        "hasTempInt": {
+          "type": "boolean",
+          "description": "hasTempInt"
+        },
+        "hasHumExt": {
+          "type": "boolean",
+          "description": "hasHumpExt"
+        },
+        "hasHumInt": {
+          "type": "boolean",
+          "description": "hasHumpInt"
+        },
+        "hasPressureExt": {
+          "type": "boolean",
+          "description": "hasPressureExt"
+        },
+        "hasPressureInt": {
+          "type": "boolean",
+          "description": "hasPressureInt"
+        },
+        "hasGases": {
+          "type": "boolean",
+          "description": "hasGases"
+        },
+        "hasLightInt": {
+          "type": "boolean",
+          "description": "hasLightInt"
+        },
+        "hasLightExt": {
+          "type": "boolean",
+          "description": "hasLightExt"
+        },
+        "hasDoor": {
+          "type": "boolean",
+          "description": "hasDoor"
+        },
+        "hasRFID": {
+          "type": "boolean",
+          "description": "hasRFID"
+        }
+      },
+      "required": [
+        "boardId"
+      ]
+    },
+    "Model3": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string"
+        },
+        "samples": {
+          "$ref": "#/definitions/data"
+        }
+      },
+      "required": [
+        "type",
+        "samples"
+      ]
+    },
+    "messages": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/Model3"
+      }
+    },
+    "Board": {
+      "type": "object",
+      "properties": {
+        "boardId": {
+          "type": "string"
+        },
+        "messages": {
+          "$ref": "#/definitions/messages"
+        }
+      },
+      "required": [
+        "boardId",
+        "messages"
+      ]
+    },
+    "Model4": {
+      "type": "object",
+      "properties": {
+        "nPointsPosted": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "nPointsPosted"
+      ]
+    }
+  },
+  "security": [
+    {
+      "jwt": []
+    }
+  ]
+}

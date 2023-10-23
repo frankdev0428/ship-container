@@ -1,0 +1,15 @@
+apis/BoardsApi.ts
+apis/index.ts
+index.ts
+models/BatteryMeasurement.ts
+models/BatteryMeasurementUpdatedAt.ts
+models/ExtendedBoard.ts
+models/Failure.ts
+models/GpsMeasurement.ts
+models/GpsMeasurementUpdatedAt.ts
+models/Model2.ts
+models/SensorsMeasurement.ts
+models/SensorsMeasurementUpdatedAt.ts
+models/Values.ts
+models/index.ts
+runtime.ts

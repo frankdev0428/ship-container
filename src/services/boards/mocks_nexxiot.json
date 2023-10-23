@@ -1,0 +1,1802 @@
+[
+  {
+    "_id": "6294edb5c1f1b743cb69e2cb",
+    "boardId": "e7e63956-41f2-4db5-9577-b48cd2563540",
+    "__v": 0,
+    "containerId": "CAVU0000352",
+    "createdAt": "2022-05-30T16:15:49.629Z",
+    "hasDoor": false,
+    "hasGases": false,
+    "hasGps": true,
+    "hasHumExt": false,
+    "hasHumInt": false,
+    "hasLightExt": false,
+    "hasLightInt": false,
+    "hasPressureExt": false,
+    "hasPressureInt": false,
+    "hasRFID": false,
+    "hasShock": true,
+    "hasTempExt": true,
+    "hasTempInt": false,
+    "source": "nexxiot",
+    "asset": {
+      "location": {
+          "geometry": [
+            29.517984833333333,
+            40.76033183333333
+          ],
+          "countryCode": "",
+          "cityName": "",
+          "regionName": ""
+      },
+      "updatedAt": "2022-07-01T10:53:05.809Z"
+    },
+    "device": {
+      "internalTemperature": {
+        "celsius" : 30
+      },
+      "updatedAt": "2022-07-01T09:53:05.809Z"
+    },
+    "updatedAt": "2022-07-04T09:51:50.825Z"
+  },
+  {
+    "_id": "6294edb7c1f1b743cb69e5e1",
+    "boardId": "842609e1-18a5-4ec3-a67a-d00eefe46c35",
+    "__v": 0,
+    "containerId": "CAVU0000100",
+    "createdAt": "2022-05-30T16:15:51.811Z",
+    "hasDoor": false,
+    "hasGases": false,
+    "hasGps": true,
+    "hasHumExt": false,
+    "hasHumInt": false,
+    "hasLightExt": false,
+    "hasLightInt": false,
+    "hasPressureExt": false,
+    "hasPressureInt": false,
+    "hasRFID": false,
+    "hasShock": true,
+    "hasTempExt": true,
+    "hasTempInt": false,
+    "source": "nexxiot",
+    "asset": {
+      "location": {
+          "geometry": [
+            29.517984833333333,
+            40.76033183333333
+          ],
+          "countryCode": "",
+          "cityName": "",
+          "regionName": ""
+      },
+      "updatedAt": "2022-07-01T10:53:05.809Z"
+    },
+    "device": {
+      "internalTemperature": {
+        "celsius" : 30
+      },
+      "updatedAt": "2022-07-01T09:53:05.809Z"
+    },
+    "updatedAt": "2022-07-04T09:52:00.589Z"
+  },
+  {
+    "_id": "6294edb9c1f1b743cb69e880",
+    "boardId": "01a02f8b-b45a-4c22-ac6f-fdda50d01525",
+    "__v": 0,
+    "containerId": "CAVU0000250",
+    "createdAt": "2022-05-30T16:15:53.886Z",
+    "hasDoor": false,
+    "hasGases": false,
+    "hasGps": true,
+    "hasHumExt": false,
+    "hasHumInt": false,
+    "hasLightExt": false,
+    "hasLightInt": false,
+    "hasPressureExt": false,
+    "hasPressureInt": false,
+    "hasRFID": false,
+    "hasShock": true,
+    "hasTempExt": true,
+    "hasTempInt": false,
+    "source": "nexxiot",
+    "asset": {
+      "location": {
+          "geometry": [
+            29.517984833333333,
+            40.76033183333333
+          ],
+          "countryCode": "",
+          "cityName": "",
+          "regionName": ""
+      },
+      "updatedAt": "2022-07-01T10:53:05.809Z"
+    },
+    "device": {
+      "internalTemperature": {
+        "celsius" : 30
+      },
+      "updatedAt": "2022-07-01T09:53:05.809Z"
+    },
+    "updatedAt": "2022-07-04T09:52:00.927Z"
+  },
+  {
+    "_id": "6294edbcc1f1b743cb69eb94",
+    "boardId": "da571c0e-9e93-464b-99d9-d2c1d0c0d46a",
+    "__v": 0,
+    "containerId": "CAVU0000141",
+    "createdAt": "2022-05-30T16:15:56.535Z",
+    "hasDoor": false,
+    "hasGases": false,
+    "hasGps": true,
+    "hasHumExt": false,
+    "hasHumInt": false,
+    "hasLightExt": false,
+    "hasLightInt": false,
+    "hasPressureExt": false,
+    "hasPressureInt": false,
+    "hasRFID": false,
+    "hasShock": true,
+    "hasTempExt": true,
+    "hasTempInt": false,
+    "source": "nexxiot",
+    "asset": {
+      "location": {
+          "geometry": [
+            29.517984833333333,
+            40.76033183333333
+          ],
+          "countryCode": "",
+          "cityName": "",
+          "regionName": ""
+      },
+      "updatedAt": "2022-07-01T10:53:05.809Z"
+    },
+    "device": {
+      "internalTemperature": {
+        "celsius" : 30
+      },
+      "updatedAt": "2022-07-01T09:53:05.809Z"
+    },
+    "updatedAt": "2022-07-04T09:51:58.147Z"
+  },
+  {
+    "_id": "6294edbfc1f1b743cb69eedf",
+    "boardId": "919523ec-9cbc-460e-9877-f2ab5ad98933",
+    "__v": 0,
+    "containerId": "CAVU0000286",
+    "createdAt": "2022-05-30T16:15:59.844Z",
+    "hasDoor": false,
+    "hasGases": false,
+    "hasGps": true,
+    "hasHumExt": false,
+    "hasHumInt": false,
+    "hasLightExt": false,
+    "hasLightInt": false,
+    "hasPressureExt": false,
+    "hasPressureInt": false,
+    "hasRFID": false,
+    "hasShock": true,
+    "hasTempExt": true,
+    "hasTempInt": false,
+    "source": "nexxiot",
+    "asset": {
+      "location": {
+          "geometry": [
+            29.517984833333333,
+            40.76033183333333
+          ],
+          "countryCode": "",
+          "cityName": "",
+          "regionName": ""
+      },
+      "updatedAt": "2022-07-01T10:53:05.809Z"
+    },
+    "device": {
+      "internalTemperature": {
+        "celsius" : 30
+      },
+      "updatedAt": "2022-07-01T09:53:05.809Z"
+    },
+    "updatedAt": "2022-07-04T09:52:00.661Z"
+  },
+  {
+    "_id": "6294edc2c1f1b743cb69f320",
+    "boardId": "7a1f02ba-057a-423b-b54f-b13b60a8dbbe",
+    "__v": 0,
+    "containerId": "CAVU0000075",
+    "createdAt": "2022-05-30T16:16:02.632Z",
+    "hasDoor": false,
+    "hasGases": false,
+    "hasGps": true,
+    "hasHumExt": false,
+    "hasHumInt": false,
+    "hasLightExt": false,
+    "hasLightInt": false,
+    "hasPressureExt": false,
+    "hasPressureInt": false,
+    "hasRFID": false,
+    "hasShock": true,
+    "hasTempExt": true,
+    "hasTempInt": false,
+    "source": "nexxiot",
+    "asset": {
+      "location": {
+          "geometry": [
+            29.517984833333333,
+            40.76033183333333
+          ],
+          "countryCode": "",
+          "cityName": "",
+          "regionName": ""
+      },
+      "updatedAt": "2022-07-01T10:53:05.809Z"
+    },
+    "device": {
+      "internalTemperature": {
+        "celsius" : 30
+      },
+      "updatedAt": "2022-07-01T09:53:05.809Z"
+    },
+    "updatedAt": "2022-07-04T09:51:58.256Z"
+  },
+  {
+    "_id": "6294edc9c1f1b743cb69f898",
+    "boardId": "23f8492e-f2fc-4ff3-bbbf-aade5c21799e",
+    "__v": 0,
+    "containerId": "CAVU0000136",
+    "createdAt": "2022-05-30T16:16:09.579Z",
+    "hasDoor": false,
+    "hasGases": false,
+    "hasGps": true,
+    "hasHumExt": false,
+    "hasHumInt": false,
+    "hasLightExt": false,
+    "hasLightInt": false,
+    "hasPressureExt": false,
+    "hasPressureInt": false,
+    "hasRFID": false,
+    "hasShock": true,
+    "hasTempExt": true,
+    "hasTempInt": false,
+    "source": "nexxiot",
+    "asset": {
+      "location": {
+          "geometry": [
+            29.517984833333333,
+            40.76033183333333
+          ],
+          "countryCode": "",
+          "cityName": "",
+          "regionName": ""
+      },
+      "updatedAt": "2022-07-01T10:53:05.809Z"
+    },
+    "device": {
+      "internalTemperature": {
+        "celsius" : 30
+      },
+      "updatedAt": "2022-07-01T09:53:05.809Z"
+    },
+    "updatedAt": "2022-07-04T09:51:56.166Z"
+  },
+  {
+    "_id": "6294edcbc1f1b743cb69fe2d",
+    "boardId": "e2ef1e87-c057-497d-b359-f689a349497c",
+    "__v": 0,
+    "containerId": "CAVU0000429",
+    "createdAt": "2022-05-30T16:16:10.480Z",
+    "hasDoor": false,
+    "hasGases": false,
+    "hasGps": true,
+    "hasHumExt": false,
+    "hasHumInt": false,
+    "hasLightExt": false,
+    "hasLightInt": false,
+    "hasPressureExt": false,
+    "hasPressureInt": false,
+    "hasRFID": false,
+    "hasShock": true,
+    "hasTempExt": true,
+    "hasTempInt": false,
+    "source": "nexxiot",
+    "asset": {
+      "location": {
+          "geometry": [
+            29.517984833333333,
+            40.76033183333333
+          ],
+          "countryCode": "",
+          "cityName": "",
+          "regionName": ""
+      },
+      "updatedAt": "2022-07-01T10:53:05.809Z"
+    },
+    "device": {
+      "internalTemperature": {
+        "celsius" : 30
+      },
+      "updatedAt": "2022-07-01T09:53:05.809Z"
+    },
+    "updatedAt": "2022-07-04T09:52:01.730Z"
+  },
+  {
+    "_id": "6294edcbc1f1b743cb69fe50",
+    "boardId": "e46f39ca-4d05-4b69-a797-a8cf1850e410",
+    "__v": 0,
+    "containerId": "CAVU0000394",
+    "createdAt": "2022-05-30T16:16:10.982Z",
+    "hasDoor": false,
+    "hasGases": false,
+    "hasGps": true,
+    "hasHumExt": false,
+    "hasHumInt": false,
+    "hasLightExt": false,
+    "hasLightInt": false,
+    "hasPressureExt": false,
+    "hasPressureInt": false,
+    "hasRFID": false,
+    "hasShock": true,
+    "hasTempExt": true,
+    "hasTempInt": false,
+    "source": "nexxiot",
+    "asset": {
+      "location": {
+          "geometry": [
+            29.517984833333333,
+            40.76033183333333
+          ],
+          "countryCode": "",
+          "cityName": "",
+          "regionName": ""
+      },
+      "updatedAt": "2022-07-01T10:53:05.809Z"
+    },
+    "device": {
+      "internalTemperature": {
+        "celsius" : 30
+      },
+      "updatedAt": "2022-07-01T09:53:05.809Z"
+    },
+    "updatedAt": "2022-07-04T09:51:55.230Z"
+  },
+  {
+    "_id": "6294edd3c1f1b743cb6a0aa6",
+    "boardId": "66b31fa5-1007-4ee6-b442-250e19bd27ac",
+    "__v": 0,
+    "containerId": "CAVU0000305",
+    "createdAt": "2022-05-30T16:16:19.047Z",
+    "hasDoor": false,
+    "hasGases": false,
+    "hasGps": true,
+    "hasHumExt": false,
+    "hasHumInt": false,
+    "hasLightExt": false,
+    "hasLightInt": false,
+    "hasPressureExt": false,
+    "hasPressureInt": false,
+    "hasRFID": false,
+    "hasShock": true,
+    "hasTempExt": true,
+    "hasTempInt": false,
+    "source": "nexxiot",
+    "asset": {
+      "location": {
+          "geometry": [
+            29.517984833333333,
+            40.76033183333333
+          ],
+          "countryCode": "",
+          "cityName": "",
+          "regionName": ""
+      },
+      "updatedAt": "2022-07-01T10:53:05.809Z"
+    },
+    "device": {
+      "internalTemperature": {
+        "celsius" : 30
+      },
+      "updatedAt": "2022-07-01T09:53:05.809Z"
+    },
+    "updatedAt": "2022-07-04T09:51:56.201Z"
+  },
+  {
+    "_id": "6294edd4c1f1b743cb6a108d",
+    "boardId": "f89bad0f-4e09-4471-9018-38b405b855f7",
+    "__v": 0,
+    "containerId": "CAVU0000331",
+    "createdAt": "2022-05-30T16:16:19.655Z",
+    "hasDoor": false,
+    "hasGases": false,
+    "hasGps": true,
+    "hasHumExt": false,
+    "hasHumInt": false,
+    "hasLightExt": false,
+    "hasLightInt": false,
+    "hasPressureExt": false,
+    "hasPressureInt": false,
+    "hasRFID": false,
+    "hasShock": true,
+    "hasTempExt": true,
+    "hasTempInt": false,
+    "source": "nexxiot",
+    "asset": {
+      "location": {
+          "geometry": [
+            29.517984833333333,
+            40.76033183333333
+          ],
+          "countryCode": "",
+          "cityName": "",
+          "regionName": ""
+      },
+      "updatedAt": "2022-07-01T10:53:05.809Z"
+    },
+    "device": {
+      "internalTemperature": {
+        "celsius" : 30
+      },
+      "updatedAt": "2022-07-01T09:53:05.809Z"
+    },
+    "updatedAt": "2022-07-04T09:51:51.117Z"
+  },
+  {
+    "_id": "6294edd4c1f1b743cb6a109c",
+    "boardId": "9905d15b-bf24-4111-8876-9bc886402687",
+    "__v": 0,
+    "containerId": "CAVU0000440",
+    "createdAt": "2022-05-30T16:16:20.095Z",
+    "hasDoor": false,
+    "hasGases": false,
+    "hasGps": true,
+    "hasHumExt": false,
+    "hasHumInt": false,
+    "hasLightExt": false,
+    "hasLightInt": false,
+    "hasPressureExt": false,
+    "hasPressureInt": false,
+    "hasRFID": false,
+    "hasShock": true,
+    "hasTempExt": true,
+    "hasTempInt": false,
+    "source": "nexxiot",
+    "asset": {
+      "location": {
+          "geometry": [
+            29.517984833333333,
+            40.76033183333333
+          ],
+          "countryCode": "",
+          "cityName": "",
+          "regionName": ""
+      },
+      "updatedAt": "2022-07-01T10:53:05.809Z"
+    },
+    "device": {
+      "internalTemperature": {
+        "celsius" : 30
+      },
+      "updatedAt": "2022-07-01T09:53:05.809Z"
+    },
+    "updatedAt": "2022-07-04T09:51:56.484Z"
+  },
+  {
+    "_id": "6294eddcc1f1b743cb6a1e7e",
+    "boardId": "fbb662bb-0544-4a2e-bcca-3e70c25997df",
+    "__v": 0,
+    "containerId": "CAVU0000579",
+    "createdAt": "2022-05-30T16:16:28.164Z",
+    "hasDoor": false,
+    "hasGases": false,
+    "hasGps": true,
+    "hasHumExt": false,
+    "hasHumInt": false,
+    "hasLightExt": false,
+    "hasLightInt": false,
+    "hasPressureExt": false,
+    "hasPressureInt": false,
+    "hasRFID": false,
+    "hasShock": true,
+    "hasTempExt": true,
+    "hasTempInt": false,
+    "source": "nexxiot",
+    "asset": {
+      "location": {
+          "geometry": [
+            29.517984833333333,
+            40.76033183333333
+          ],
+          "countryCode": "",
+          "cityName": "",
+          "regionName": ""
+      },
+      "updatedAt": "2022-07-01T10:53:05.809Z"
+    },
+    "device": {
+      "internalTemperature": {
+        "celsius" : 30
+      },
+      "updatedAt": "2022-07-01T09:53:05.809Z"
+    },
+    "updatedAt": "2022-07-04T09:51:58.368Z"
+  },
+  {
+    "_id": "6294eddec1f1b743cb6a2542",
+    "boardId": "f079267c-2d42-4582-adfc-2e2ecea2ed46",
+    "__v": 0,
+    "containerId": "CAVU0000558",
+    "createdAt": "2022-05-30T16:16:29.585Z",
+    "hasDoor": false,
+    "hasGases": false,
+    "hasGps": true,
+    "hasHumExt": false,
+    "hasHumInt": false,
+    "hasLightExt": false,
+    "hasLightInt": false,
+    "hasPressureExt": false,
+    "hasPressureInt": false,
+    "hasRFID": false,
+    "hasShock": true,
+    "hasTempExt": true,
+    "hasTempInt": false,
+    "source": "nexxiot",
+    "asset": {
+      "location": {
+          "geometry": [
+            29.517984833333333,
+            40.76033183333333
+          ],
+          "countryCode": "",
+          "cityName": "",
+          "regionName": ""
+      },
+      "updatedAt": "2022-07-01T10:53:05.809Z"
+    },
+    "device": {
+      "internalTemperature": {
+        "celsius" : 30
+      },
+      "updatedAt": "2022-07-01T09:53:05.809Z"
+    },
+    "updatedAt": "2022-07-04T09:51:51.171Z"
+  },
+  {
+    "_id": "6294eddec1f1b743cb6a2590",
+    "boardId": "b7f9489a-be3f-4161-a00b-16a1bae7550a",
+    "__v": 0,
+    "containerId": "CAVU0000584",
+    "createdAt": "2022-05-30T16:16:29.230Z",
+    "hasDoor": false,
+    "hasGases": false,
+    "hasGps": true,
+    "hasHumExt": false,
+    "hasHumInt": false,
+    "hasLightExt": false,
+    "hasLightInt": false,
+    "hasPressureExt": false,
+    "hasPressureInt": false,
+    "hasRFID": false,
+    "hasShock": true,
+    "hasTempExt": true,
+    "hasTempInt": false,
+    "source": "nexxiot",
+    "asset": {
+      "location": {
+          "geometry": [
+            29.517984833333333,
+            40.76033183333333
+          ],
+          "countryCode": "",
+          "cityName": "",
+          "regionName": ""
+      },
+      "updatedAt": "2022-07-01T10:53:05.809Z"
+    },
+    "device": {
+      "internalTemperature": {
+        "celsius" : 30
+      },
+      "updatedAt": "2022-07-01T09:53:05.809Z"
+    },
+    "updatedAt": "2022-07-04T09:52:01.875Z"
+  },
+  {
+    "_id": "6294edebc1f1b743cb6a35f9",
+    "boardId": "beaf97d7-8a21-4e53-993e-3dac0c7981ab",
+    "__v": 0,
+    "containerId": "CAVU0000460",
+    "createdAt": "2022-05-30T16:16:43.718Z",
+    "hasDoor": false,
+    "hasGases": false,
+    "hasGps": true,
+    "hasHumExt": false,
+    "hasHumInt": false,
+    "hasLightExt": false,
+    "hasLightInt": false,
+    "hasPressureExt": false,
+    "hasPressureInt": false,
+    "hasRFID": false,
+    "hasShock": true,
+    "hasTempExt": true,
+    "hasTempInt": false,
+    "source": "nexxiot",
+    "asset": {
+      "location": {
+          "geometry": [
+            29.517984833333333,
+            40.76033183333333
+          ],
+          "countryCode": "",
+          "cityName": "",
+          "regionName": ""
+      },
+      "updatedAt": "2022-07-01T10:53:05.809Z"
+    },
+    "device": {
+      "internalTemperature": {
+        "celsius" : 30
+      },
+      "updatedAt": "2022-07-01T09:53:05.809Z"
+    },
+    "updatedAt": "2022-07-04T09:52:00.787Z"
+  },
+  {
+    "_id": "6294edeec1f1b743cb6a3ef7",
+    "boardId": "47d30a63-0f2d-4789-b5b9-ef42177a851e",
+    "__v": 0,
+    "containerId": "CAVU0000413",
+    "createdAt": "2022-05-30T16:16:45.397Z",
+    "hasDoor": false,
+    "hasGases": false,
+    "hasGps": true,
+    "hasHumExt": false,
+    "hasHumInt": false,
+    "hasLightExt": false,
+    "hasLightInt": false,
+    "hasPressureExt": false,
+    "hasPressureInt": false,
+    "hasRFID": false,
+    "hasShock": true,
+    "hasTempExt": true,
+    "hasTempInt": false,
+    "source": "nexxiot",
+    "asset": {
+      "location": {
+          "geometry": [
+            29.517984833333333,
+            40.76033183333333
+          ],
+          "countryCode": "",
+          "cityName": "",
+          "regionName": ""
+      },
+      "updatedAt": "2022-07-01T10:53:05.809Z"
+    },
+    "device": {
+      "internalTemperature": {
+        "celsius" : 30
+      },
+      "updatedAt": "2022-07-01T09:53:05.809Z"
+    },
+    "updatedAt": "2022-07-04T09:52:00.878Z"
+  },
+  {
+    "_id": "6294edf7c1f1b743cb6a49b2",
+    "boardId": "0a792c56-8b77-4ac9-9a63-2c836392011f",
+    "__v": 0,
+    "containerId": "CAVU0000542",
+    "createdAt": "2022-05-30T16:16:55.195Z",
+    "hasDoor": false,
+    "hasGases": false,
+    "hasGps": true,
+    "hasHumExt": false,
+    "hasHumInt": false,
+    "hasLightExt": false,
+    "hasLightInt": false,
+    "hasPressureExt": false,
+    "hasPressureInt": false,
+    "hasRFID": false,
+    "hasShock": true,
+    "hasTempExt": true,
+    "hasTempInt": false,
+    "source": "nexxiot",
+    "asset": {
+      "location": {
+          "geometry": [
+            29.517984833333333,
+            40.76033183333333
+          ],
+          "countryCode": "",
+          "cityName": "",
+          "regionName": ""
+      },
+      "updatedAt": "2022-07-01T10:53:05.809Z"
+    },
+    "device": {
+      "internalTemperature": {
+        "celsius" : 30
+      },
+      "updatedAt": "2022-07-01T09:53:05.809Z"
+    },
+    "updatedAt": "2022-07-04T09:52:00.609Z"
+  },
+  {
+    "_id": "6294edfac1f1b743cb6a5484",
+    "boardId": "38be5aef-8381-49e9-8b7b-b360a1a89f62",
+    "__v": 0,
+    "containerId": "CAVU0000096",
+    "createdAt": "2022-05-30T16:16:56.525Z",
+    "hasDoor": false,
+    "hasGases": false,
+    "hasGps": true,
+    "hasHumExt": false,
+    "hasHumInt": false,
+    "hasLightExt": false,
+    "hasLightInt": false,
+    "hasPressureExt": false,
+    "hasPressureInt": false,
+    "hasRFID": false,
+    "hasShock": true,
+    "hasTempExt": true,
+    "hasTempInt": false,
+    "source": "nexxiot",
+    "asset": {
+      "location": {
+          "geometry": [
+            29.517984833333333,
+            40.76033183333333
+          ],
+          "countryCode": "",
+          "cityName": "",
+          "regionName": ""
+      },
+      "updatedAt": "2022-07-01T10:53:05.809Z"
+    },
+    "device": {
+      "internalTemperature": {
+        "celsius" : 30
+      },
+      "updatedAt": "2022-07-01T09:53:05.809Z"
+    },
+    "updatedAt": "2022-07-04T09:51:56.805Z"
+  },
+  {
+    "_id": "6294ee01c1f1b743cb6a603b",
+    "boardId": "0df086cc-7ac0-419f-89db-9b74038e651d",
+    "__v": 0,
+    "containerId": "CAVU0000389",
+    "createdAt": "2022-05-30T16:17:05.919Z",
+    "hasDoor": false,
+    "hasGases": false,
+    "hasGps": true,
+    "hasHumExt": false,
+    "hasHumInt": false,
+    "hasLightExt": false,
+    "hasLightInt": false,
+    "hasPressureExt": false,
+    "hasPressureInt": false,
+    "hasRFID": false,
+    "hasShock": true,
+    "hasTempExt": true,
+    "hasTempInt": false,
+    "source": "nexxiot",
+    "asset": {
+      "location": {
+          "geometry": [
+            29.517984833333333,
+            40.76033183333333
+          ],
+          "countryCode": "",
+          "cityName": "",
+          "regionName": ""
+      },
+      "updatedAt": "2022-07-01T10:53:05.809Z"
+    },
+    "device": {
+      "internalTemperature": {
+        "celsius" : 30
+      },
+      "updatedAt": "2022-07-01T09:53:05.809Z"
+    },
+    "updatedAt": "2022-07-04T09:51:56.224Z"
+  },
+  {
+    "_id": "6294ee05c1f1b743cb6a6b9e",
+    "boardId": "9c386abf-7702-41fa-870d-5616f163dd67",
+    "__v": 0,
+    "containerId": "CAVU0000373",
+    "createdAt": "2022-05-30T16:17:08.804Z",
+    "hasDoor": false,
+    "hasGases": false,
+    "hasGps": true,
+    "hasHumExt": false,
+    "hasHumInt": false,
+    "hasLightExt": false,
+    "hasLightInt": false,
+    "hasPressureExt": false,
+    "hasPressureInt": false,
+    "hasRFID": false,
+    "hasShock": true,
+    "hasTempExt": true,
+    "hasTempInt": false,
+    "source": "nexxiot",
+    "asset": {
+      "location": {
+          "geometry": [
+            29.517984833333333,
+            40.76033183333333
+          ],
+          "countryCode": "",
+          "cityName": "",
+          "regionName": ""
+      },
+      "updatedAt": "2022-07-01T10:53:05.809Z"
+    },
+    "device": {
+      "internalTemperature": {
+        "celsius" : 30
+      },
+      "updatedAt": "2022-07-01T09:53:05.809Z"
+    },
+    "updatedAt": "2022-07-04T09:52:00.604Z"
+  },
+  {
+    "_id": "6294ee06c1f1b743cb6a6c7f",
+    "boardId": "592ef262-7d2b-4a01-bf5f-e9067d15699d",
+    "__v": 0,
+    "containerId": "CAVU0000516",
+    "createdAt": "2022-05-30T16:17:09.264Z",
+    "hasDoor": false,
+    "hasGases": false,
+    "hasGps": true,
+    "hasHumExt": false,
+    "hasHumInt": false,
+    "hasLightExt": false,
+    "hasLightInt": false,
+    "hasPressureExt": false,
+    "hasPressureInt": false,
+    "hasRFID": false,
+    "hasShock": true,
+    "hasTempExt": true,
+    "hasTempInt": false,
+    "source": "nexxiot",
+    "asset": {
+      "location": {
+          "geometry": [
+            29.517984833333333,
+            40.76033183333333
+          ],
+          "countryCode": "",
+          "cityName": "",
+          "regionName": ""
+      },
+      "updatedAt": "2022-07-01T10:53:05.809Z"
+    },
+    "device": {
+      "internalTemperature": {
+        "celsius" : 30
+      },
+      "updatedAt": "2022-07-01T09:53:05.809Z"
+    },
+    "updatedAt": "2022-07-04T09:51:58.434Z"
+  },
+  {
+    "_id": "6294ee0ac1f1b743cb6a7c98",
+    "boardId": "dad9cc4e-0e95-4417-b4a1-45236d779f4c",
+    "__v": 0,
+    "containerId": "CAVU0000497",
+    "createdAt": "2022-05-30T16:17:12.441Z",
+    "hasDoor": false,
+    "hasGases": false,
+    "hasGps": true,
+    "hasHumExt": false,
+    "hasHumInt": false,
+    "hasLightExt": false,
+    "hasLightInt": false,
+    "hasPressureExt": false,
+    "hasPressureInt": false,
+    "hasRFID": false,
+    "hasShock": true,
+    "hasTempExt": true,
+    "hasTempInt": false,
+    "source": "nexxiot",
+    "asset": {
+      "location": {
+          "geometry": [
+            29.517984833333333,
+            40.76033183333333
+          ],
+          "countryCode": "",
+          "cityName": "",
+          "regionName": ""
+      },
+      "updatedAt": "2022-07-01T10:53:05.809Z"
+    },
+    "device": {
+      "internalTemperature": {
+        "celsius" : 30
+      },
+      "updatedAt": "2022-07-01T09:53:05.809Z"
+    },
+    "updatedAt": "2022-07-04T09:52:00.953Z"
+  },
+  {
+    "_id": "6294ee16c1f1b743cb6a94a5",
+    "boardId": "576bc9d2-d19f-467d-ac08-9eeb30f89ba8",
+    "__v": 0,
+    "containerId": "CAVU0000590",
+    "createdAt": "2022-05-30T16:17:26.218Z",
+    "hasDoor": false,
+    "hasGases": false,
+    "hasGps": true,
+    "hasHumExt": false,
+    "hasHumInt": false,
+    "hasLightExt": false,
+    "hasLightInt": false,
+    "hasPressureExt": false,
+    "hasPressureInt": false,
+    "hasRFID": false,
+    "hasShock": true,
+    "hasTempExt": true,
+    "hasTempInt": false,
+    "source": "nexxiot",
+    "asset": {
+      "location": {
+          "geometry": [
+            29.517984833333333,
+            40.76033183333333
+          ],
+          "countryCode": "",
+          "cityName": "",
+          "regionName": ""
+      },
+      "updatedAt": "2022-07-01T10:53:05.809Z"
+    },
+    "device": {
+      "internalTemperature": {
+        "celsius" : 30
+      },
+      "updatedAt": "2022-07-01T09:53:05.809Z"
+    },
+    "updatedAt": "2022-07-04T09:51:56.184Z"
+  },
+  {
+    "_id": "6294ee1ac1f1b743cb6aa1c3",
+    "boardId": "25fb58fc-6fb5-4ad5-a507-29f9ec0bdc62",
+    "__v": 0,
+    "containerId": "CAVU0000408",
+    "createdAt": "2022-05-30T16:17:28.759Z",
+    "hasDoor": false,
+    "hasGases": false,
+    "hasGps": true,
+    "hasHumExt": false,
+    "hasHumInt": false,
+    "hasLightExt": false,
+    "hasLightInt": false,
+    "hasPressureExt": false,
+    "hasPressureInt": false,
+    "hasRFID": false,
+    "hasShock": true,
+    "hasTempExt": true,
+    "hasTempInt": false,
+    "source": "nexxiot",
+    "asset": {
+      "location": {
+          "geometry": [
+            29.517984833333333,
+            40.76033183333333
+          ],
+          "countryCode": "",
+          "cityName": "",
+          "regionName": ""
+      },
+      "updatedAt": "2022-07-01T10:53:05.809Z"
+    },
+    "device": {
+      "internalTemperature": {
+        "celsius" : 30
+      },
+      "updatedAt": "2022-07-01T09:53:05.809Z"
+    },
+    "updatedAt": "2022-07-04T09:52:00.899Z"
+  },
+  {
+    "_id": "6294ee1fc1f1b743cb6aafda",
+    "boardId": "d8ec712c-1f3a-441b-bd26-246e7b5d791c",
+    "__v": 0,
+    "containerId": "CAVU0000563",
+    "createdAt": "2022-05-30T16:17:35.487Z",
+    "hasDoor": false,
+    "hasGases": false,
+    "hasGps": true,
+    "hasHumExt": false,
+    "hasHumInt": false,
+    "hasLightExt": false,
+    "hasLightInt": false,
+    "hasPressureExt": false,
+    "hasPressureInt": false,
+    "hasRFID": false,
+    "hasShock": true,
+    "hasTempExt": true,
+    "hasTempInt": false,
+    "source": "nexxiot",
+    "asset": {
+      "location": {
+          "geometry": [
+            29.517984833333333,
+            40.76033183333333
+          ],
+          "countryCode": "",
+          "cityName": "",
+          "regionName": ""
+      },
+      "updatedAt": "2022-07-01T10:53:05.809Z"
+    },
+    "device": {
+      "internalTemperature": {
+        "celsius" : 30
+      },
+      "updatedAt": "2022-07-01T09:53:05.809Z"
+    },
+    "updatedAt": "2022-07-04T09:51:57.002Z"
+  },
+  {
+    "_id": "6294ee2ac1f1b743cb6abf77",
+    "boardId": "62323b25-5f5e-4274-a452-1dcfa35b4b7c",
+    "__v": 0,
+    "containerId": "CAVU0000481",
+    "createdAt": "2022-05-30T16:17:46.557Z",
+    "hasDoor": false,
+    "hasGases": false,
+    "hasGps": true,
+    "hasHumExt": false,
+    "hasHumInt": false,
+    "hasLightExt": false,
+    "hasLightInt": false,
+    "hasPressureExt": false,
+    "hasPressureInt": false,
+    "hasRFID": false,
+    "hasShock": true,
+    "hasTempExt": true,
+    "hasTempInt": false,
+    "source": "nexxiot",
+    "asset": {
+      "location": {
+          "geometry": [
+            29.517984833333333,
+            40.76033183333333
+          ],
+          "countryCode": "",
+          "cityName": "",
+          "regionName": ""
+      },
+      "updatedAt": "2022-07-01T10:53:05.809Z"
+    },
+    "device": {
+      "internalTemperature": {
+        "celsius" : 30
+      },
+      "updatedAt": "2022-07-01T09:53:05.809Z"
+    },
+    "updatedAt": "2022-07-04T09:51:58.177Z"
+  },
+  {
+    "_id": "6294ee2ec1f1b743cb6acdb0",
+    "boardId": "bb5b02f8-bbd8-46fb-8343-e00e7cc5ab58",
+    "__v": 0,
+    "containerId": "CAVU0000455",
+    "createdAt": "2022-05-30T16:17:50.516Z",
+    "hasDoor": false,
+    "hasGases": false,
+    "hasGps": true,
+    "hasHumExt": false,
+    "hasHumInt": false,
+    "hasLightExt": false,
+    "hasLightInt": false,
+    "hasPressureExt": false,
+    "hasPressureInt": false,
+    "hasRFID": false,
+    "hasShock": true,
+    "hasTempExt": true,
+    "hasTempInt": false,
+    "source": "nexxiot",
+    "asset": {
+      "location": {
+          "geometry": [
+            29.517984833333333,
+            40.76033183333333
+          ],
+          "countryCode": "",
+          "cityName": "",
+          "regionName": ""
+      },
+      "updatedAt": "2022-07-01T10:53:05.809Z"
+    },
+    "device": {
+      "internalTemperature": {
+        "celsius" : 30
+      },
+      "updatedAt": "2022-07-01T09:53:05.809Z"
+    },
+    "updatedAt": "2022-07-04T09:51:58.100Z"
+  },
+  {
+    "_id": "6294ee37c1f1b743cb6adec3",
+    "boardId": "94bbb0af-ece3-417b-a9a7-f0f667b6c67e",
+    "__v": 0,
+    "containerId": "CAVU0000476",
+    "createdAt": "2022-05-30T16:17:59.642Z",
+    "hasDoor": false,
+    "hasGases": false,
+    "hasGps": true,
+    "hasHumExt": false,
+    "hasHumInt": false,
+    "hasLightExt": false,
+    "hasLightInt": false,
+    "hasPressureExt": false,
+    "hasPressureInt": false,
+    "hasRFID": false,
+    "hasShock": true,
+    "hasTempExt": true,
+    "hasTempInt": false,
+    "source": "nexxiot",
+    "asset": {
+      "location": {
+          "geometry": [
+            29.517984833333333,
+            40.76033183333333
+          ],
+          "countryCode": "",
+          "cityName": "",
+          "regionName": ""
+      },
+      "updatedAt": "2022-07-01T10:53:05.809Z"
+    },
+    "device": {
+      "internalTemperature": {
+        "celsius" : 30
+      },
+      "updatedAt": "2022-07-01T09:53:05.809Z"
+    },
+    "updatedAt": "2022-07-04T09:52:02.321Z"
+  },
+  {
+    "_id": "6294ee3dc1f1b743cb6aef84",
+    "boardId": "e05d6ada-120a-45f9-868e-b8f0acdd52f0",
+    "__v": 0,
+    "containerId": "CAVU0000537",
+    "createdAt": "2022-05-30T16:18:04.372Z",
+    "hasDoor": false,
+    "hasGases": false,
+    "hasGps": true,
+    "hasHumExt": false,
+    "hasHumInt": false,
+    "hasLightExt": false,
+    "hasLightInt": false,
+    "hasPressureExt": false,
+    "hasPressureInt": false,
+    "hasRFID": false,
+    "hasShock": true,
+    "hasTempExt": true,
+    "hasTempInt": false,
+    "source": "nexxiot",
+    "asset": {
+      "location": {
+          "geometry": [
+            29.517984833333333,
+            40.76033183333333
+          ],
+          "countryCode": "",
+          "cityName": "",
+          "regionName": ""
+      },
+      "updatedAt": "2022-07-01T10:53:05.809Z"
+    },
+    "device": {
+      "internalTemperature": {
+        "celsius" : 30
+      },
+      "updatedAt": "2022-07-01T09:53:05.809Z"
+    },
+    "updatedAt": "2022-07-04T09:51:56.673Z"
+  },
+  {
+    "_id": "6294ee3dc1f1b743cb6aefa7",
+    "boardId": "e0076b33-b686-4127-90db-76f0d5522f9a",
+    "__v": 0,
+    "containerId": "CAVU0000244",
+    "createdAt": "2022-05-30T16:18:05.024Z",
+    "hasDoor": false,
+    "hasGases": false,
+    "hasGps": true,
+    "hasHumExt": false,
+    "hasHumInt": false,
+    "hasLightExt": false,
+    "hasLightInt": false,
+    "hasPressureExt": false,
+    "hasPressureInt": false,
+    "hasRFID": false,
+    "hasShock": true,
+    "hasTempExt": true,
+    "hasTempInt": false,
+    "source": "nexxiot",
+    "asset": {
+      "location": {
+          "geometry": [
+            29.517984833333333,
+            40.76033183333333
+          ],
+          "countryCode": "",
+          "cityName": "",
+          "regionName": ""
+      },
+      "updatedAt": "2022-07-01T10:53:05.809Z"
+    },
+    "device": {
+      "internalTemperature": {
+        "celsius" : 30
+      },
+      "updatedAt": "2022-07-01T09:53:05.809Z"
+    },
+    "updatedAt": "2022-07-04T09:52:01.629Z"
+  },
+  {
+    "_id": "6294ee83c1f1b743cb6b1d49",
+    "boardId": "bcd7ee8b-dbbe-4e99-962b-941755c7d279",
+    "__v": 0,
+    "containerId": "CAVU0000521",
+    "createdAt": "2022-05-30T16:19:15.605Z",
+    "hasDoor": false,
+    "hasGases": false,
+    "hasGps": true,
+    "hasHumExt": false,
+    "hasHumInt": false,
+    "hasLightExt": false,
+    "hasLightInt": false,
+    "hasPressureExt": false,
+    "hasPressureInt": false,
+    "hasRFID": false,
+    "hasShock": true,
+    "hasTempExt": true,
+    "hasTempInt": false,
+    "source": "nexxiot",
+    "asset": {
+      "location": {
+          "geometry": [
+            29.517984833333333,
+            40.76033183333333
+          ],
+          "countryCode": "",
+          "cityName": "",
+          "regionName": ""
+      },
+      "updatedAt": "2022-07-01T10:53:05.809Z"
+    },
+    "device": {
+      "internalTemperature": {
+        "celsius" : 30
+      },
+      "updatedAt": "2022-07-01T09:53:05.809Z"
+    },
+    "updatedAt": "2022-07-04T09:51:58.047Z"
+  },
+  {
+    "_id": "629f384d60e64d9d55a52f7d",
+    "boardId": "ded3aa25-8c17-4a77-a6d3-a8c3f46ee8eb",
+    "__v": 0,
+    "containerId": "CAVU0000630",
+    "createdAt": "2022-06-07T11:36:45.174Z",
+    "hasDoor": false,
+    "hasGases": false,
+    "hasGps": true,
+    "hasHumExt": false,
+    "hasHumInt": false,
+    "hasLightExt": false,
+    "hasLightInt": false,
+    "hasPressureExt": false,
+    "hasPressureInt": false,
+    "hasRFID": false,
+    "hasShock": true,
+    "hasTempExt": true,
+    "hasTempInt": false,
+    "source": "nexxiot",
+    "asset": {
+      "location": {
+          "geometry": [
+            29.517984833333333,
+            40.76033183333333
+          ],
+          "countryCode": "",
+          "cityName": "",
+          "regionName": ""
+      },
+      "updatedAt": "2022-07-01T10:53:05.809Z"
+    },
+    "device": {
+      "internalTemperature": {
+        "celsius" : 30
+      },
+      "updatedAt": "2022-07-01T09:53:05.809Z"
+    },
+    "updatedAt": "2022-07-04T09:51:56.556Z"
+  },
+  {
+    "_id": "629f384e60e64d9d55a52fba",
+    "boardId": "4fc2aae1-8f0c-46a6-be42-f9f9a91fcfb8",
+    "__v": 0,
+    "containerId": "CAVU0000624",
+    "createdAt": "2022-06-07T11:36:46.537Z",
+    "hasDoor": false,
+    "hasGases": false,
+    "hasGps": true,
+    "hasHumExt": false,
+    "hasHumInt": false,
+    "hasLightExt": false,
+    "hasLightInt": false,
+    "hasPressureExt": false,
+    "hasPressureInt": false,
+    "hasRFID": false,
+    "hasShock": true,
+    "hasTempExt": true,
+    "hasTempInt": false,
+    "source": "nexxiot",
+    "asset": {
+      "location": {
+          "geometry": [
+            29.517984833333333,
+            40.76033183333333
+          ],
+          "countryCode": "",
+          "cityName": "",
+          "regionName": ""
+      },
+      "updatedAt": "2022-07-01T10:53:05.809Z"
+    },
+    "device": {
+      "internalTemperature": {
+        "celsius" : 30
+      },
+      "updatedAt": "2022-07-01T09:53:05.809Z"
+    },
+    "updatedAt": "2022-07-04T09:51:58.027Z"
+  },
+  {
+    "_id": "629f384f60e64d9d55a53011",
+    "boardId": "143f7375-1c4c-421a-81e6-56a0d948ea2c",
+    "__v": 0,
+    "containerId": "CAVU0000619",
+    "createdAt": "2022-06-07T11:36:47.923Z",
+    "hasDoor": false,
+    "hasGases": false,
+    "hasGps": true,
+    "hasHumExt": false,
+    "hasHumInt": false,
+    "hasLightExt": false,
+    "hasLightInt": false,
+    "hasPressureExt": false,
+    "hasPressureInt": false,
+    "hasRFID": false,
+    "hasShock": true,
+    "hasTempExt": true,
+    "hasTempInt": false,
+    "source": "nexxiot",
+    "asset": {
+      "location": {
+          "geometry": [
+            29.517984833333333,
+            40.76033183333333
+          ],
+          "countryCode": "",
+          "cityName": "",
+          "regionName": ""
+      },
+      "updatedAt": "2022-07-01T10:53:05.809Z"
+    },
+    "device": {
+      "internalTemperature": {
+        "celsius" : 30
+      },
+      "updatedAt": "2022-07-01T09:53:05.809Z"
+    },
+    "updatedAt": "2022-07-04T09:51:58.446Z"
+  },
+  {
+    "_id": "629f385460e64d9d55a530f6",
+    "boardId": "ed1d7c4a-114b-404b-8af0-701a6604135a",
+    "__v": 0,
+    "containerId": "CAVU0000603",
+    "createdAt": "2022-06-07T11:36:52.427Z",
+    "hasDoor": false,
+    "hasGases": false,
+    "hasGps": true,
+    "hasHumExt": false,
+    "hasHumInt": false,
+    "hasLightExt": false,
+    "hasLightInt": false,
+    "hasPressureExt": false,
+    "hasPressureInt": false,
+    "hasRFID": false,
+    "hasShock": true,
+    "hasTempExt": true,
+    "hasTempInt": false,
+    "source": "nexxiot",
+    "asset": {
+      "location": {
+          "geometry": [
+            29.517984833333333,
+            40.76033183333333
+          ],
+          "countryCode": "",
+          "cityName": "",
+          "regionName": ""
+      },
+      "updatedAt": "2022-07-01T10:53:05.809Z"
+    },
+    "device": {
+      "internalTemperature": {
+        "celsius" : 30
+      },
+      "updatedAt": "2022-07-01T09:53:05.809Z"
+    },
+    "updatedAt": "2022-07-04T09:52:01.589Z"
+  },
+  {
+    "_id": "629f698760e64d9d55ac667f",
+    "boardId": "8ccae0af-e57f-44aa-8daf-fa75771d6fe5",
+    "__v": 0,
+    "containerId": "CAVU0000748",
+    "createdAt": "2022-06-07T15:06:47.870Z",
+    "hasDoor": false,
+    "hasGases": false,
+    "hasGps": true,
+    "hasHumExt": false,
+    "hasHumInt": false,
+    "hasLightExt": false,
+    "hasLightInt": false,
+    "hasPressureExt": false,
+    "hasPressureInt": false,
+    "hasRFID": false,
+    "hasShock": true,
+    "hasTempExt": true,
+    "hasTempInt": false,
+    "source": "nexxiot",
+    "asset": {
+      "location": {
+          "geometry": [
+            29.517984833333333,
+            40.76033183333333
+          ],
+          "countryCode": "",
+          "cityName": "",
+          "regionName": ""
+      },
+      "updatedAt": "2022-07-01T10:53:05.809Z"
+    },
+    "device": {
+      "internalTemperature": {
+        "celsius" : 30
+      },
+      "updatedAt": "2022-07-01T09:53:05.809Z"
+    },
+    "updatedAt": "2022-07-04T09:52:00.508Z"
+  },
+  {
+    "_id": "629f708a60e64d9d55ad719e",
+    "boardId": "04a3057c-5136-433b-ac22-b7f464f687a6",
+    "__v": 0,
+    "containerId": "CAVU0000671",
+    "createdAt": "2022-06-07T15:36:42.724Z",
+    "hasDoor": false,
+    "hasGases": false,
+    "hasGps": true,
+    "hasHumExt": false,
+    "hasHumInt": false,
+    "hasLightExt": false,
+    "hasLightInt": false,
+    "hasPressureExt": false,
+    "hasPressureInt": false,
+    "hasRFID": false,
+    "hasShock": true,
+    "hasTempExt": true,
+    "hasTempInt": false,
+    "source": "nexxiot",
+    "asset": {
+      "location": {
+          "geometry": [
+            29.517984833333333,
+            40.76033183333333
+          ],
+          "countryCode": "",
+          "cityName": "",
+          "regionName": ""
+      },
+      "updatedAt": "2022-07-01T10:53:05.809Z"
+    },
+    "device": {
+      "internalTemperature": {
+        "celsius" : 30
+      },
+      "updatedAt": "2022-07-01T09:53:05.809Z"
+    },
+    "updatedAt": "2022-07-04T09:52:00.153Z"
+  },
+  {
+    "_id": "629f708b60e64d9d55ad723c",
+    "boardId": "77966731-a806-4bc3-8e82-d7e2919aedbb",
+    "__v": 0,
+    "containerId": "CAVU0000645",
+    "createdAt": "2022-06-07T15:36:43.572Z",
+    "hasDoor": false,
+    "hasGases": false,
+    "hasGps": true,
+    "hasHumExt": false,
+    "hasHumInt": false,
+    "hasLightExt": false,
+    "hasLightInt": false,
+    "hasPressureExt": false,
+    "hasPressureInt": false,
+    "hasRFID": false,
+    "hasShock": true,
+    "hasTempExt": true,
+    "hasTempInt": false,
+    "source": "nexxiot",
+    "asset": {
+      "location": {
+          "geometry": [
+            29.517984833333333,
+            40.76033183333333
+          ],
+          "countryCode": "",
+          "cityName": "",
+          "regionName": ""
+      },
+      "updatedAt": "2022-07-01T10:53:05.809Z"
+    },
+    "device": {
+      "internalTemperature": {
+        "celsius" : 30
+      },
+      "updatedAt": "2022-07-01T09:53:05.809Z"
+    },
+    "updatedAt": "2022-07-04T09:52:00.741Z"
+  },
+  {
+    "_id": "629f708e60e64d9d55ad72c9",
+    "boardId": "380ecc46-9d64-42b5-ba71-7f62ae043371",
+    "__v": 0,
+    "containerId": "CAVU0000687",
+    "createdAt": "2022-06-07T15:36:46.976Z",
+    "hasDoor": false,
+    "hasGases": false,
+    "hasGps": true,
+    "hasHumExt": false,
+    "hasHumInt": false,
+    "hasLightExt": false,
+    "hasLightInt": false,
+    "hasPressureExt": false,
+    "hasPressureInt": false,
+    "hasRFID": false,
+    "hasShock": true,
+    "hasTempExt": true,
+    "hasTempInt": false,
+    "source": "nexxiot",
+    "asset": {
+      "location": {
+          "geometry": [
+            29.517984833333333,
+            40.76033183333333
+          ],
+          "countryCode": "",
+          "cityName": "",
+          "regionName": ""
+      },
+      "updatedAt": "2022-07-01T10:53:05.809Z"
+    },
+    "device": {
+      "internalTemperature": {
+        "celsius" : 30
+      },
+      "updatedAt": "2022-07-01T09:53:05.809Z"
+    },
+    "updatedAt": "2022-07-04T09:52:00.989Z"
+  },
+  {
+    "_id": "62a0181f0ea09b8e24d9bbb1",
+    "boardId": "00051a68-3e0b-4afb-8d29-00169a84f425",
+    "__v": 0,
+    "containerId": "CAVU0000753",
+    "createdAt": "2022-06-08T03:31:43.801Z",
+    "hasDoor": false,
+    "hasGases": false,
+    "hasGps": true,
+    "hasHumExt": false,
+    "hasHumInt": false,
+    "hasLightExt": false,
+    "hasLightInt": false,
+    "hasPressureExt": false,
+    "hasPressureInt": false,
+    "hasRFID": false,
+    "hasShock": true,
+    "hasTempExt": true,
+    "hasTempInt": false,
+    "source": "nexxiot",
+    "asset": {
+      "location": {
+          "geometry": [
+            29.517984833333333,
+            40.76033183333333
+          ],
+          "countryCode": "",
+          "cityName": "",
+          "regionName": ""
+      },
+      "updatedAt": "2022-07-01T10:53:05.809Z"
+    },
+    "device": {
+      "internalTemperature": {
+        "celsius" : 30
+      },
+      "updatedAt": "2022-07-01T09:53:05.809Z"
+    },
+    "updatedAt": "2022-07-04T09:51:58.247Z"
+  },
+  {
+    "_id": "62a0181f0ea09b8e24d9bbba",
+    "boardId": "28c06e7f-4b29-4398-8f17-a4aaf49577cd",
+    "__v": 0,
+    "containerId": "CAVU0000692",
+    "createdAt": "2022-06-08T03:31:43.880Z",
+    "hasDoor": false,
+    "hasGases": false,
+    "hasGps": true,
+    "hasHumExt": false,
+    "hasHumInt": false,
+    "hasLightExt": false,
+    "hasLightInt": false,
+    "hasPressureExt": false,
+    "hasPressureInt": false,
+    "hasRFID": false,
+    "hasShock": true,
+    "hasTempExt": true,
+    "hasTempInt": false,
+    "source": "nexxiot",
+    "asset": {
+      "location": {
+          "geometry": [
+            29.517984833333333,
+            40.76033183333333
+          ],
+          "countryCode": "",
+          "cityName": "",
+          "regionName": ""
+      },
+      "updatedAt": "2022-07-01T10:53:05.809Z"
+    },
+    "device": {
+      "internalTemperature": {
+        "celsius" : 30
+      },
+      "updatedAt": "2022-07-01T09:53:05.809Z"
+    },
+    "updatedAt": "2022-07-04T09:52:01.038Z"
+  },
+  {
+    "_id": "62a03b4d0ea09b8e24dec940",
+    "boardId": "ab917ce8-3fdf-4ae6-928b-fe308390f17b",
+    "__v": 0,
+    "containerId": "CAVU0000650",
+    "createdAt": "2022-06-08T06:01:49.162Z",
+    "hasDoor": false,
+    "hasGases": false,
+    "hasGps": true,
+    "hasHumExt": false,
+    "hasHumInt": false,
+    "hasLightExt": false,
+    "hasLightInt": false,
+    "hasPressureExt": false,
+    "hasPressureInt": false,
+    "hasRFID": false,
+    "hasShock": true,
+    "hasTempExt": true,
+    "hasTempInt": false,
+    "source": "nexxiot",
+    "asset": {
+      "location": {
+          "geometry": [
+            29.517984833333333,
+            40.76033183333333
+          ],
+          "countryCode": "",
+          "cityName": "",
+          "regionName": ""
+      },
+      "updatedAt": "2022-07-01T10:53:05.809Z"
+    },
+    "device": {
+      "internalTemperature": {
+        "celsius" : 30
+      },
+      "updatedAt": "2022-07-01T09:53:05.809Z"
+    },
+    "updatedAt": "2022-07-04T09:52:01.688Z"
+  },
+  {
+    "_id": "62bfac1fcdc7b23ed4ddea4b",
+    "boardId": "c7110f2c-f782-4370-a5f9-71f2da68f8fe",
+    "__v": 0,
+    "containerId": "CAVU0000711",
+    "createdAt": "2022-07-02T02:23:27.778Z",
+    "hasDoor": false,
+    "hasGases": false,
+    "hasGps": true,
+    "hasHumExt": false,
+    "hasHumInt": false,
+    "hasLightExt": false,
+    "hasLightInt": false,
+    "hasPressureExt": false,
+    "hasPressureInt": false,
+    "hasRFID": false,
+    "hasShock": true,
+    "hasTempExt": true,
+    "hasTempInt": false,
+    "source": "nexxiot",
+    "asset": {
+      "location": {
+          "geometry": [
+            29.517984833333333,
+            40.76033183333333
+          ],
+          "countryCode": "",
+          "cityName": "",
+          "regionName": ""
+      },
+      "updatedAt": "2022-07-01T10:53:05.809Z"
+    },
+    "device": {
+      "internalTemperature": {
+        "celsius" : 30
+      },
+      "updatedAt": "2022-07-01T09:53:05.809Z"
+    },
+    "updatedAt": "2022-07-04T09:51:58.440Z"
+  },
+  {
+    "_id": "62bfb320cdc7b23ed4defa9a",
+    "boardId": "79a28759-aa84-46ed-801e-69d485c72487",
+    "__v": 0,
+    "containerId": "CAVU0000666",
+    "createdAt": "2022-07-02T02:53:20.626Z",
+    "hasDoor": false,
+    "hasGases": false,
+    "hasGps": true,
+    "hasHumExt": false,
+    "hasHumInt": false,
+    "hasLightExt": false,
+    "hasLightInt": false,
+    "hasPressureExt": false,
+    "hasPressureInt": false,
+    "hasRFID": false,
+    "hasShock": true,
+    "hasTempExt": true,
+    "hasTempInt": false,
+    "source": "nexxiot",
+    "asset": {
+      "location": {
+          "geometry": [
+            29.517984833333333,
+            40.76033183333333
+          ],
+          "countryCode": "",
+          "cityName": "",
+          "regionName": ""
+      },
+      "updatedAt": "2022-07-01T10:53:05.809Z"
+    },
+    "device": {
+      "internalTemperature": {
+        "celsius" : 30
+      },
+      "updatedAt": "2022-07-01T09:53:05.809Z"
+    },
+    "updatedAt": "2022-07-04T09:51:54.938Z"
+  }
+]

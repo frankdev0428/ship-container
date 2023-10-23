@@ -1,0 +1,533 @@
+{
+  "swagger": "2.0",
+  "host": "localhost:3000",
+  "basePath": "/",
+  "schemes": [
+    "http"
+  ],
+  "info": {
+    "title": "Aeler demo",
+    "version": "1.0.0"
+  },
+  "securityDefinitions": {
+    "jwt": {
+      "type": "apiKey",
+      "name": "Authorization",
+      "in": "header"
+    }
+  },
+  "tags": [],
+  "paths": {
+    "/boards": {
+      "get": {
+        "summary": "Get boards",
+        "operationId": "getBoards",
+        "parameters": [
+          {
+            "type": "string",
+            "description": "Board ID",
+            "name": "boardId",
+            "in": "query"
+          },
+          {
+            "type": "string",
+            "description": "From data",
+            "name": "from",
+            "in": "query"
+          },
+          {
+            "type": "string",
+            "description": "To data",
+            "name": "to",
+            "in": "query"
+          }
+        ],
+        "tags": [
+          "boards"
+        ],
+        "security": [
+          {
+            "jwt": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "schema": {
+              "$ref": "#/definitions/Model1"
+            },
+            "description": "The persisted data"
+          },
+          "400": {
+            "description": "Bad request",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "500": {
+            "description": "Internal error",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          }
+        }
+      }
+    },
+    "/boards/{deviceId}/stream": {
+      "get": {
+        "summary": "Get board stream",
+        "operationId": "getBoardsDeviceidStream",
+        "parameters": [
+          {
+            "type": "string",
+            "description": "Equipment code",
+            "name": "deviceId",
+            "in": "path",
+            "required": true
+          },
+          {
+            "type": "string",
+            "description": "From data",
+            "name": "from",
+            "in": "query"
+          },
+          {
+            "type": "string",
+            "description": "To data",
+            "name": "to",
+            "in": "query"
+          }
+        ],
+        "tags": [
+          "boards"
+        ],
+        "security": [
+          {
+            "jwt": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "schema": {
+              "$ref": "#/definitions/Model3"
+            },
+            "description": "The persisted data"
+          },
+          "400": {
+            "description": "Bad request",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "500": {
+            "description": "Internal error",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "MostEventUpdatedAt": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "shock",
+            "light"
+          ]
+        },
+        "shock": {
+          "type": "number"
+        },
+        "light": {
+          "type": "number"
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date"
+        }
+      },
+      "required": [
+        "type",
+        "updatedAt"
+      ]
+    },
+    "MostSensorsUpdatedAt": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "temperature",
+            "humidity",
+            "luminance",
+            "g",
+            "dewpoint",
+            "all",
+            "battery",
+            "rssi"
+          ]
+        },
+        "temperature": {
+          "type": "number"
+        },
+        "humidity": {
+          "type": "number"
+        },
+        "luminance": {
+          "type": "number"
+        },
+        "g": {
+          "type": "number"
+        },
+        "dewpoint": {
+          "type": "number"
+        },
+        "battery": {
+          "type": "number"
+        },
+        "rssi": {
+          "type": "number"
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date"
+        }
+      },
+      "required": [
+        "type",
+        "updatedAt"
+      ]
+    },
+    "Coordinates": {
+      "type": "array",
+      "description": "A tuple containing the longitude and the latitude",
+      "example": [
+        [
+          7.65499738,
+          45.97249611
+        ]
+      ],
+      "minItems": 2,
+      "maxItems": 2,
+      "items": {
+        "type": "number"
+      }
+    },
+    "MostLocationUpdatedAt": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "signal-triangulation",
+            "gps"
+          ]
+        },
+        "location": {
+          "$ref": "#/definitions/Coordinates"
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date"
+        }
+      },
+      "required": [
+        "type",
+        "location",
+        "updatedAt"
+      ]
+    },
+    "ExtendedBoard": {
+      "type": "object",
+      "properties": {
+        "boardId": {
+          "type": "string"
+        },
+        "source": {
+          "type": "string",
+          "description": "nexxiot, aeler, kizy, etc"
+        },
+        "containerId": {
+          "type": "string",
+          "description": "Container name associated to device"
+        },
+        "buildDate": {
+          "type": "string",
+          "format": "date",
+          "description": "Board build date"
+        },
+        "hwVersion": {
+          "type": "string",
+          "description": "Board hardware version"
+        },
+        "fwVersion": {
+          "type": "string",
+          "description": "Board firmware version"
+        },
+        "hwMinorRevision": {
+          "type": "string",
+          "description": "Board hardware minor revision"
+        },
+        "fwMinorRevision": {
+          "type": "string",
+          "description": "Board firmware minor revision"
+        },
+        "hasGps": {
+          "type": "boolean",
+          "description": "hasGps"
+        },
+        "hasShock": {
+          "type": "boolean",
+          "description": "hasShock"
+        },
+        "hasTempExt": {
+          "type": "boolean",
+          "description": "hasTempExt"
+        },
+        "hasTempInt": {
+          "type": "boolean",
+          "description": "hasTempInt"
+        },
+        "hasHumExt": {
+          "type": "boolean",
+          "description": "hasHumpExt"
+        },
+        "hasHumInt": {
+          "type": "boolean",
+          "description": "hasHumpInt"
+        },
+        "hasPressureExt": {
+          "type": "boolean",
+          "description": "hasPressureExt"
+        },
+        "hasPressureInt": {
+          "type": "boolean",
+          "description": "hasPressureInt"
+        },
+        "hasGases": {
+          "type": "boolean",
+          "description": "hasGases"
+        },
+        "hasLightInt": {
+          "type": "boolean",
+          "description": "hasLightInt"
+        },
+        "hasLightExt": {
+          "type": "boolean",
+          "description": "hasLightExt"
+        },
+        "hasDoor": {
+          "type": "boolean",
+          "description": "hasDoor"
+        },
+        "hasRFID": {
+          "type": "boolean",
+          "description": "hasRFID"
+        },
+        "event": {
+          "$ref": "#/definitions/MostEventUpdatedAt"
+        },
+        "sensors": {
+          "$ref": "#/definitions/MostSensorsUpdatedAt"
+        },
+        "location": {
+          "$ref": "#/definitions/MostLocationUpdatedAt"
+        }
+      },
+      "required": [
+        "boardId"
+      ]
+    },
+    "Model1": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ExtendedBoard"
+      }
+    },
+    "errors": {
+      "type": "array",
+      "description": "Error messages",
+      "items": {
+        "type": "string"
+      }
+    },
+    "Failure": {
+      "type": "object",
+      "description": "An error due to a wrong request or an internal error when processing the request",
+      "properties": {
+        "errors": {
+          "$ref": "#/definitions/errors"
+        }
+      },
+      "required": [
+        "errors"
+      ]
+    },
+    "sensors": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "temperature",
+            "humidity",
+            "luminance",
+            "g",
+            "dewpoint",
+            "all",
+            "battery",
+            "rssi"
+          ]
+        },
+        "temperature": {
+          "type": "number"
+        },
+        "humidity": {
+          "type": "number"
+        },
+        "luminance": {
+          "type": "number"
+        },
+        "g": {
+          "type": "number"
+        },
+        "dewpoint": {
+          "type": "number"
+        },
+        "battery": {
+          "type": "number"
+        },
+        "rssi": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "type"
+      ]
+    },
+    "events": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "shock",
+            "light"
+          ]
+        },
+        "shock": {
+          "type": "number"
+        },
+        "light": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "type"
+      ]
+    },
+    "location": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "signal-triangulation",
+            "gps"
+          ]
+        },
+        "location": {
+          "$ref": "#/definitions/Coordinates"
+        }
+      },
+      "required": [
+        "type",
+        "location"
+      ]
+    },
+    "values": {
+      "type": "object",
+      "properties": {
+        "measurementTime": {
+          "type": "string",
+          "format": "date"
+        },
+        "measurementType": {
+          "type": "string",
+          "enum": [
+            "sensors",
+            "location",
+            "events"
+          ]
+        },
+        "sensors": {
+          "$ref": "#/definitions/sensors"
+        },
+        "events": {
+          "$ref": "#/definitions/events"
+        },
+        "location": {
+          "$ref": "#/definitions/location"
+        }
+      },
+      "required": [
+        "measurementTime",
+        "measurementType"
+      ]
+    },
+    "Model2": {
+      "type": "object",
+      "properties": {
+        "boardId": {
+          "type": "string"
+        },
+        "values": {
+          "$ref": "#/definitions/values"
+        }
+      },
+      "required": [
+        "boardId",
+        "values"
+      ]
+    },
+    "Model3": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/Model2"
+      }
+    }
+  },
+  "security": [
+    {
+      "jwt": []
+    }
+  ]
+}

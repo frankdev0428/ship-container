@@ -1,0 +1,36 @@
+{
+  "extends": "ts-config-single-spa",
+  "compilerOptions": {
+    "target": "es2017",
+    "outDir": "build",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    // "noEmit": false,
+    "emitDeclarationOnly": false,
+    "jsx": "react",
+    "noFallthroughCasesInSwitch": true
+  },
+  "include": [
+    "src",
+    "src/**/*",
+    "node_modules/@types"
+  ],
+  "exclude": [
+    "src/**/*.test*",
+    "src/apis-client",
+    "node_modules"
+  ]
+}

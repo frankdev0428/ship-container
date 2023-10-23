@@ -1,0 +1,18 @@
+# Step 1: build node modules
+FROM node:17 as builder
+WORKDIR /app
+COPY package*.json ./
+# NPM introduced a breaking change in npm@8.6 (yes! a minor version bump, with a major breaking changes).
+# The update changes the behavior of package installation, both from npm install and npm ci.
+# Previously, the npm ci command would blindly install whatever was in the lock file.
+# AS IS, it will validate both the package-lock.json and package.json is in a consistent state.
+# You could read more about the issue here: github.com/npm/cli/issues/4998, github.com/npm/cli/issues/5113, and github.com/npm/cli/issues/4664
+RUN npm ci --legacy-peer-deps
+
+# Step 2: build application
+FROM node:17-alpine
+WORKDIR /app
+ENV NODE_ENV development
+ENV NODE_OPTIONS --openssl-legacy-provider
+COPY --from=builder /app/node_modules ./node_modules/
+COPY . .

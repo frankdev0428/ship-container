@@ -1,0 +1,47 @@
+module.exports = {
+  parser: '@typescript-eslint/parser',
+  plugins: ['react', '@typescript-eslint'],
+  extends: [
+    'standard',
+    'eslint:recommended',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:react/recommended',
+    'plugin:react/recommended',
+    'plugin:import/errors',
+    'plugin:import/warnings',
+    'plugin:import/typescript',
+  ],
+  rules: {
+    '@typescript-eslint/no-use-before-define': ['off', { functions: false }],
+    'no-use-before-define': ['off', { functions: false }],
+    'import/order': ['error', { 'newlines-between': 'always' }],
+    'import/namespace': ['off'],
+    'comma-dangle': ['error', 'always-multiline'],
+    'no-useless-constructor': ['off'],
+    '@typescript-eslint/no-useless-constructor': ['error'],
+    '@typescript-eslint/no-parameter-properties': [
+      'error',
+      { allows: ['readonly', 'private readonly'] },
+    ],
+    'no-trailing-spaces': ['error', { ignoreComments: true }],
+    '@typescript-eslint/no-empty-interface': ['warn'],
+    '@typescript-eslint/explicit-function-return-type': 0,
+    '@typescript-eslint/no-empty-function': 'off',
+    'space-before-function-paren': ['error', {
+      anonymous: 'never',
+      named: 'never',
+      asyncArrow: 'always',
+    }],
+  },
+  parserOptions: {
+    ecmaVersion: 2018,
+    project: './tsconfig.json',
+  },
+  env: {
+    node: true,
+    es6: true,
+    browser: true,
+    jest: true,
+  },
+  root: true,
+}

@@ -1,0 +1,1401 @@
+{
+  "swagger": "2.0",
+  "host": "staging.aeler.com",
+  "basePath": "/",
+  "schemes": [
+    "https"
+  ],
+  "info": {
+    "title": "Aeler demo",
+    "version": "1.0.0"
+  },
+  "securityDefinitions": {
+    "jwt": {
+      "type": "apiKey",
+      "name": "Authorization",
+      "in": "header"
+    }
+  },
+  "tags": [],
+  "paths": {
+    "/alerts/statuses": {
+      "get": {
+        "summary": "get config",
+        "operationId": "getAlertsStatuses",
+        "parameters": [
+          {
+            "type": "string",
+            "description": "User ID",
+            "name": "userId",
+            "in": "query"
+          },
+          {
+            "type": "number",
+            "description": "is it unread",
+            "name": "isUnread",
+            "in": "query"
+          }
+        ],
+        "tags": [
+          "alerts"
+        ],
+        "security": [
+          {
+            "jwt": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "schema": {
+              "$ref": "#/definitions/Model1"
+            },
+            "description": "The VisibilityState"
+          },
+          "400": {
+            "description": "Bad request",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "500": {
+            "description": "Internal error",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "add config",
+        "operationId": "postAlertsStatuses",
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/VisibilityStateInput"
+            }
+          }
+        ],
+        "tags": [
+          "alerts"
+        ],
+        "security": [
+          {
+            "jwt": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "schema": {
+              "$ref": "#/definitions/Model7"
+            },
+            "description": "The VisibilityState"
+          },
+          "400": {
+            "description": "Bad request",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "500": {
+            "description": "Internal error",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          }
+        }
+      },
+      "put": {
+        "summary": "edit config",
+        "operationId": "putAlertsStatuses",
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/VisibilityStateInput"
+            }
+          }
+        ],
+        "tags": [
+          "alerts"
+        ],
+        "security": [
+          {
+            "jwt": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "schema": {
+              "$ref": "#/definitions/Model7"
+            },
+            "description": "The VisibilityState"
+          },
+          "400": {
+            "description": "Bad request",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "500": {
+            "description": "Internal error",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          }
+        }
+      }
+    },
+    "/configurations/filters": {
+      "get": {
+        "summary": "get config",
+        "operationId": "getConfigurationsFilters",
+        "parameters": [
+          {
+            "type": "string",
+            "description": "email | platform, falls back to platform",
+            "name": "delivery",
+            "in": "query"
+          },
+          {
+            "type": "number",
+            "description": "is it unread",
+            "name": "muteAll",
+            "in": "query"
+          },
+          {
+            "type": "string",
+            "description": "entityId",
+            "name": "entityId",
+            "in": "query"
+          },
+          {
+            "type": "string",
+            "description": "entityType",
+            "name": "entityType",
+            "in": "query"
+          },
+          {
+            "type": "string",
+            "description": "criterionId",
+            "name": "criterionId",
+            "in": "query"
+          },
+          {
+            "type": "string",
+            "description": "subcase",
+            "name": "subCase",
+            "in": "query"
+          }
+        ],
+        "tags": [
+          "configurations"
+        ],
+        "security": [
+          {
+            "jwt": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "schema": {
+              "$ref": "#/definitions/Model2"
+            },
+            "description": "The FilterCriterion"
+          },
+          "400": {
+            "description": "Bad request",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "500": {
+            "description": "Internal error",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "add config",
+        "operationId": "postConfigurationsFilters",
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/Model8"
+            }
+          }
+        ],
+        "tags": [
+          "configurations"
+        ],
+        "security": [
+          {
+            "jwt": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "schema": {
+              "$ref": "#/definitions/PublicFilter"
+            },
+            "description": "The FilterCriterion"
+          },
+          "400": {
+            "description": "Bad request",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "500": {
+            "description": "Internal error",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          }
+        }
+      },
+      "put": {
+        "summary": "add config",
+        "operationId": "putConfigurationsFilters",
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/Model8"
+            }
+          }
+        ],
+        "tags": [
+          "configurations"
+        ],
+        "security": [
+          {
+            "jwt": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "schema": {
+              "$ref": "#/definitions/PublicFilter"
+            },
+            "description": "The FilterCriterion"
+          },
+          "400": {
+            "description": "Bad request",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "500": {
+            "description": "Internal error",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          }
+        }
+      }
+    },
+    "/configurations/notifications": {
+      "get": {
+        "summary": "get config",
+        "operationId": "getConfigurationsNotifications",
+        "tags": [
+          "configurations"
+        ],
+        "security": [
+          {
+            "jwt": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "schema": {
+              "$ref": "#/definitions/NotificationConfiguration"
+            },
+            "description": "The configuration"
+          },
+          "400": {
+            "description": "Bad request",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "500": {
+            "description": "Internal error",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "add config",
+        "operationId": "postConfigurationsNotifications",
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/ConfigurationInput"
+            }
+          }
+        ],
+        "tags": [
+          "configurations"
+        ],
+        "security": [
+          {
+            "jwt": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "schema": {
+              "$ref": "#/definitions/Model9"
+            },
+            "description": "The configuration"
+          },
+          "400": {
+            "description": "Bad request",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "500": {
+            "description": "Internal error",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          }
+        }
+      },
+      "put": {
+        "summary": "edit config",
+        "operationId": "putConfigurationsNotifications",
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/ConfigurationInput"
+            }
+          }
+        ],
+        "tags": [
+          "configurations"
+        ],
+        "security": [
+          {
+            "jwt": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "schema": {
+              "$ref": "#/definitions/Model9"
+            },
+            "description": "The configuration"
+          },
+          "400": {
+            "description": "Bad request",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "500": {
+            "description": "Internal error",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          }
+        }
+      },
+      "delete": {
+        "summary": "get config",
+        "operationId": "deleteConfigurationsNotifications",
+        "tags": [
+          "configurations"
+        ],
+        "security": [
+          {
+            "jwt": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "schema": {
+              "$ref": "#/definitions/Model9"
+            },
+            "description": "The configuration"
+          },
+          "400": {
+            "description": "Bad request",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "500": {
+            "description": "Internal error",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          }
+        }
+      }
+    },
+    "/configurations/users": {
+      "get": {
+        "summary": "get config",
+        "operationId": "getConfigurationsUsers",
+        "parameters": [
+          {
+            "type": "string",
+            "description": "User ID",
+            "name": "userId",
+            "in": "query"
+          }
+        ],
+        "tags": [
+          "configurations"
+        ],
+        "security": [
+          {
+            "jwt": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "schema": {
+              "$ref": "#/definitions/Model3"
+            },
+            "description": "The configuration"
+          },
+          "400": {
+            "description": "Bad request",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "500": {
+            "description": "Internal error",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          }
+        }
+      }
+    },
+    "/notifications/pending": {
+      "get": {
+        "summary": "list monitoring configs",
+        "operationId": "getNotificationsPending",
+        "tags": [
+          "notifications"
+        ],
+        "security": [
+          {
+            "jwt": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "schema": {
+              "$ref": "#/definitions/PublicPendingNotifications"
+            },
+            "description": "The persisted monitoring jobs"
+          },
+          "400": {
+            "description": "Bad request",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "500": {
+            "description": "Internal error",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "add notif",
+        "operationId": "postNotificationsPending",
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/NotificationInput"
+            }
+          }
+        ],
+        "tags": [
+          "notifications"
+        ],
+        "security": [
+          {
+            "jwt": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "schema": {
+              "$ref": "#/definitions/PublicPendingNotification"
+            },
+            "description": "The persisted monitoring jobs"
+          },
+          "400": {
+            "description": "Bad request",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "500": {
+            "description": "Internal error",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          }
+        }
+      }
+    },
+    "/alerts/statuses/mine": {
+      "get": {
+        "summary": "get config",
+        "operationId": "getAlertsStatusesMine",
+        "parameters": [
+          {
+            "type": "string",
+            "description": "User ID",
+            "name": "userId",
+            "in": "query"
+          },
+          {
+            "type": "number",
+            "description": "is it unread",
+            "name": "isUnread",
+            "in": "query"
+          }
+        ],
+        "tags": [
+          "alerts"
+        ],
+        "security": [
+          {
+            "jwt": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "schema": {
+              "$ref": "#/definitions/Model1"
+            },
+            "description": "The VisibilityState"
+          },
+          "400": {
+            "description": "Bad request",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "500": {
+            "description": "Internal error",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          }
+        }
+      }
+    },
+    "/configurations/filters/admin": {
+      "get": {
+        "summary": "get config",
+        "operationId": "getConfigurationsFiltersAdmin",
+        "parameters": [
+          {
+            "type": "string",
+            "description": "email | platform, falls back to platform",
+            "name": "delivery",
+            "in": "query"
+          },
+          {
+            "type": "string",
+            "description": "User ID",
+            "name": "userId",
+            "in": "query"
+          },
+          {
+            "type": "number",
+            "description": "is it unread",
+            "name": "muteAll",
+            "in": "query"
+          },
+          {
+            "type": "string",
+            "description": "entityId",
+            "name": "entityId",
+            "in": "query"
+          },
+          {
+            "type": "string",
+            "description": "entityType",
+            "name": "entityType",
+            "in": "query"
+          },
+          {
+            "type": "string",
+            "description": "criterionId",
+            "name": "criterionId",
+            "in": "query"
+          },
+          {
+            "type": "string",
+            "description": "subcase",
+            "name": "subCase",
+            "in": "query"
+          }
+        ],
+        "tags": [
+          "configurations"
+        ],
+        "security": [
+          {
+            "jwt": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "schema": {
+              "$ref": "#/definitions/Model2"
+            },
+            "description": "The FilterCriterion"
+          },
+          "400": {
+            "description": "Bad request",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "500": {
+            "description": "Internal error",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          }
+        }
+      }
+    },
+    "/alerts/filtered": {
+      "post": {
+        "summary": "get config",
+        "operationId": "postAlertsFiltered",
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/Model5"
+            }
+          }
+        ],
+        "tags": [
+          "alerts"
+        ],
+        "security": [
+          {
+            "jwt": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "schema": {
+              "$ref": "#/definitions/Model6"
+            },
+            "description": "The FilterCriterion"
+          },
+          "400": {
+            "description": "Bad request",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "500": {
+            "description": "Internal error",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          }
+        }
+      }
+    },
+    "/notifications/confirm": {
+      "post": {
+        "summary": "Modify a monitoring job",
+        "operationId": "postNotificationsConfirm",
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/PendingNotificationsInput"
+            }
+          }
+        ],
+        "tags": [
+          "notifications"
+        ],
+        "security": [
+          {
+            "jwt": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "schema": {
+              "$ref": "#/definitions/PublicPendingNotification"
+            },
+            "description": "The updated PendingNotifications"
+          },
+          "400": {
+            "description": "Bad request",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "500": {
+            "description": "Internal error",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "VisibilityState": {
+      "type": "object",
+      "properties": {
+        "userId": {
+          "type": "string",
+          "description": "the user",
+          "x-format": {
+            "guid": true
+          }
+        },
+        "alertStateId": {
+          "type": "string",
+          "description": "the alert",
+          "x-format": {
+            "guid": true
+          }
+        },
+        "readAt": {"x-nullable": true,
+          "type": "string",
+          "format": "date-time"
+        },
+        "isSnoozed": {
+          "type": "boolean",
+          "description": "is it snoozed"
+        },
+        "snoozeUntil": {
+          "type": "string",
+          "format": "date-time"
+        }
+      }
+    },
+    "Model1": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/VisibilityState"
+      }
+    },
+    "errors": {
+      "type": "array",
+      "description": "Error messages",
+      "items": {
+        "type": "string"
+      }
+    },
+    "Failure": {
+      "type": "object",
+      "description": "An error due to a wrong request or an internal error when processing the request",
+      "properties": {
+        "errors": {
+          "$ref": "#/definitions/errors"
+        }
+      },
+      "required": [
+        "errors"
+      ]
+    },
+    "PublicFilter": {
+      "type": "object",
+      "properties": {
+        "userId": {
+          "type": "string",
+          "description": "the user",
+          "x-format": {
+            "guid": true
+          }
+        },
+        "muteAll": {
+          "type": "boolean"
+        },
+        "filterType": {
+          "type": "string",
+          "enum": [
+            "CRI",
+            "ENT",
+            "CRIENT"
+          ]
+        },
+        "criterionId": {
+          "type": "string",
+          "description": "the criterion",
+          "pattern": "^[a-zA-Z0-9-_]{1,40}$"
+        },
+        "entityType": {
+          "type": "string",
+          "description": "entity type"
+        },
+        "entityId": {
+          "type": "string",
+          "description": "the entity"
+        },
+        "subCase": {
+          "type": "string"
+        },
+        "delivery": {
+          "type": "string",
+          "enum": [
+            "platform",
+            "email"
+          ]
+        }
+      },
+      "required": [
+        "userId",
+        "muteAll",
+        "filterType"
+      ]
+    },
+    "Model2": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/PublicFilter"
+      }
+    },
+    "NotificationConfiguration": {
+      "type": "object",
+      "properties": {
+        "userId": {
+          "type": "string"
+        },
+        "muteAll": {
+          "type": "boolean"
+        }
+      }
+    },
+    "Model3": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/NotificationConfiguration"
+      }
+    },
+    "PublicPendingNotification": {
+      "type": "object",
+      "properties": {
+        "recipient": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "body": {
+          "type": "string"
+        },
+        "recipientId": {
+          "type": "string",
+          "description": "we also store the user ID for convenience (check the config)"
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "id": {
+          "type": "string"
+        },
+        "isPending": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "recipient",
+        "title",
+        "body",
+        "createdAt",
+        "id",
+        "isPending"
+      ]
+    },
+    "PublicPendingNotifications": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/PublicPendingNotification"
+      }
+    },
+    "Model4": {
+      "type": "object",
+      "properties": {
+        "alertStateId": {
+          "type": "string"
+        },
+        "criterionId": {
+          "type": "string"
+        },
+        "entityType": {
+          "type": "string"
+        },
+        "entityId": {
+          "type": "string"
+        },
+        "subCase": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "alertStateId",
+        "criterionId",
+        "entityType",
+        "entityId"
+      ]
+    },
+    "alerts": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/Model4"
+      }
+    },
+    "Model5": {
+      "type": "object",
+      "properties": {
+        "alerts": {
+          "$ref": "#/definitions/alerts"
+        },
+        "userId": {
+          "type": "string"
+        },
+        "delivery": {
+          "type": "string",
+          "description": "by default, falls back to platform",
+          "enum": [
+            "platform",
+            "email"
+          ]
+        }
+      },
+      "required": [
+        "alerts",
+        "userId"
+      ]
+    },
+    "Model6": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "VisibilityStateInput": {
+      "type": "object",
+      "properties": {
+        "alertStateId": {
+          "type": "string",
+          "description": "the alert",
+          "x-format": {
+            "guid": true
+          }
+        },
+        "readAt": {"x-nullable": true,
+          "type": "string",
+          "format": "date-time"
+        },
+        "isSnoozed": {
+          "type": "boolean",
+          "description": "is it snoozed"
+        },
+        "snoozeUntil": {
+          "type": "string",
+          "format": "date-time"
+        }
+      },
+      "required": [
+        "alertStateId"
+      ]
+    },
+    "Model7": {
+      "type": "object",
+      "properties": {
+        "userId": {
+          "type": "string",
+          "description": "the user",
+          "x-format": {
+            "guid": true
+          }
+        },
+        "alertStateId": {
+          "type": "string",
+          "description": "the alert",
+          "x-format": {
+            "guid": true
+          }
+        },
+        "readAt": {"x-nullable": true,
+          "type": "string",
+          "format": "date-time"
+        },
+        "isSnoozed": {
+          "type": "boolean",
+          "description": "is it snoozed"
+        },
+        "snoozeUntil": {
+          "type": "string",
+          "format": "date-time"
+        }
+      },
+      "required": [
+        "userId",
+        "alertStateId"
+      ]
+    },
+    "Model8": {
+      "type": "object",
+      "properties": {
+        "muteAll": {
+          "type": "boolean"
+        },
+        "filterType": {
+          "type": "string",
+          "enum": [
+            "CRI",
+            "ENT",
+            "CRIENT"
+          ]
+        },
+        "criterionId": {
+          "type": "string",
+          "description": "the criterion",
+          "pattern": "^[a-zA-Z0-9-_]{1,40}$"
+        },
+        "entityType": {
+          "type": "string",
+          "description": "entity type",
+          "pattern": "^[a-zA-Z0-9-_]{1,40}$"
+        },
+        "entityId": {
+          "type": "string",
+          "description": "the entity",
+          "pattern": "^[a-zA-Z0-9-_]{1,40}$"
+        },
+        "subCase": {
+          "type": "string",
+          "description": "the subcase",
+          "pattern": "^[a-zA-Z0-9-_]{1,40}$"
+        },
+        "delivery": {
+          "type": "string",
+          "description": "by default, falls back to platform",
+          "enum": [
+            "platform",
+            "email"
+          ]
+        }
+      },
+      "required": [
+        "muteAll",
+        "filterType"
+      ]
+    },
+    "ConfigurationInput": {
+      "type": "object",
+      "properties": {
+        "muteAll": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "muteAll"
+      ]
+    },
+    "Model9": {
+      "type": "object",
+      "properties": {
+        "userId": {
+          "type": "string"
+        },
+        "muteAll": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "userId",
+        "muteAll"
+      ]
+    },
+    "PendingNotificationsInput": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "shouldDismiss": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "id",
+        "shouldDismiss"
+      ]
+    },
+    "NotificationInput": {
+      "type": "object",
+      "properties": {
+        "recipient": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "body": {
+          "type": "string"
+        },
+        "recipientId": {
+          "type": "string",
+          "description": "we also store the user ID for convenience (check the config)"
+        }
+      },
+      "required": [
+        "recipient",
+        "title",
+        "body"
+      ]
+    }
+  },
+  "security": [
+    {
+      "jwt": []
+    }
+  ]
+}

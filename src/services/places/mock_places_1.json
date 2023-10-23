@@ -1,0 +1,70 @@
+[
+  {
+    "id": 1,
+    "facilityId": "7bbfcd0d-a962-423c-b986-d198b1d2395f",
+    "name": "bla",
+    "code": "CH-BOT-BLAA-001",
+    "type": "DEPO",
+    "addressId": "c544d62e-b02c-4f8e-bf79-432fd96458c7",
+    "latestStatusId": null,
+    "identifiers_bicId": null,
+    "identifiers_smdgId": null,
+    "identifiers_imoId": null,
+    "operatorName": null,
+    "operatorID": null,
+    "charateristics_area": null,
+    "locationId": null,
+    "partnershipTypes": [
+      "Storage"
+    ],
+    "createdAt": "2022-03-23T21:25:34.941Z",
+    "updatedAt": "2022-03-23T21:25:34.941Z",
+    "deletedAt": null,
+    "address": {
+      "name": null,
+      "region": "Europe",
+      "country": {
+        "name": "boomlandia",
+        "code": "CH"
+      },
+      "city": {
+        "name": "boomtown",
+        "identifiers_iso5": null
+      }
+    }
+  },
+  {
+    "id": 2,
+    "facilityId": "4873456c-d92f-4d4b-a57c-de4b9517564f",
+    "name": "Rotterdam",
+    "code": "CH-BOT-ROTT-001",
+    "type": "DEPO",
+    "addressId": "c544d62e-b02c-4f8e-bf79-432fd96458c7",
+    "latestStatusId": null,
+    "identifiers_bicId": null,
+    "identifiers_smdgId": null,
+    "identifiers_imoId": null,
+    "operatorName": null,
+    "operatorID": null,
+    "charateristics_area": null,
+    "locationId": null,
+    "partnershipTypes": [
+      "Storage"
+    ],
+    "createdAt": "2022-04-21T14:09:17.438Z",
+    "updatedAt": "2022-04-21T14:09:17.438Z",
+    "deletedAt": null,
+    "address": {
+      "name": null,
+      "region": "Europe",
+      "country": {
+        "name": "boomlandia",
+        "code": "CH"
+      },
+      "city": {
+        "name": "boomtown",
+        "identifiers_iso5": null
+      }
+    }
+  }
+]

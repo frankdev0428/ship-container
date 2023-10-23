@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+  flocktilla-front:
+    build:
+      context: ./
+      dockerfile: Dockerfile.dev
+       
+    environment:
+      PORT: $PORT
+      SKIP_PREFLIGHT_CHECK: $SKIP_PREFLIGHT_CHECK
+      ESLINT_NO_DEV_ERRORS: $ESLINT_NO_DEV_ERRORS
+
+    ports:
+      - 3001:3001
+    command: ['npm', 'run', 'start:standalone']
+    volumes:
+      - './src:/app/src'

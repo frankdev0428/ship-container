@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  flocktilla-front-prod:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    environment:
+      AELER_AUTH_URL: https://auth.aeler.com/auth
+      AELER_AUTH_CLIENTID: admin-frontend-local
+      AELER_AUTH_REALM: Fleet-test
+      AELER_API_URL: http://localhost:3002
+    ports:
+      - 3001:80

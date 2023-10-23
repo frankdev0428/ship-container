@@ -1,0 +1,133 @@
+[
+  {
+    "_id": "62a6e98d27ca55c41b0f60ce",
+    "boardId": "szK5HG",
+    "__v": 0,
+    "containerId": "",
+    "createdAt": "2022-06-13T07:38:53.556Z",
+    "hasDoor": false,
+    "hasGases": false,
+    "hasGps": true,
+    "hasHumExt": false,
+    "hasHumInt": true,
+    "hasLightExt": false,
+    "hasLightInt": false,
+    "hasPressureExt": false,
+    "hasPressureInt": false,
+    "hasRFID": false,
+    "hasShock": false,
+    "hasTempExt": false,
+    "hasTempInt": true,
+    "source": "kizy",
+    "updatedAt": "2022-06-13T07:41:57.015Z",
+    "gps": {
+      "geometry": [
+        12.150400126666668,
+        48.996545403333336
+      ],
+      "updatedAt": "2022-06-11T11:55:17.000Z"
+    }
+  },
+  {
+    "_id": "62a6e98d27ca55c41b0f60cf",
+    "boardId": "HFLjVt",
+    "__v": 0,
+    "containerId": null,
+    "createdAt": "2022-06-13T07:38:53.557Z",
+    "hasDoor": false,
+    "hasGases": false,
+    "hasGps": true,
+    "hasHumExt": false,
+    "hasHumInt": true,
+    "hasLightExt": false,
+    "hasLightInt": false,
+    "hasPressureExt": false,
+    "hasPressureInt": false,
+    "hasRFID": false,
+    "hasShock": false,
+    "hasTempExt": false,
+    "hasTempInt": true,
+    "source": "kizy",
+    "updatedAt": "2022-06-13T07:41:57.015Z",
+    "gps": {
+      "geometry": [
+        14.318517737499999,
+        48.307443812500004
+      ],
+      "updatedAt": "2022-06-03T18:33:14.000Z"
+    },
+    "sensors": {
+      "internalTemperature": 22.56,
+      "internalHumidity": 58.4,
+      "updatedAt": "2022-06-12T18:44:43.000Z"
+    }
+  },
+  {
+    "_id": "62a6e98d27ca55c41b0f60cd",
+    "boardId": "bb8VQp",
+    "__v": 0,
+    "containerId": null,
+    "createdAt": "2022-06-13T07:38:53.556Z",
+    "hasDoor": false,
+    "hasGases": false,
+    "hasGps": true,
+    "hasHumExt": false,
+    "hasHumInt": true,
+    "hasLightExt": false,
+    "hasLightInt": false,
+    "hasPressureExt": false,
+    "hasPressureInt": false,
+    "hasRFID": false,
+    "hasShock": false,
+    "hasTempExt": false,
+    "hasTempInt": true,
+    "source": "kizy",
+    "updatedAt": "2022-06-13T07:41:57.015Z",
+    "gps": {
+      "geometry": [
+        14.316871799999998,
+        48.3095248
+      ],
+      "updatedAt": "2022-06-02T19:56:18.000Z"
+    },
+    "sensors": {
+      "internalTemperature": 21.67,
+      "internalHumidity": 55.5,
+      "updatedAt": "2022-06-12T19:30:17.000Z"
+    }
+  },
+  {
+    "_id": "62a6e98d27ca55c41b0f60cc",
+    "boardId": "d5YJR7",
+    "__v": 0,
+    "containerId": "",
+    "createdAt": "2022-06-13T07:38:53.555Z",
+    "hasDoor": false,
+    "hasGases": false,
+    "hasGps": true,
+    "hasHumExt": false,
+    "hasHumInt": true,
+    "hasLightExt": false,
+    "hasLightInt": false,
+    "hasPressureExt": false,
+    "hasPressureInt": false,
+    "hasRFID": false,
+    "hasShock": false,
+    "hasTempExt": false,
+    "hasTempInt": true,
+    "source": "kizy",
+    "updatedAt": "2022-06-13T07:41:57.014Z",
+    "gps": {
+      "geometry": [
+        5.504941,
+        46.124199
+      ],
+      "updatedAt": "2022-06-13T00:34:03.000Z"
+    },
+    "sensors": {
+      "internalTemperature": 17.99,
+      "internalHumidity": 52.6,
+      "updatedAt": "2022-06-13T00:33:37.000Z"
+    }
+  }
+]

@@ -1,0 +1,498 @@
+{
+  "swagger": "2.0",
+  "host": "localhost:3009",
+  "basePath": "/",
+  "schemes": [
+    "http"
+  ],
+  "info": {
+    "title": "Nexxiot Boards",
+    "version": "1.0.0"
+  },
+  "securityDefinitions": {
+    "jwt": {
+      "type": "apiKey",
+      "name": "Authorization",
+      "in": "header"
+    }
+  },
+  "tags": [],
+  "paths": {
+    "/boards": {
+      "get": {
+        "summary": "Get boards",
+        "operationId": "getBoards",
+        "parameters": [
+          {
+            "type": "string",
+            "description": "Board ID",
+            "name": "boardId",
+            "in": "query"
+          },
+          {
+            "type": "string",
+            "description": "From data",
+            "name": "from",
+            "in": "query"
+          },
+          {
+            "type": "string",
+            "description": "To data",
+            "name": "to",
+            "in": "query"
+          }
+        ],
+        "tags": [
+          "boards"
+        ],
+        "security": [
+          {
+            "jwt": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "schema": {
+              "$ref": "#/definitions/Model1"
+            },
+            "description": "The persisted data"
+          },
+          "400": {
+            "description": "Bad request",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "500": {
+            "description": "Internal error",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          }
+        }
+      }
+    },
+    "/boards/{deviceId}/stream": {
+      "get": {
+        "summary": "Get board stream",
+        "operationId": "getBoardsDeviceidStream",
+        "parameters": [
+          {
+            "type": "string",
+            "description": "Equipment code",
+            "name": "deviceId",
+            "in": "path",
+            "required": true
+          },
+          {
+            "type": "string",
+            "description": "From data",
+            "name": "from",
+            "in": "query"
+          },
+          {
+            "type": "string",
+            "description": "To data",
+            "name": "to",
+            "in": "query"
+          }
+        ],
+        "tags": [
+          "boards"
+        ],
+        "security": [
+          {
+            "jwt": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "schema": {
+              "$ref": "#/definitions/Model3"
+            },
+            "description": "The persisted data"
+          },
+          "400": {
+            "description": "Bad request",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "500": {
+            "description": "Internal error",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "Coordinates": {
+      "type": "array",
+      "description": "A tuple containing the longitude and the latitude",
+      "example": [
+        [
+          7.65499738,
+          45.97249611
+        ]
+      ],
+      "minItems": 2,
+      "maxItems": 2,
+      "items": {
+        "type": "number"
+      }
+    },
+    "location": {
+      "type": "object",
+      "properties": {
+        "geometry": {
+          "$ref": "#/definitions/Coordinates"
+        },
+        "countryCode": {
+          "type": "string"
+        },
+        "cityName": {
+          "type": "string"
+        },
+        "regionName": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "geometry"
+      ]
+    },
+    "NexxiotAssetMeasurementUpdatedAt": {
+      "type": "object",
+      "properties": {
+        "location": {
+          "$ref": "#/definitions/location"
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date"
+        }
+      },
+      "required": [
+        "location",
+        "updatedAt"
+      ]
+    },
+    "internalTemperature": {
+      "type": "object",
+      "properties": {
+        "celsius": {
+          "type": "number",
+          "description": "battery temperature - proxy for external(?) temperature"
+        }
+      },
+      "required": [
+        "celsius"
+      ]
+    },
+    "NexxiotDeviceMeasurementUpdatedAt": {
+      "type": "object",
+      "properties": {
+        "internalTemperature": {
+          "$ref": "#/definitions/internalTemperature"
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date"
+        }
+      },
+      "required": [
+        "internalTemperature",
+        "updatedAt"
+      ]
+    },
+    "shock": {
+      "type": "object",
+      "properties": {
+        "x": {
+          "type": "number",
+          "description": "shock value along x-axis in G"
+        },
+        "y": {
+          "type": "number",
+          "description": "shock value along y-axis in G"
+        },
+        "z": {
+          "type": "number",
+          "description": "shock value along z-axis in G"
+        }
+      },
+      "required": [
+        "x",
+        "y",
+        "z"
+      ]
+    },
+    "NexxiotAlertMeasurementUpdatedAt": {
+      "type": "object",
+      "properties": {
+        "alertType": {
+          "type": "string"
+        },
+        "alertLevel": {
+          "type": "string"
+        },
+        "alertMsg": {
+          "type": "string"
+        },
+        "shock": {
+          "$ref": "#/definitions/shock"
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date"
+        }
+      },
+      "required": [
+        "updatedAt"
+      ]
+    },
+    "ExtendedBoard": {
+      "type": "object",
+      "properties": {
+        "boardId": {
+          "type": "string"
+        },
+        "source": {
+          "type": "string",
+          "description": "nexxiot, aeler, kizy, etc"
+        },
+        "containerId": {
+          "type": "string",
+          "description": "Container name associated to device"
+        },
+        "buildDate": {
+          "type": "string",
+          "format": "date",
+          "description": "Board build date"
+        },
+        "hwVersion": {
+          "type": "string",
+          "description": "Board hardware version"
+        },
+        "fwVersion": {
+          "type": "string",
+          "description": "Board firmware version"
+        },
+        "hwMinorRevision": {
+          "type": "string",
+          "description": "Board hardware minor revision"
+        },
+        "fwMinorRevision": {
+          "type": "string",
+          "description": "Board firmware minor revision"
+        },
+        "hasGps": {
+          "type": "boolean",
+          "description": "hasGps"
+        },
+        "hasShock": {
+          "type": "boolean",
+          "description": "hasShock"
+        },
+        "hasTempExt": {
+          "type": "boolean",
+          "description": "hasTempExt"
+        },
+        "hasTempInt": {
+          "type": "boolean",
+          "description": "hasTempInt"
+        },
+        "hasHumExt": {
+          "type": "boolean",
+          "description": "hasHumpExt"
+        },
+        "hasHumInt": {
+          "type": "boolean",
+          "description": "hasHumpInt"
+        },
+        "hasPressureExt": {
+          "type": "boolean",
+          "description": "hasPressureExt"
+        },
+        "hasPressureInt": {
+          "type": "boolean",
+          "description": "hasPressureInt"
+        },
+        "hasGases": {
+          "type": "boolean",
+          "description": "hasGases"
+        },
+        "hasLightInt": {
+          "type": "boolean",
+          "description": "hasLightInt"
+        },
+        "hasLightExt": {
+          "type": "boolean",
+          "description": "hasLightExt"
+        },
+        "hasDoor": {
+          "type": "boolean",
+          "description": "hasDoor"
+        },
+        "hasRFID": {
+          "type": "boolean",
+          "description": "hasRFID"
+        },
+        "asset": {
+          "$ref": "#/definitions/NexxiotAssetMeasurementUpdatedAt"
+        },
+        "device": {
+          "$ref": "#/definitions/NexxiotDeviceMeasurementUpdatedAt"
+        },
+        "alert": {
+          "$ref": "#/definitions/NexxiotAlertMeasurementUpdatedAt"
+        }
+      },
+      "required": [
+        "boardId"
+      ]
+    },
+    "Model1": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ExtendedBoard"
+      }
+    },
+    "errors": {
+      "type": "array",
+      "description": "Error messages",
+      "items": {
+        "type": "string"
+      }
+    },
+    "Failure": {
+      "type": "object",
+      "description": "An error due to a wrong request or an internal error when processing the request",
+      "properties": {
+        "errors": {
+          "$ref": "#/definitions/errors"
+        }
+      },
+      "required": [
+        "errors"
+      ]
+    },
+    "assetMeasurement": {
+      "type": "object",
+      "properties": {
+        "location": {
+          "$ref": "#/definitions/location"
+        }
+      },
+      "required": [
+        "location"
+      ]
+    },
+    "deviceMeasurement": {
+      "type": "object",
+      "properties": {
+        "internalTemperature": {
+          "$ref": "#/definitions/internalTemperature"
+        }
+      },
+      "required": [
+        "internalTemperature"
+      ]
+    },
+    "alertMeasurement": {
+      "type": "object",
+      "properties": {
+        "alertType": {
+          "type": "string"
+        },
+        "alertLevel": {
+          "type": "string"
+        },
+        "alertMsg": {
+          "type": "string"
+        },
+        "shock": {
+          "$ref": "#/definitions/shock"
+        }
+      }
+    },
+    "values": {
+      "type": "object",
+      "properties": {
+        "measurementTime": {
+          "type": "string",
+          "format": "date"
+        },
+        "measurementType": {
+          "type": "string"
+        },
+        "assetMeasurement": {
+          "$ref": "#/definitions/assetMeasurement"
+        },
+        "deviceMeasurement": {
+          "$ref": "#/definitions/deviceMeasurement"
+        },
+        "alertMeasurement": {
+          "$ref": "#/definitions/alertMeasurement"
+        }
+      }
+    },
+    "Model2": {
+      "type": "object",
+      "properties": {
+        "containerId": {
+          "type": "string"
+        },
+        "deviceId": {
+          "type": "string"
+        },
+        "values": {
+          "$ref": "#/definitions/values"
+        }
+      },
+      "required": [
+        "containerId",
+        "deviceId",
+        "values"
+      ]
+    },
+    "Model3": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/Model2"
+      }
+    }
+  },
+  "security": [
+    {
+      "jwt": []
+    }
+  ]
+}

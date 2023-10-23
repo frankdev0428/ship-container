@@ -1,0 +1,2032 @@
+[
+  {
+    "id": 2,
+    "orderId": "XXXX-22-07-26-AEL-001",
+    "createdAt": "2022-07-26T08:28:38.580Z",
+    "customerId": "",
+    "timePlaced": "2022-07-26T08:28:37.954Z",
+    "pickupLocation": "57906dab-8b40-4591-ad07-3462656c7af7",
+    "dropoffLocation": "57906dab-8b40-4591-ad07-3462656c7af7",
+    "isDropoffLocationConfirmed": true,
+    "returnDate": "2022-07-26T08:28:09.170Z",
+    "executionDate": "2022-07-26T08:28:09.170Z",
+    "units": 3,
+    "customersBookingNumber": null,
+    "dropoffLocationActual": "57906dab-8b40-4591-ad07-3462656c7af7",
+    "parentOrderId": null,
+    "lastChangedBy": "5efc0ef4-c865-4758-8e8b-04f35faa67ec",
+    "lastChangedByUserId": null,
+    "lastOperation": null,
+    "updatedAt": "2022-07-26T08:28:38.580Z",
+    "deletedAt": null,
+    "equipmentleasecontracts": [
+      {
+        "id": 10,
+        "equipmentLeaseContractId": "cedbdf0d-e862-4add-b2f5-d32d99990260",
+        "equipmentId": "1ea3c2a6-4be8-45e9-83bc-fa18034e12ae",
+        "orderId": "XXXX-22-07-26-AEL-001",
+        "createdAt": "2022-07-26T08:28:51.993Z",
+        "active": false,
+        "lastChangedByUserId": null,
+        "lastOperation": null,
+        "updatedAt": "2022-07-26T08:29:16.899Z",
+        "leasevisibilitycontracts": [
+          {
+            "id": 4,
+            "leaseVisibilityContractId": "03a27583-945f-45cc-9010-7df93170cffd",
+            "equipmentLeaseContractId": "cedbdf0d-e862-4add-b2f5-d32d99990260",
+            "customerId": "",
+            "lastChangedBy": "system",
+            "createdAt": "2022-07-26T08:28:52.000Z",
+            "updatedAt": "2022-07-26T08:29:16.906Z",
+            "startAt": null,
+            "stopAt": null,
+            "isSameDatesAsLease": true,
+            "isSameDatesAsStatus": null,
+            "isActive": false,
+            "lastChangedByUserId": null,
+            "lastOperation": null
+          }
+        ]
+      },
+      {
+        "id": 11,
+        "equipmentLeaseContractId": "fc3be093-23b3-4056-b306-e61d297eefbb",
+        "equipmentId": "7b64b9c6-7f2b-4504-8ff4-d566622b3d56",
+        "orderId": "XXXX-22-07-26-AEL-001",
+        "createdAt": "2022-07-26T08:29:29.755Z",
+        "active": false,
+        "lastChangedByUserId": null,
+        "lastOperation": null,
+        "updatedAt": "2022-07-26T08:29:39.471Z",
+        "leasevisibilitycontracts": [
+          {
+            "id": 5,
+            "leaseVisibilityContractId": "400152c1-4693-4385-a200-48fe8d0bfa06",
+            "equipmentLeaseContractId": "fc3be093-23b3-4056-b306-e61d297eefbb",
+            "customerId": "",
+            "lastChangedBy": "system",
+            "createdAt": "2022-07-26T08:29:29.768Z",
+            "updatedAt": "2022-07-26T08:29:39.475Z",
+            "startAt": null,
+            "stopAt": null,
+            "isSameDatesAsLease": true,
+            "isSameDatesAsStatus": null,
+            "isActive": false,
+            "lastChangedByUserId": null,
+            "lastOperation": null
+          }
+        ]
+      },
+      {
+        "id": 26,
+        "equipmentLeaseContractId": "d043e73a-0cfa-41c0-b83c-e948df43075a",
+        "equipmentId": "70e39074-544d-45bb-bbe7-6a50bf0ea34c",
+        "orderId": "XXXX-22-07-26-AEL-001",
+        "createdAt": "2022-09-16T21:57:12.782Z",
+        "active": true,
+        "lastChangedByUserId": null,
+        "lastOperation": null,
+        "updatedAt": "2022-09-16T21:57:12.783Z",
+        "leasevisibilitycontracts": [
+          {
+            "id": 13,
+            "leaseVisibilityContractId": "88acb2b1-68a2-434a-b452-8e91a09e50d0",
+            "equipmentLeaseContractId": "d043e73a-0cfa-41c0-b83c-e948df43075a",
+            "customerId": "",
+            "lastChangedBy": "system",
+            "createdAt": "2022-09-16T21:57:12.799Z",
+            "updatedAt": "2022-09-16T21:57:12.799Z",
+            "startAt": null,
+            "stopAt": null,
+            "isSameDatesAsLease": true,
+            "isSameDatesAsStatus": null,
+            "isActive": true,
+            "lastChangedByUserId": null,
+            "lastOperation": null
+          }
+        ]
+      }
+    ],
+    "equipmentleasestatuses": [
+      {
+        "id": 4,
+        "orderId": "XXXX-22-07-26-AEL-001",
+        "createdAt": "2022-07-26T08:28:39.056Z",
+        "orderStatus": "ACCEPTED",
+        "contractStatus": "AEL",
+        "isCurrent": true,
+        "lastChangedByUserId": null,
+        "lastOperation": null,
+        "updatedAt": "2022-07-26T08:28:39.056Z"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "orderId": "AECA-22-08-28-AEL-001",
+    "createdAt": "2022-08-28T20:10:13.451Z",
+    "customerId": "a1c84a32-4be5-4740-87c4-0ff06574d617",
+    "timePlaced": "2022-08-28T20:10:13.343Z",
+    "pickupLocation": "d0b0294c-beaa-49b7-a651-451ad1bf5573",
+    "dropoffLocation": "72f8e61a-698e-4a6c-80c1-d79459f4d134",
+    "isDropoffLocationConfirmed": true,
+    "returnDate": "2022-08-28T20:09:51.984Z",
+    "executionDate": "2022-08-28T20:09:51.984Z",
+    "units": 3,
+    "customersBookingNumber": "123 456 789",
+    "dropoffLocationActual": "72f8e61a-698e-4a6c-80c1-d79459f4d134",
+    "parentOrderId": null,
+    "lastChangedBy": "5efc0ef4-c865-4758-8e8b-04f35faa67ec",
+    "lastChangedByUserId": null,
+    "lastOperation": null,
+    "updatedAt": "2022-08-28T20:10:13.451Z",
+    "deletedAt": null,
+    "equipmentleasecontracts": [
+      {
+        "id": 13,
+        "equipmentLeaseContractId": "524ade76-15fd-45aa-b8c5-520695910141",
+        "equipmentId": "1ea3c2a6-4be8-45e9-83bc-fa18034e12ae",
+        "orderId": "AECA-22-08-28-AEL-001",
+        "createdAt": "2022-08-28T20:10:36.134Z",
+        "active": true,
+        "lastChangedByUserId": null,
+        "lastOperation": null,
+        "updatedAt": "2022-08-28T20:10:36.134Z",
+        "leasevisibilitycontracts": [
+          {
+            "id": 7,
+            "leaseVisibilityContractId": "f429a3df-0c80-4c36-8c22-4d5500da7f9c",
+            "equipmentLeaseContractId": "524ade76-15fd-45aa-b8c5-520695910141",
+            "customerId": "a1c84a32-4be5-4740-87c4-0ff06574d617",
+            "lastChangedBy": "system",
+            "createdAt": "2022-08-28T20:10:36.148Z",
+            "updatedAt": "2022-08-28T20:10:36.148Z",
+            "startAt": null,
+            "stopAt": null,
+            "isSameDatesAsLease": true,
+            "isSameDatesAsStatus": null,
+            "isActive": true,
+            "lastChangedByUserId": null,
+            "lastOperation": null
+          },
+          {
+            "id": 8,
+            "leaseVisibilityContractId": "9817a9c6-aa94-4171-a9d4-7cc26849178f",
+            "equipmentLeaseContractId": "524ade76-15fd-45aa-b8c5-520695910141",
+            "customerId": "064e6bc2-5c4d-4cc3-b3b0-6d5b2d8a3bf0",
+            "lastChangedBy": "5efc0ef4-c865-4758-8e8b-04f35faa67ec",
+            "createdAt": "2022-08-28T20:14:20.448Z",
+            "updatedAt": "2022-08-28T20:14:20.448Z",
+            "startAt": "2022-08-28T22:00:00.000Z",
+            "stopAt": "2022-08-30T22:00:00.000Z",
+            "isSameDatesAsLease": true,
+            "isSameDatesAsStatus": true,
+            "isActive": true,
+            "lastChangedByUserId": null,
+            "lastOperation": null
+          }
+        ]
+      }
+    ],
+    "equipmentleasestatuses": [
+      {
+        "id": 24,
+        "orderId": "AECA-22-08-28-AEL-001",
+        "createdAt": "2022-10-07T08:54:48.355Z",
+        "orderStatus": "COMPLETED-FULFILLED",
+        "contractStatus": "AEL",
+        "isCurrent": true,
+        "lastChangedByUserId": null,
+        "lastOperation": null,
+        "updatedAt": "2022-10-07T08:54:48.355Z"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "orderId": "PER1-22-02-01-AEL-001",
+    "createdAt": "2022-09-14T11:40:44.548Z",
+    "customerId": "83ef280b-de98-49ec-8cba-417e310c1cdd",
+    "timePlaced": "2022-09-14T11:40:43.942Z",
+    "pickupLocation": "bdecc06e-ebeb-4b85-802f-ffe0be5109d8",
+    "dropoffLocation": "72f8e61a-698e-4a6c-80c1-d79459f4d134",
+    "isDropoffLocationConfirmed": true,
+    "returnDate": "2022-09-30T00:00:18.000Z",
+    "executionDate": "2022-02-01T00:00:18.000Z",
+    "units": 1,
+    "customersBookingNumber": "bkg1",
+    "dropoffLocationActual": "72f8e61a-698e-4a6c-80c1-d79459f4d134",
+    "parentOrderId": null,
+    "lastChangedBy": "582b81d1-9261-45bb-8b22-2ac0dd2f5d22",
+    "lastChangedByUserId": null,
+    "lastOperation": null,
+    "updatedAt": "2022-09-14T11:40:44.548Z",
+    "deletedAt": null,
+    "equipmentleasecontracts": [
+      {
+        "id": 14,
+        "equipmentLeaseContractId": "84975afb-8535-400e-94da-dce92fab9801",
+        "equipmentId": "70e39074-544d-45bb-bbe7-6a50bf0ea34c",
+        "orderId": "PER1-22-02-01-AEL-001",
+        "createdAt": "2022-09-14T11:40:54.136Z",
+        "active": true,
+        "lastChangedByUserId": null,
+        "lastOperation": null,
+        "updatedAt": "2022-09-14T11:40:54.136Z",
+        "leasevisibilitycontracts": [
+          {
+            "id": 9,
+            "leaseVisibilityContractId": "d012e914-d3d7-4249-9e24-198b3ab6101b",
+            "equipmentLeaseContractId": "84975afb-8535-400e-94da-dce92fab9801",
+            "customerId": "83ef280b-de98-49ec-8cba-417e310c1cdd",
+            "lastChangedBy": "system",
+            "createdAt": "2022-09-14T11:40:54.143Z",
+            "updatedAt": "2022-09-14T11:40:54.143Z",
+            "startAt": null,
+            "stopAt": null,
+            "isSameDatesAsLease": true,
+            "isSameDatesAsStatus": null,
+            "isActive": true,
+            "lastChangedByUserId": null,
+            "lastOperation": null
+          }
+        ]
+      },
+      {
+        "id": 22,
+        "equipmentLeaseContractId": "0fd76645-65da-4c09-8cbd-32d75c7b6f07",
+        "equipmentId": "1ea3c2a6-4be8-45e9-83bc-fa18034e12ae",
+        "orderId": "PER1-22-02-01-AEL-001",
+        "createdAt": "2022-09-16T13:51:02.891Z",
+        "active": false,
+        "lastChangedByUserId": "2ecc3895-c41d-4cfd-ac40-0cb9dba703ff",
+        "lastOperation": "U",
+        "updatedAt": "2022-10-21T09:51:27.188Z",
+        "leasevisibilitycontracts": [
+          {
+            "id": 12,
+            "leaseVisibilityContractId": "cd80545f-64fb-4548-80d6-e4ec0d358f17",
+            "equipmentLeaseContractId": "0fd76645-65da-4c09-8cbd-32d75c7b6f07",
+            "customerId": "83ef280b-de98-49ec-8cba-417e310c1cdd",
+            "lastChangedBy": "system",
+            "createdAt": "2022-09-16T13:51:02.912Z",
+            "updatedAt": "2022-10-21T09:51:27.200Z",
+            "startAt": null,
+            "stopAt": null,
+            "isSameDatesAsLease": true,
+            "isSameDatesAsStatus": null,
+            "isActive": false,
+            "lastChangedByUserId": "2ecc3895-c41d-4cfd-ac40-0cb9dba703ff",
+            "lastOperation": "U"
+          }
+        ]
+      }
+    ],
+    "equipmentleasestatuses": [
+      {
+        "id": 17,
+        "orderId": "PER1-22-02-01-AEL-001",
+        "createdAt": "2022-09-14T11:40:45.004Z",
+        "orderStatus": "ACCEPTED",
+        "contractStatus": "AEL",
+        "isCurrent": true,
+        "lastChangedByUserId": null,
+        "lastOperation": null,
+        "updatedAt": "2022-09-14T11:40:45.004Z"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "orderId": "AECA-22-08-01-AEL-001",
+    "createdAt": "2022-09-17T21:05:34.210Z",
+    "customerId": "a1c84a32-4be5-4740-87c4-0ff06574d617",
+    "timePlaced": "2022-09-17T21:05:33.378Z",
+    "pickupLocation": "d0b0294c-beaa-49b7-a651-451ad1bf5573",
+    "dropoffLocation": "d0b0294c-beaa-49b7-a651-451ad1bf5573",
+    "isDropoffLocationConfirmed": true,
+    "returnDate": "2022-12-29T00:00:13.000Z",
+    "executionDate": "2022-08-01T00:00:13.000Z",
+    "units": 1,
+    "customersBookingNumber": null,
+    "dropoffLocationActual": "d0b0294c-beaa-49b7-a651-451ad1bf5573",
+    "parentOrderId": null,
+    "lastChangedBy": "2ecc3895-c41d-4cfd-ac40-0cb9dba703ff",
+    "lastChangedByUserId": "2ecc3895-c41d-4cfd-ac40-0cb9dba703ff",
+    "lastOperation": "U",
+    "updatedAt": "2022-10-21T09:54:53.698Z",
+    "deletedAt": null,
+    "equipmentleasecontracts": [
+      {
+        "id": 46,
+        "equipmentLeaseContractId": "45de36dd-eaf5-4a16-90eb-f74d1aa35a83",
+        "equipmentId": "1ea3c2a6-4be8-45e9-83bc-fa18034e12ae",
+        "orderId": "AECA-22-08-01-AEL-001",
+        "createdAt": "2022-10-10T13:27:20.597Z",
+        "active": true,
+        "lastChangedByUserId": "5efc0ef4-c865-4758-8e8b-04f35faa67ec",
+        "lastOperation": "C",
+        "updatedAt": "2022-10-10T13:27:20.597Z",
+        "leasevisibilitycontracts": [
+          {
+            "id": 19,
+            "leaseVisibilityContractId": "e40ee3cd-db20-4f1b-ae7d-a6395a76d3f8",
+            "equipmentLeaseContractId": "45de36dd-eaf5-4a16-90eb-f74d1aa35a83",
+            "customerId": "a1c84a32-4be5-4740-87c4-0ff06574d617",
+            "lastChangedBy": "system",
+            "createdAt": "2022-10-10T13:27:20.614Z",
+            "updatedAt": "2022-10-10T13:27:20.614Z",
+            "startAt": null,
+            "stopAt": null,
+            "isSameDatesAsLease": true,
+            "isSameDatesAsStatus": null,
+            "isActive": true,
+            "lastChangedByUserId": "5efc0ef4-c865-4758-8e8b-04f35faa67ec",
+            "lastOperation": "C"
+          }
+        ]
+      },
+      {
+        "id": 61,
+        "equipmentLeaseContractId": "5be6dff7-79eb-4ea8-974b-377f1ffad1d5",
+        "equipmentId": "18e72420-0c9e-4773-a182-088c075240da",
+        "orderId": "AECA-22-08-01-AEL-001",
+        "createdAt": "2022-10-21T09:52:19.563Z",
+        "active": true,
+        "lastChangedByUserId": "2ecc3895-c41d-4cfd-ac40-0cb9dba703ff",
+        "lastOperation": "C",
+        "updatedAt": "2022-10-21T09:52:19.563Z",
+        "leasevisibilitycontracts": [
+          {
+            "id": 24,
+            "leaseVisibilityContractId": "8e9b15f5-e58c-4ee3-93dd-9f5b04759f8a",
+            "equipmentLeaseContractId": "5be6dff7-79eb-4ea8-974b-377f1ffad1d5",
+            "customerId": "a1c84a32-4be5-4740-87c4-0ff06574d617",
+            "lastChangedBy": "2ecc3895-c41d-4cfd-ac40-0cb9dba703ff",
+            "createdAt": "2022-10-21T09:52:19.577Z",
+            "updatedAt": "2022-10-21T10:03:27.844Z",
+            "startAt": null,
+            "stopAt": null,
+            "isSameDatesAsLease": false,
+            "isSameDatesAsStatus": true,
+            "isActive": true,
+            "lastChangedByUserId": "2ecc3895-c41d-4cfd-ac40-0cb9dba703ff",
+            "lastOperation": "U"
+          }
+        ]
+      },
+      {
+        "id": 30,
+        "equipmentLeaseContractId": "0267ea90-b206-4b7c-8361-db68ca31f759",
+        "equipmentId": "9900a399-b99f-4c55-a37d-2ff523b762ce",
+        "orderId": "AECA-22-08-01-AEL-001",
+        "createdAt": "2022-09-17T21:06:18.934Z",
+        "active": true,
+        "lastChangedByUserId": null,
+        "lastOperation": null,
+        "updatedAt": "2022-09-17T21:06:18.934Z",
+        "leasevisibilitycontracts": [
+          {
+            "id": 14,
+            "leaseVisibilityContractId": "ee508bef-e2b4-4938-87b9-f677d5075b29",
+            "equipmentLeaseContractId": "0267ea90-b206-4b7c-8361-db68ca31f759",
+            "customerId": "a1c84a32-4be5-4740-87c4-0ff06574d617",
+            "lastChangedBy": "2ecc3895-c41d-4cfd-ac40-0cb9dba703ff",
+            "createdAt": "2022-09-17T21:06:18.946Z",
+            "updatedAt": "2022-10-21T10:03:32.792Z",
+            "startAt": null,
+            "stopAt": null,
+            "isSameDatesAsLease": true,
+            "isSameDatesAsStatus": false,
+            "isActive": true,
+            "lastChangedByUserId": "2ecc3895-c41d-4cfd-ac40-0cb9dba703ff",
+            "lastOperation": "U"
+          }
+        ]
+      },
+      {
+        "id": 34,
+        "equipmentLeaseContractId": "c43c6a9b-3260-4129-b489-ade5cb9eb840",
+        "equipmentId": "c3327e00-ecfd-4cf5-b006-e1e1129f8422",
+        "orderId": "AECA-22-08-01-AEL-001",
+        "createdAt": "2022-09-24T21:47:40.877Z",
+        "active": false,
+        "lastChangedByUserId": "2ecc3895-c41d-4cfd-ac40-0cb9dba703ff",
+        "lastOperation": "U",
+        "updatedAt": "2022-10-21T11:18:31.781Z",
+        "leasevisibilitycontracts": [
+          {
+            "id": 16,
+            "leaseVisibilityContractId": "58125b92-48d0-4503-9124-83416c7ad990",
+            "equipmentLeaseContractId": "c43c6a9b-3260-4129-b489-ade5cb9eb840",
+            "customerId": "a1c84a32-4be5-4740-87c4-0ff06574d617",
+            "lastChangedBy": "system",
+            "createdAt": "2022-09-24T21:47:40.885Z",
+            "updatedAt": "2022-10-21T11:18:31.792Z",
+            "startAt": null,
+            "stopAt": null,
+            "isSameDatesAsLease": true,
+            "isSameDatesAsStatus": null,
+            "isActive": false,
+            "lastChangedByUserId": "2ecc3895-c41d-4cfd-ac40-0cb9dba703ff",
+            "lastOperation": "U"
+          }
+        ]
+      }
+    ],
+    "equipmentleasestatuses": [
+      {
+        "id": 19,
+        "orderId": "AECA-22-08-01-AEL-001",
+        "createdAt": "2022-09-17T21:05:34.697Z",
+        "orderStatus": "ACCEPTED",
+        "contractStatus": "AEL",
+        "isCurrent": true,
+        "lastChangedByUserId": null,
+        "lastOperation": null,
+        "updatedAt": "2022-09-17T21:05:34.697Z"
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "orderId": "HGTC-22-10-27-AEL-001",
+    "createdAt": "2022-10-27T10:27:36.062Z",
+    "customerId": "a3834e9f-5d1e-4ccb-828a-cff6eaea945a",
+    "timePlaced": "2022-10-27T10:27:33.736Z",
+    "pickupLocation": "57906dab-8b40-4591-ad07-3462656c7af7",
+    "dropoffLocation": "d0b0294c-beaa-49b7-a651-451ad1bf5573",
+    "isDropoffLocationConfirmed": true,
+    "returnDate": "2022-11-01T00:00:00.000Z",
+    "executionDate": "2022-10-27T10:27:00.339Z",
+    "units": 1,
+    "customersBookingNumber": "FM-512",
+    "dropoffLocationActual": "d0b0294c-beaa-49b7-a651-451ad1bf5573",
+    "parentOrderId": null,
+    "lastChangedBy": "5efc0ef4-c865-4758-8e8b-04f35faa67ec",
+    "lastChangedByUserId": "5efc0ef4-c865-4758-8e8b-04f35faa67ec",
+    "lastOperation": "C",
+    "updatedAt": "2022-10-27T10:27:36.062Z",
+    "deletedAt": null,
+    "equipmentleasecontracts": [
+      {
+        "id": 68,
+        "equipmentLeaseContractId": "df6a7260-1b28-4397-b166-9a377cf73596",
+        "equipmentId": "75ba91c8-c15d-49ff-b3ed-cd4d4381acd3",
+        "orderId": "HGTC-22-10-27-AEL-001",
+        "createdAt": "2022-10-27T10:30:07.619Z",
+        "active": true,
+        "lastChangedByUserId": "5efc0ef4-c865-4758-8e8b-04f35faa67ec",
+        "lastOperation": "C",
+        "updatedAt": "2022-10-27T10:30:07.619Z",
+        "leasevisibilitycontracts": [
+          {
+            "id": 31,
+            "leaseVisibilityContractId": "040ed320-3b6d-473d-8d98-52e9f4707b14",
+            "equipmentLeaseContractId": "df6a7260-1b28-4397-b166-9a377cf73596",
+            "customerId": "a3834e9f-5d1e-4ccb-828a-cff6eaea945a",
+            "lastChangedBy": "system",
+            "createdAt": "2022-10-27T10:30:07.630Z",
+            "updatedAt": "2022-10-27T10:30:07.630Z",
+            "startAt": null,
+            "stopAt": null,
+            "isSameDatesAsLease": true,
+            "isSameDatesAsStatus": null,
+            "isActive": true,
+            "lastChangedByUserId": "5efc0ef4-c865-4758-8e8b-04f35faa67ec",
+            "lastOperation": "C"
+          }
+        ]
+      }
+    ],
+    "equipmentleasestatuses": [
+      {
+        "id": 46,
+        "orderId": "HGTC-22-10-27-AEL-001",
+        "createdAt": "2022-10-27T10:27:37.326Z",
+        "orderStatus": "ACCEPTED",
+        "contractStatus": "AEL",
+        "isCurrent": true,
+        "lastChangedByUserId": "5efc0ef4-c865-4758-8e8b-04f35faa67ec",
+        "lastOperation": "C",
+        "updatedAt": "2022-10-27T10:27:37.326Z"
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "orderId": "VALG-22-12-01-AEL-001",
+    "createdAt": "2022-10-21T08:43:02.826Z",
+    "customerId": "df2abcae-680d-4abf-a8e7-9432cfd85832",
+    "timePlaced": "2022-10-21T08:43:02.723Z",
+    "pickupLocation": "d0b0294c-beaa-49b7-a651-451ad1bf5573",
+    "dropoffLocation": "ac565cc3-4121-4c55-9db9-477dd8a78860",
+    "isDropoffLocationConfirmed": true,
+    "returnDate": "2022-12-31T00:00:17.000Z",
+    "executionDate": "2022-10-20T00:00:17.000Z",
+    "units": 1,
+    "customersBookingNumber": null,
+    "dropoffLocationActual": "ac565cc3-4121-4c55-9db9-477dd8a78860",
+    "parentOrderId": null,
+    "lastChangedBy": "5efc0ef4-c865-4758-8e8b-04f35faa67ec",
+    "lastChangedByUserId": "5efc0ef4-c865-4758-8e8b-04f35faa67ec",
+    "lastOperation": "U",
+    "updatedAt": "2022-10-21T10:08:15.770Z",
+    "deletedAt": null,
+    "equipmentleasecontracts": [
+      {
+        "id": 60,
+        "equipmentLeaseContractId": "5cec66af-acd1-49f4-94ee-12144c4bcf99",
+        "equipmentId": "76e3027e-f828-4205-8b44-34240358b0fa",
+        "orderId": "VALG-22-12-01-AEL-001",
+        "createdAt": "2022-10-21T08:43:46.139Z",
+        "active": false,
+        "lastChangedByUserId": "aa23ed2b-1afc-462e-89e5-a13184227ca8",
+        "lastOperation": "U",
+        "updatedAt": "2022-10-21T08:54:00.302Z",
+        "leasevisibilitycontracts": [
+          {
+            "id": 23,
+            "leaseVisibilityContractId": "2a8db1f2-9c0c-4533-8ba7-969daa55940c",
+            "equipmentLeaseContractId": "5cec66af-acd1-49f4-94ee-12144c4bcf99",
+            "customerId": "df2abcae-680d-4abf-a8e7-9432cfd85832",
+            "lastChangedBy": "system",
+            "createdAt": "2022-10-21T08:43:46.154Z",
+            "updatedAt": "2022-10-21T08:54:00.317Z",
+            "startAt": null,
+            "stopAt": null,
+            "isSameDatesAsLease": true,
+            "isSameDatesAsStatus": null,
+            "isActive": false,
+            "lastChangedByUserId": "aa23ed2b-1afc-462e-89e5-a13184227ca8",
+            "lastOperation": "U"
+          }
+        ]
+      },
+      {
+        "id": 62,
+        "equipmentLeaseContractId": "38b6d734-9787-4f21-a0e5-bc10972b1256",
+        "equipmentId": "dc929235-bbf7-4e50-aa2e-527f2e05b6ee",
+        "orderId": "VALG-22-12-01-AEL-001",
+        "createdAt": "2022-10-21T10:00:46.577Z",
+        "active": true,
+        "lastChangedByUserId": "aa23ed2b-1afc-462e-89e5-a13184227ca8",
+        "lastOperation": "C",
+        "updatedAt": "2022-10-21T10:00:46.577Z",
+        "leasevisibilitycontracts": [
+          {
+            "id": 25,
+            "leaseVisibilityContractId": "2d45c41f-1c92-408a-8b13-9c845e8f2775",
+            "equipmentLeaseContractId": "38b6d734-9787-4f21-a0e5-bc10972b1256",
+            "customerId": "df2abcae-680d-4abf-a8e7-9432cfd85832",
+            "lastChangedBy": "system",
+            "createdAt": "2022-10-21T10:00:46.589Z",
+            "updatedAt": "2022-10-21T10:00:46.589Z",
+            "startAt": null,
+            "stopAt": null,
+            "isSameDatesAsLease": true,
+            "isSameDatesAsStatus": null,
+            "isActive": true,
+            "lastChangedByUserId": "aa23ed2b-1afc-462e-89e5-a13184227ca8",
+            "lastOperation": "C"
+          }
+        ]
+      },
+      {
+        "id": 63,
+        "equipmentLeaseContractId": "ebf4f228-95f4-469d-88b9-0b86973ef2b0",
+        "equipmentId": "08e197df-9a43-4e9d-ae5e-30f1ed2716a3",
+        "orderId": "VALG-22-12-01-AEL-001",
+        "createdAt": "2022-10-21T10:02:08.047Z",
+        "active": true,
+        "lastChangedByUserId": "aa23ed2b-1afc-462e-89e5-a13184227ca8",
+        "lastOperation": "C",
+        "updatedAt": "2022-10-21T10:02:08.047Z",
+        "leasevisibilitycontracts": [
+          {
+            "id": 26,
+            "leaseVisibilityContractId": "67cb9346-59fa-45ba-8800-0b529a97ced6",
+            "equipmentLeaseContractId": "ebf4f228-95f4-469d-88b9-0b86973ef2b0",
+            "customerId": "df2abcae-680d-4abf-a8e7-9432cfd85832",
+            "lastChangedBy": "system",
+            "createdAt": "2022-10-21T10:02:08.060Z",
+            "updatedAt": "2022-10-21T10:02:08.060Z",
+            "startAt": null,
+            "stopAt": null,
+            "isSameDatesAsLease": true,
+            "isSameDatesAsStatus": null,
+            "isActive": true,
+            "lastChangedByUserId": "aa23ed2b-1afc-462e-89e5-a13184227ca8",
+            "lastOperation": "C"
+          }
+        ]
+      }
+    ],
+    "equipmentleasestatuses": [
+      {
+        "id": 36,
+        "orderId": "VALG-22-12-01-AEL-001",
+        "createdAt": "2022-10-21T08:43:03.056Z",
+        "orderStatus": "ACCEPTED",
+        "contractStatus": "AEL",
+        "isCurrent": true,
+        "lastChangedByUserId": "aa23ed2b-1afc-462e-89e5-a13184227ca8",
+        "lastOperation": "C",
+        "updatedAt": "2022-10-21T08:43:03.056Z"
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "orderId": "AECA-22-06-01-AEL-001",
+    "createdAt": "2022-07-20T16:04:31.306Z",
+    "customerId": "a1c84a32-4be5-4740-87c4-0ff06574d617",
+    "timePlaced": "2022-07-20T16:04:31.205Z",
+    "pickupLocation": "d0b0294c-beaa-49b7-a651-451ad1bf5573",
+    "dropoffLocation": "ace83ec7-be4a-4cc1-8a4c-69dc9973dd49",
+    "isDropoffLocationConfirmed": true,
+    "returnDate": "2023-01-31T00:00:00.000Z",
+    "executionDate": "2022-03-01T00:00:00.000Z",
+    "units": 1,
+    "customersBookingNumber": null,
+    "dropoffLocationActual": "ace83ec7-be4a-4cc1-8a4c-69dc9973dd49",
+    "parentOrderId": null,
+    "lastChangedBy": "2ecc3895-c41d-4cfd-ac40-0cb9dba703ff",
+    "lastChangedByUserId": "2ecc3895-c41d-4cfd-ac40-0cb9dba703ff",
+    "lastOperation": "U",
+    "updatedAt": "2022-10-21T11:17:46.300Z",
+    "deletedAt": null,
+    "equipmentleasecontracts": [
+      {
+        "id": 1,
+        "equipmentLeaseContractId": "63f1222f-6836-4658-bba6-6bccb7a428e0",
+        "equipmentId": "7b64b9c6-7f2b-4504-8ff4-d566622b3d56",
+        "orderId": "AECA-22-06-01-AEL-001",
+        "createdAt": "2022-07-20T16:04:35.956Z",
+        "active": true,
+        "lastChangedByUserId": null,
+        "lastOperation": null,
+        "updatedAt": "2022-07-20T16:04:35.956Z",
+        "leasevisibilitycontracts": [
+          {
+            "id": 1,
+            "leaseVisibilityContractId": "8a2a962d-0c32-4499-9753-e885ec14364d",
+            "equipmentLeaseContractId": "63f1222f-6836-4658-bba6-6bccb7a428e0",
+            "customerId": "a1c84a32-4be5-4740-87c4-0ff06574d617",
+            "lastChangedBy": "system",
+            "createdAt": "2022-07-20T16:04:35.967Z",
+            "updatedAt": "2022-07-20T16:04:35.967Z",
+            "startAt": null,
+            "stopAt": null,
+            "isSameDatesAsLease": true,
+            "isSameDatesAsStatus": null,
+            "isActive": true,
+            "lastChangedByUserId": null,
+            "lastOperation": null
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "equipmentLeaseContractId": "e403972d-8064-47f1-9c0a-5943610422af",
+        "equipmentId": "ec947a58-ceec-4f41-864a-e40833180fae",
+        "orderId": "AECA-22-06-01-AEL-001",
+        "createdAt": "2022-07-20T16:10:16.771Z",
+        "active": true,
+        "lastChangedByUserId": null,
+        "lastOperation": null,
+        "updatedAt": "2022-07-20T16:10:16.771Z",
+        "leasevisibilitycontracts": [
+          {
+            "id": 2,
+            "leaseVisibilityContractId": "199d24a4-d9b3-4f6d-bec1-89b7fb9866bc",
+            "equipmentLeaseContractId": "e403972d-8064-47f1-9c0a-5943610422af",
+            "customerId": "a1c84a32-4be5-4740-87c4-0ff06574d617",
+            "lastChangedBy": "system",
+            "createdAt": "2022-07-20T16:10:16.778Z",
+            "updatedAt": "2022-07-20T16:10:16.778Z",
+            "startAt": null,
+            "stopAt": null,
+            "isSameDatesAsLease": true,
+            "isSameDatesAsStatus": null,
+            "isActive": true,
+            "lastChangedByUserId": null,
+            "lastOperation": null
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "equipmentLeaseContractId": "0d0c89a2-0265-43bc-a2a0-c97d58f3338b",
+        "equipmentId": "1ea3c2a6-4be8-45e9-83bc-fa18034e12ae",
+        "orderId": "AECA-22-06-01-AEL-001",
+        "createdAt": "2022-07-21T12:46:35.475Z",
+        "active": true,
+        "lastChangedByUserId": null,
+        "lastOperation": null,
+        "updatedAt": "2022-07-21T12:46:35.475Z",
+        "leasevisibilitycontracts": [
+          {
+            "id": 3,
+            "leaseVisibilityContractId": "22e67054-cabd-41c2-9cf0-10ad87cab8f9",
+            "equipmentLeaseContractId": "0d0c89a2-0265-43bc-a2a0-c97d58f3338b",
+            "customerId": "a1c84a32-4be5-4740-87c4-0ff06574d617",
+            "lastChangedBy": "system",
+            "createdAt": "2022-07-21T12:46:35.501Z",
+            "updatedAt": "2022-07-21T12:46:35.501Z",
+            "startAt": null,
+            "stopAt": null,
+            "isSameDatesAsLease": true,
+            "isSameDatesAsStatus": null,
+            "isActive": true,
+            "lastChangedByUserId": null,
+            "lastOperation": null
+          }
+        ]
+      },
+      {
+        "id": 17,
+        "equipmentLeaseContractId": "40905ad2-63a9-4de5-b31f-cd6f3aededfb",
+        "equipmentId": "70e39074-544d-45bb-bbe7-6a50bf0ea34c",
+        "orderId": "AECA-22-06-01-AEL-001",
+        "createdAt": "2022-09-16T13:12:21.101Z",
+        "active": true,
+        "lastChangedByUserId": null,
+        "lastOperation": null,
+        "updatedAt": "2022-09-16T13:12:21.101Z",
+        "leasevisibilitycontracts": [
+          {
+            "id": 10,
+            "leaseVisibilityContractId": "a958f51a-a2af-49f3-8088-d900a44744e4",
+            "equipmentLeaseContractId": "40905ad2-63a9-4de5-b31f-cd6f3aededfb",
+            "customerId": "a1c84a32-4be5-4740-87c4-0ff06574d617",
+            "lastChangedBy": "system",
+            "createdAt": "2022-09-16T13:12:21.108Z",
+            "updatedAt": "2022-09-16T13:12:21.108Z",
+            "startAt": null,
+            "stopAt": null,
+            "isSameDatesAsLease": true,
+            "isSameDatesAsStatus": null,
+            "isActive": true,
+            "lastChangedByUserId": null,
+            "lastOperation": null
+          }
+        ]
+      },
+      {
+        "id": 18,
+        "equipmentLeaseContractId": "397883f1-042d-4abf-8df7-7ae80a49b74b",
+        "equipmentId": "9900a399-b99f-4c55-a37d-2ff523b762ce",
+        "orderId": "AECA-22-06-01-AEL-001",
+        "createdAt": "2022-09-16T13:12:53.601Z",
+        "active": true,
+        "lastChangedByUserId": null,
+        "lastOperation": null,
+        "updatedAt": "2022-09-16T13:12:53.602Z",
+        "leasevisibilitycontracts": [
+          {
+            "id": 11,
+            "leaseVisibilityContractId": "b1d9bbcd-1da7-4136-bced-4226ea210e3e",
+            "equipmentLeaseContractId": "397883f1-042d-4abf-8df7-7ae80a49b74b",
+            "customerId": "a1c84a32-4be5-4740-87c4-0ff06574d617",
+            "lastChangedBy": "system",
+            "createdAt": "2022-09-16T13:12:53.610Z",
+            "updatedAt": "2022-09-16T13:12:53.610Z",
+            "startAt": null,
+            "stopAt": null,
+            "isSameDatesAsLease": true,
+            "isSameDatesAsStatus": null,
+            "isActive": true,
+            "lastChangedByUserId": null,
+            "lastOperation": null
+          }
+        ]
+      },
+      {
+        "id": 12,
+        "equipmentLeaseContractId": "43fddad5-d125-49cd-8780-a56f216f2883",
+        "equipmentId": "c3327e00-ecfd-4cf5-b006-e1e1129f8422",
+        "orderId": "AECA-22-06-01-AEL-001",
+        "createdAt": "2022-08-05T16:01:55.301Z",
+        "active": true,
+        "lastChangedByUserId": null,
+        "lastOperation": null,
+        "updatedAt": "2022-08-05T16:01:55.301Z",
+        "leasevisibilitycontracts": [
+          {
+            "id": 6,
+            "leaseVisibilityContractId": "81e06a10-7370-4f70-87f7-f7cb25b8a8b1",
+            "equipmentLeaseContractId": "43fddad5-d125-49cd-8780-a56f216f2883",
+            "customerId": "a1c84a32-4be5-4740-87c4-0ff06574d617",
+            "lastChangedBy": "2ecc3895-c41d-4cfd-ac40-0cb9dba703ff",
+            "createdAt": "2022-08-05T16:01:55.324Z",
+            "updatedAt": "2022-10-21T11:19:22.155Z",
+            "startAt": "2022-04-30T22:00:00.000Z",
+            "stopAt": "2022-12-20T23:00:00.000Z",
+            "isSameDatesAsLease": false,
+            "isSameDatesAsStatus": false,
+            "isActive": true,
+            "lastChangedByUserId": "2ecc3895-c41d-4cfd-ac40-0cb9dba703ff",
+            "lastOperation": "U"
+          }
+        ]
+      }
+    ],
+    "equipmentleasestatuses": [
+      {
+        "id": 2,
+        "orderId": "AECA-22-06-01-AEL-001",
+        "createdAt": "2022-07-20T16:04:31.562Z",
+        "orderStatus": "ACCEPTED",
+        "contractStatus": "AEL",
+        "isCurrent": true,
+        "lastChangedByUserId": null,
+        "lastOperation": null,
+        "updatedAt": "2022-07-20T16:04:31.562Z"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "orderId": "XXXX-22-09-23-AEL-001",
+    "createdAt": "2022-09-23T12:37:11.495Z",
+    "customerId": "",
+    "timePlaced": "2022-09-23T12:37:10.830Z",
+    "pickupLocation": "d0b0294c-beaa-49b7-a651-451ad1bf5573",
+    "dropoffLocation": "fb472357-6024-455b-82e2-ece43ed26bd8",
+    "isDropoffLocationConfirmed": true,
+    "returnDate": "2022-09-23T12:34:28.615Z",
+    "executionDate": "2022-09-23T12:34:28.615Z",
+    "units": 33,
+    "customersBookingNumber": "1985",
+    "dropoffLocationActual": "fb472357-6024-455b-82e2-ece43ed26bd8",
+    "parentOrderId": null,
+    "lastChangedBy": "aa23ed2b-1afc-462e-89e5-a13184227ca8",
+    "lastChangedByUserId": null,
+    "lastOperation": null,
+    "updatedAt": "2022-10-07T07:53:53.322Z",
+    "deletedAt": null,
+    "equipmentleasecontracts": [
+      {
+        "id": 31,
+        "equipmentLeaseContractId": "b456ad7e-2e6b-475b-a3d3-7623af6cc829",
+        "equipmentId": "c3327e00-ecfd-4cf5-b006-e1e1129f8422",
+        "orderId": "XXXX-22-09-23-AEL-001",
+        "createdAt": "2022-09-23T12:45:14.798Z",
+        "active": false,
+        "lastChangedByUserId": null,
+        "lastOperation": null,
+        "updatedAt": "2022-10-05T09:37:04.794Z",
+        "leasevisibilitycontracts": [
+          {
+            "id": 15,
+            "leaseVisibilityContractId": "009b959f-d96f-4d0f-85db-0e0b0ba332c8",
+            "equipmentLeaseContractId": "b456ad7e-2e6b-475b-a3d3-7623af6cc829",
+            "customerId": "",
+            "lastChangedBy": "system",
+            "createdAt": "2022-09-23T12:45:14.828Z",
+            "updatedAt": "2022-10-05T09:37:04.799Z",
+            "startAt": null,
+            "stopAt": null,
+            "isSameDatesAsLease": true,
+            "isSameDatesAsStatus": null,
+            "isActive": false,
+            "lastChangedByUserId": null,
+            "lastOperation": null
+          }
+        ]
+      }
+    ],
+    "equipmentleasestatuses": [
+      {
+        "id": 21,
+        "orderId": "XXXX-22-09-23-AEL-001",
+        "createdAt": "2022-09-23T12:37:12.293Z",
+        "orderStatus": "ACCEPTED",
+        "contractStatus": "AEL",
+        "isCurrent": true,
+        "lastChangedByUserId": null,
+        "lastOperation": null,
+        "updatedAt": "2022-09-23T12:37:12.293Z"
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "orderId": "BBBB-22-10-16-OWL-001",
+    "createdAt": "2022-10-07T13:59:05.788Z",
+    "customerId": "ab4955a9-8178-4ed6-b76d-3578a397a0c1",
+    "timePlaced": "2022-10-07T13:59:05.646Z",
+    "pickupLocation": "57906dab-8b40-4591-ad07-3462656c7af7",
+    "dropoffLocation": "49a3fbbe-703b-43ea-bff6-71cadfa357a2",
+    "isDropoffLocationConfirmed": true,
+    "returnDate": "2022-10-30T00:00:59.000Z",
+    "executionDate": "2022-10-16T00:00:59.000Z",
+    "units": 5,
+    "customersBookingNumber": "1111",
+    "dropoffLocationActual": "49a3fbbe-703b-43ea-bff6-71cadfa357a2",
+    "parentOrderId": null,
+    "lastChangedBy": "aa23ed2b-1afc-462e-89e5-a13184227ca8",
+    "lastChangedByUserId": null,
+    "lastOperation": null,
+    "updatedAt": "2022-10-07T13:59:05.788Z",
+    "deletedAt": null,
+    "equipmentleasecontracts": [],
+    "equipmentleasestatuses": [
+      {
+        "id": 44,
+        "orderId": "BBBB-22-10-16-OWL-001",
+        "createdAt": "2022-10-27T09:37:05.210Z",
+        "orderStatus": "COMPLETED-FULFILLED",
+        "contractStatus": "OWL",
+        "isCurrent": true,
+        "lastChangedByUserId": "aa23ed2b-1afc-462e-89e5-a13184227ca8",
+        "lastOperation": "C",
+        "updatedAt": "2022-10-27T09:37:05.210Z"
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "orderId": "BBBB-22-08-06-AEL-001",
+    "createdAt": "2022-10-07T14:03:35.295Z",
+    "customerId": "ab4955a9-8178-4ed6-b76d-3578a397a0c1",
+    "timePlaced": "2022-10-07T14:03:35.151Z",
+    "pickupLocation": "d0b0294c-beaa-49b7-a651-451ad1bf5573",
+    "dropoffLocation": "8392b671-0e3a-48f7-b0be-226d34a2bb81",
+    "isDropoffLocationConfirmed": true,
+    "returnDate": "2022-09-14T00:00:01.000Z",
+    "executionDate": "2022-08-06T00:00:01.000Z",
+    "units": 6,
+    "customersBookingNumber": "1111",
+    "dropoffLocationActual": "8392b671-0e3a-48f7-b0be-226d34a2bb81",
+    "parentOrderId": null,
+    "lastChangedBy": "aa23ed2b-1afc-462e-89e5-a13184227ca8",
+    "lastChangedByUserId": null,
+    "lastOperation": null,
+    "updatedAt": "2022-10-07T14:03:35.295Z",
+    "deletedAt": null,
+    "equipmentleasecontracts": [
+      {
+        "id": 36,
+        "equipmentLeaseContractId": "2a094d8f-72ff-4deb-bd3f-0281a45ad394",
+        "equipmentId": "f84eb174-2de4-4a92-9181-2889a1f6a37e",
+        "orderId": "BBBB-22-08-06-AEL-001",
+        "createdAt": "2022-10-10T12:25:21.269Z",
+        "active": false,
+        "lastChangedByUserId": "aa23ed2b-1afc-462e-89e5-a13184227ca8",
+        "lastOperation": "U",
+        "updatedAt": "2022-10-10T12:59:26.188Z",
+        "leasevisibilitycontracts": [
+          {
+            "id": 17,
+            "leaseVisibilityContractId": "310de2c9-a4c4-44e6-bc40-289a370cd323",
+            "equipmentLeaseContractId": "2a094d8f-72ff-4deb-bd3f-0281a45ad394",
+            "customerId": "ab4955a9-8178-4ed6-b76d-3578a397a0c1",
+            "lastChangedBy": "system",
+            "createdAt": "2022-10-10T12:25:21.289Z",
+            "updatedAt": "2022-10-10T12:59:26.197Z",
+            "startAt": null,
+            "stopAt": null,
+            "isSameDatesAsLease": true,
+            "isSameDatesAsStatus": null,
+            "isActive": false,
+            "lastChangedByUserId": "aa23ed2b-1afc-462e-89e5-a13184227ca8",
+            "lastOperation": "U"
+          }
+        ]
+      },
+      {
+        "id": 54,
+        "equipmentLeaseContractId": "55e67bb8-9cc4-4dec-a4e4-af9c5608bea9",
+        "equipmentId": "76e3027e-f828-4205-8b44-34240358b0fa",
+        "orderId": "BBBB-22-08-06-AEL-001",
+        "createdAt": "2022-10-10T14:42:16.062Z",
+        "active": false,
+        "lastChangedByUserId": "aa23ed2b-1afc-462e-89e5-a13184227ca8",
+        "lastOperation": "U",
+        "updatedAt": "2022-10-10T14:45:26.564Z",
+        "leasevisibilitycontracts": [
+          {
+            "id": 20,
+            "leaseVisibilityContractId": "137978fb-a135-436b-8d35-13c49f088d29",
+            "equipmentLeaseContractId": "55e67bb8-9cc4-4dec-a4e4-af9c5608bea9",
+            "customerId": "ab4955a9-8178-4ed6-b76d-3578a397a0c1",
+            "lastChangedBy": "system",
+            "createdAt": "2022-10-10T14:42:16.072Z",
+            "updatedAt": "2022-10-10T14:45:26.568Z",
+            "startAt": null,
+            "stopAt": null,
+            "isSameDatesAsLease": true,
+            "isSameDatesAsStatus": null,
+            "isActive": false,
+            "lastChangedByUserId": "aa23ed2b-1afc-462e-89e5-a13184227ca8",
+            "lastOperation": "U"
+          }
+        ]
+      }
+    ],
+    "equipmentleasestatuses": [
+      {
+        "id": 28,
+        "orderId": "BBBB-22-08-06-AEL-001",
+        "createdAt": "2022-10-07T14:03:35.534Z",
+        "orderStatus": "ACCEPTED",
+        "contractStatus": "AEL",
+        "isCurrent": true,
+        "lastChangedByUserId": null,
+        "lastOperation": null,
+        "updatedAt": "2022-10-07T14:03:35.534Z"
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "orderId": "VALG-22-10-20-AEL-001",
+    "createdAt": "2022-10-21T08:26:44.375Z",
+    "customerId": "df2abcae-680d-4abf-a8e7-9432cfd85832",
+    "timePlaced": "2022-10-21T08:26:43.971Z",
+    "pickupLocation": "bdecc06e-ebeb-4b85-802f-ffe0be5109d8",
+    "dropoffLocation": "d0b0294c-beaa-49b7-a651-451ad1bf5573",
+    "isDropoffLocationConfirmed": true,
+    "returnDate": "2022-10-31T00:00:11.000Z",
+    "executionDate": "2022-10-20T00:00:11.000Z",
+    "units": 1,
+    "customersBookingNumber": null,
+    "dropoffLocationActual": "d0b0294c-beaa-49b7-a651-451ad1bf5573",
+    "parentOrderId": null,
+    "lastChangedBy": "aa23ed2b-1afc-462e-89e5-a13184227ca8",
+    "lastChangedByUserId": "aa23ed2b-1afc-462e-89e5-a13184227ca8",
+    "lastOperation": "C",
+    "updatedAt": "2022-10-21T08:26:44.375Z",
+    "deletedAt": null,
+    "equipmentleasecontracts": [
+      {
+        "id": 58,
+        "equipmentLeaseContractId": "fe418c43-f2c5-4af2-b0b0-fbb297c421a4",
+        "equipmentId": "76e3027e-f828-4205-8b44-34240358b0fa",
+        "orderId": "VALG-22-10-20-AEL-001",
+        "createdAt": "2022-10-21T08:27:20.165Z",
+        "active": true,
+        "lastChangedByUserId": "aa23ed2b-1afc-462e-89e5-a13184227ca8",
+        "lastOperation": "C",
+        "updatedAt": "2022-10-21T08:27:20.165Z",
+        "leasevisibilitycontracts": [
+          {
+            "id": 21,
+            "leaseVisibilityContractId": "1f9d81a7-6c47-42f4-89e8-a08b42d48104",
+            "equipmentLeaseContractId": "fe418c43-f2c5-4af2-b0b0-fbb297c421a4",
+            "customerId": "df2abcae-680d-4abf-a8e7-9432cfd85832",
+            "lastChangedBy": "system",
+            "createdAt": "2022-10-21T08:27:20.178Z",
+            "updatedAt": "2022-10-21T08:27:20.178Z",
+            "startAt": null,
+            "stopAt": null,
+            "isSameDatesAsLease": true,
+            "isSameDatesAsStatus": null,
+            "isActive": true,
+            "lastChangedByUserId": "aa23ed2b-1afc-462e-89e5-a13184227ca8",
+            "lastOperation": "C"
+          }
+        ]
+      }
+    ],
+    "equipmentleasestatuses": [
+      {
+        "id": 43,
+        "orderId": "VALG-22-10-20-AEL-001",
+        "createdAt": "2022-10-27T09:36:36.467Z",
+        "orderStatus": "COMPLETED-FULFILLED",
+        "contractStatus": "AEL",
+        "isCurrent": true,
+        "lastChangedByUserId": "aa23ed2b-1afc-462e-89e5-a13184227ca8",
+        "lastOperation": "C",
+        "updatedAt": "2022-10-27T09:36:36.467Z"
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "orderId": "VALG-22-11-01-AEL-001",
+    "createdAt": "2022-10-21T08:34:57.673Z",
+    "customerId": "df2abcae-680d-4abf-a8e7-9432cfd85832",
+    "timePlaced": "2022-10-21T08:34:57.588Z",
+    "pickupLocation": "bdecc06e-ebeb-4b85-802f-ffe0be5109d8",
+    "dropoffLocation": "d0b0294c-beaa-49b7-a651-451ad1bf5573",
+    "isDropoffLocationConfirmed": true,
+    "returnDate": "2022-11-30T00:00:28.000Z",
+    "executionDate": "2022-11-01T00:00:28.000Z",
+    "units": 2,
+    "customersBookingNumber": null,
+    "dropoffLocationActual": "d0b0294c-beaa-49b7-a651-451ad1bf5573",
+    "parentOrderId": null,
+    "lastChangedBy": "aa23ed2b-1afc-462e-89e5-a13184227ca8",
+    "lastChangedByUserId": "aa23ed2b-1afc-462e-89e5-a13184227ca8",
+    "lastOperation": "C",
+    "updatedAt": "2022-10-21T08:34:57.673Z",
+    "deletedAt": null,
+    "equipmentleasecontracts": [
+      {
+        "id": 66,
+        "equipmentLeaseContractId": "8ab18602-c2f1-4712-b657-9d7d6e7dfeb2",
+        "equipmentId": "e9569d06-b213-49aa-9ba1-a64e2e619e1b",
+        "orderId": "VALG-22-11-01-AEL-001",
+        "createdAt": "2022-10-26T07:19:09.451Z",
+        "active": true,
+        "lastChangedByUserId": "aa23ed2b-1afc-462e-89e5-a13184227ca8",
+        "lastOperation": "C",
+        "updatedAt": "2022-10-26T07:19:09.451Z",
+        "leasevisibilitycontracts": [
+          {
+            "id": 29,
+            "leaseVisibilityContractId": "857bbb94-09a8-4130-8a29-6391ca977ae2",
+            "equipmentLeaseContractId": "8ab18602-c2f1-4712-b657-9d7d6e7dfeb2",
+            "customerId": "df2abcae-680d-4abf-a8e7-9432cfd85832",
+            "lastChangedBy": "system",
+            "createdAt": "2022-10-26T07:19:09.481Z",
+            "updatedAt": "2022-10-26T07:19:09.481Z",
+            "startAt": null,
+            "stopAt": null,
+            "isSameDatesAsLease": true,
+            "isSameDatesAsStatus": null,
+            "isActive": true,
+            "lastChangedByUserId": "aa23ed2b-1afc-462e-89e5-a13184227ca8",
+            "lastOperation": "C"
+          }
+        ]
+      },
+      {
+        "id": 59,
+        "equipmentLeaseContractId": "a64417b8-d2b0-42b3-a32c-adc7e76dcc03",
+        "equipmentId": "aa068d7f-a5d1-40f2-9e81-97132a609a87",
+        "orderId": "VALG-22-11-01-AEL-001",
+        "createdAt": "2022-10-21T08:37:35.299Z",
+        "active": true,
+        "lastChangedByUserId": "aa23ed2b-1afc-462e-89e5-a13184227ca8",
+        "lastOperation": "C",
+        "updatedAt": "2022-10-21T08:37:35.299Z",
+        "leasevisibilitycontracts": [
+          {
+            "id": 22,
+            "leaseVisibilityContractId": "18cc0e43-5eff-4a54-959e-6b3ec333def1",
+            "equipmentLeaseContractId": "a64417b8-d2b0-42b3-a32c-adc7e76dcc03",
+            "customerId": "df2abcae-680d-4abf-a8e7-9432cfd85832",
+            "lastChangedBy": "system",
+            "createdAt": "2022-10-21T08:37:35.331Z",
+            "updatedAt": "2022-10-21T08:37:35.331Z",
+            "startAt": null,
+            "stopAt": null,
+            "isSameDatesAsLease": true,
+            "isSameDatesAsStatus": null,
+            "isActive": true,
+            "lastChangedByUserId": "aa23ed2b-1afc-462e-89e5-a13184227ca8",
+            "lastOperation": "C"
+          }
+        ]
+      }
+    ],
+    "equipmentleasestatuses": [
+      {
+        "id": 34,
+        "orderId": "VALG-22-11-01-AEL-001",
+        "createdAt": "2022-10-21T08:34:57.954Z",
+        "orderStatus": "ACCEPTED",
+        "contractStatus": "AEL",
+        "isCurrent": true,
+        "lastChangedByUserId": "aa23ed2b-1afc-462e-89e5-a13184227ca8",
+        "lastOperation": "C",
+        "updatedAt": "2022-10-21T08:34:57.954Z"
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "orderId": "HGTC-22-10-23-AEL-001",
+    "createdAt": "2022-10-24T12:27:59.383Z",
+    "customerId": "a3834e9f-5d1e-4ccb-828a-cff6eaea945a",
+    "timePlaced": "2022-10-24T12:27:58.966Z",
+    "pickupLocation": "57906dab-8b40-4591-ad07-3462656c7af7",
+    "dropoffLocation": "d0b0294c-beaa-49b7-a651-451ad1bf5573",
+    "isDropoffLocationConfirmed": true,
+    "returnDate": "2022-10-31T00:00:00.000Z",
+    "executionDate": "2022-10-24T00:00:00.000Z",
+    "units": 1,
+    "customersBookingNumber": "FM-512",
+    "dropoffLocationActual": "d0b0294c-beaa-49b7-a651-451ad1bf5573",
+    "parentOrderId": null,
+    "lastChangedBy": "5efc0ef4-c865-4758-8e8b-04f35faa67ec",
+    "lastChangedByUserId": "5efc0ef4-c865-4758-8e8b-04f35faa67ec",
+    "lastOperation": "U",
+    "updatedAt": "2022-10-24T12:56:10.216Z",
+    "deletedAt": null,
+    "equipmentleasecontracts": [
+      {
+        "id": 64,
+        "equipmentLeaseContractId": "f04b5b3e-eb76-4bed-9db6-4178338aaf64",
+        "equipmentId": "73d1a7f6-2d34-426f-9b91-657ac06a886f",
+        "orderId": "HGTC-22-10-23-AEL-001",
+        "createdAt": "2022-10-24T12:56:35.981Z",
+        "active": true,
+        "lastChangedByUserId": "5efc0ef4-c865-4758-8e8b-04f35faa67ec",
+        "lastOperation": "C",
+        "updatedAt": "2022-10-24T12:56:35.982Z",
+        "leasevisibilitycontracts": [
+          {
+            "id": 27,
+            "leaseVisibilityContractId": "a5f1806a-acfd-494d-afd5-1927ba7e311e",
+            "equipmentLeaseContractId": "f04b5b3e-eb76-4bed-9db6-4178338aaf64",
+            "customerId": "a3834e9f-5d1e-4ccb-828a-cff6eaea945a",
+            "lastChangedBy": "system",
+            "createdAt": "2022-10-24T12:56:35.996Z",
+            "updatedAt": "2022-10-24T12:56:35.996Z",
+            "startAt": null,
+            "stopAt": null,
+            "isSameDatesAsLease": true,
+            "isSameDatesAsStatus": null,
+            "isActive": true,
+            "lastChangedByUserId": "5efc0ef4-c865-4758-8e8b-04f35faa67ec",
+            "lastOperation": "C"
+          }
+        ]
+      }
+    ],
+    "equipmentleasestatuses": [
+      {
+        "id": 38,
+        "orderId": "HGTC-22-10-23-AEL-001",
+        "createdAt": "2022-10-24T12:28:00.355Z",
+        "orderStatus": "ACCEPTED",
+        "contractStatus": "AEL",
+        "isCurrent": true,
+        "lastChangedByUserId": "5efc0ef4-c865-4758-8e8b-04f35faa67ec",
+        "lastOperation": "C",
+        "updatedAt": "2022-10-24T12:28:00.355Z"
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "orderId": "VALG-22-10-24-AEL-001",
+    "createdAt": "2022-10-24T14:14:57.818Z",
+    "customerId": "df2abcae-680d-4abf-a8e7-9432cfd85832",
+    "timePlaced": "2022-10-24T14:14:57.348Z",
+    "pickupLocation": "bdecc06e-ebeb-4b85-802f-ffe0be5109d8",
+    "dropoffLocation": "d0b0294c-beaa-49b7-a651-451ad1bf5573",
+    "isDropoffLocationConfirmed": true,
+    "returnDate": "2022-10-31T00:00:23.000Z",
+    "executionDate": "2022-10-24T14:12:23.566Z",
+    "units": 1,
+    "customersBookingNumber": "1111",
+    "dropoffLocationActual": "d0b0294c-beaa-49b7-a651-451ad1bf5573",
+    "parentOrderId": null,
+    "lastChangedBy": "aa23ed2b-1afc-462e-89e5-a13184227ca8",
+    "lastChangedByUserId": "aa23ed2b-1afc-462e-89e5-a13184227ca8",
+    "lastOperation": "C",
+    "updatedAt": "2022-10-24T14:14:57.818Z",
+    "deletedAt": null,
+    "equipmentleasecontracts": [
+      {
+        "id": 65,
+        "equipmentLeaseContractId": "11ed3e7a-2f54-4240-b1f6-fb3d58cd1f6e",
+        "equipmentId": "1c395612-885f-4c19-b9a4-46a2e3e380f1",
+        "orderId": "VALG-22-10-24-AEL-001",
+        "createdAt": "2022-10-24T14:20:32.627Z",
+        "active": true,
+        "lastChangedByUserId": "aa23ed2b-1afc-462e-89e5-a13184227ca8",
+        "lastOperation": "C",
+        "updatedAt": "2022-10-24T14:20:32.627Z",
+        "leasevisibilitycontracts": [
+          {
+            "id": 28,
+            "leaseVisibilityContractId": "0780b335-c1e5-46a7-911e-0ff55cccdcff",
+            "equipmentLeaseContractId": "11ed3e7a-2f54-4240-b1f6-fb3d58cd1f6e",
+            "customerId": "df2abcae-680d-4abf-a8e7-9432cfd85832",
+            "lastChangedBy": "system",
+            "createdAt": "2022-10-24T14:20:32.653Z",
+            "updatedAt": "2022-10-24T14:20:32.653Z",
+            "startAt": null,
+            "stopAt": null,
+            "isSameDatesAsLease": true,
+            "isSameDatesAsStatus": null,
+            "isActive": true,
+            "lastChangedByUserId": "aa23ed2b-1afc-462e-89e5-a13184227ca8",
+            "lastOperation": "C"
+          }
+        ]
+      }
+    ],
+    "equipmentleasestatuses": [
+      {
+        "id": 40,
+        "orderId": "VALG-22-10-24-AEL-001",
+        "createdAt": "2022-10-24T14:14:58.153Z",
+        "orderStatus": "ACCEPTED",
+        "contractStatus": "AEL",
+        "isCurrent": true,
+        "lastChangedByUserId": "aa23ed2b-1afc-462e-89e5-a13184227ca8",
+        "lastOperation": "C",
+        "updatedAt": "2022-10-24T14:14:58.153Z"
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "orderId": "VALG-22-10-26-AEL-001",
+    "createdAt": "2022-10-26T15:37:06.991Z",
+    "customerId": "df2abcae-680d-4abf-a8e7-9432cfd85832",
+    "timePlaced": "2022-10-26T15:37:06.604Z",
+    "pickupLocation": "d0b0294c-beaa-49b7-a651-451ad1bf5573",
+    "dropoffLocation": "72f8e61a-698e-4a6c-80c1-d79459f4d134",
+    "isDropoffLocationConfirmed": true,
+    "returnDate": "2022-10-31T00:00:46.000Z",
+    "executionDate": "2022-10-26T15:36:46.701Z",
+    "units": 1,
+    "customersBookingNumber": null,
+    "dropoffLocationActual": "72f8e61a-698e-4a6c-80c1-d79459f4d134",
+    "parentOrderId": null,
+    "lastChangedBy": "aa23ed2b-1afc-462e-89e5-a13184227ca8",
+    "lastChangedByUserId": "aa23ed2b-1afc-462e-89e5-a13184227ca8",
+    "lastOperation": "C",
+    "updatedAt": "2022-10-26T15:37:06.991Z",
+    "deletedAt": null,
+    "equipmentleasecontracts": [
+      {
+        "id": 67,
+        "equipmentLeaseContractId": "63dcc66a-8af7-4166-be4f-41c7c541ad34",
+        "equipmentId": "adf82812-aab8-4ed0-a568-cbcd68b5385f",
+        "orderId": "VALG-22-10-26-AEL-001",
+        "createdAt": "2022-10-26T15:37:19.106Z",
+        "active": true,
+        "lastChangedByUserId": "aa23ed2b-1afc-462e-89e5-a13184227ca8",
+        "lastOperation": "C",
+        "updatedAt": "2022-10-26T15:37:19.106Z",
+        "leasevisibilitycontracts": [
+          {
+            "id": 30,
+            "leaseVisibilityContractId": "5a55070e-54fc-4672-9f2a-b574e383e282",
+            "equipmentLeaseContractId": "63dcc66a-8af7-4166-be4f-41c7c541ad34",
+            "customerId": "df2abcae-680d-4abf-a8e7-9432cfd85832",
+            "lastChangedBy": "system",
+            "createdAt": "2022-10-26T15:37:19.118Z",
+            "updatedAt": "2022-10-26T15:37:19.118Z",
+            "startAt": null,
+            "stopAt": null,
+            "isSameDatesAsLease": true,
+            "isSameDatesAsStatus": null,
+            "isActive": true,
+            "lastChangedByUserId": "aa23ed2b-1afc-462e-89e5-a13184227ca8",
+            "lastOperation": "C"
+          }
+        ]
+      }
+    ],
+    "equipmentleasestatuses": [
+      {
+        "id": 42,
+        "orderId": "VALG-22-10-26-AEL-001",
+        "createdAt": "2022-10-26T15:37:07.496Z",
+        "orderStatus": "ACCEPTED",
+        "contractStatus": "AEL",
+        "isCurrent": true,
+        "lastChangedByUserId": "aa23ed2b-1afc-462e-89e5-a13184227ca8",
+        "lastOperation": "C",
+        "updatedAt": "2022-10-26T15:37:07.496Z"
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "orderId": "HGTC-22-10-27-OWL-001",
+    "createdAt": "2022-10-27T11:27:05.699Z",
+    "customerId": "a3834e9f-5d1e-4ccb-828a-cff6eaea945a",
+    "timePlaced": "2022-10-27T11:27:03.345Z",
+    "pickupLocation": "57906dab-8b40-4591-ad07-3462656c7af7",
+    "dropoffLocation": "d0b0294c-beaa-49b7-a651-451ad1bf5573",
+    "isDropoffLocationConfirmed": true,
+    "returnDate": "2022-10-31T00:00:22.000Z",
+    "executionDate": "2022-10-29T00:00:00.000Z",
+    "units": 3,
+    "customersBookingNumber": "2023",
+    "dropoffLocationActual": "d0b0294c-beaa-49b7-a651-451ad1bf5573",
+    "parentOrderId": null,
+    "lastChangedBy": "5efc0ef4-c865-4758-8e8b-04f35faa67ec",
+    "lastChangedByUserId": "5efc0ef4-c865-4758-8e8b-04f35faa67ec",
+    "lastOperation": "U",
+    "updatedAt": "2022-10-28T11:25:45.936Z",
+    "deletedAt": null,
+    "equipmentleasecontracts": [
+      {
+        "id": 71,
+        "equipmentLeaseContractId": "67e365a3-cf41-4a20-88a0-5edb9c7a5ea6",
+        "equipmentId": "eea53c7a-85d7-408c-915c-a5e0d661a4f9",
+        "orderId": "HGTC-22-10-27-OWL-001",
+        "createdAt": "2022-10-27T11:27:20.738Z",
+        "active": false,
+        "lastChangedByUserId": "5efc0ef4-c865-4758-8e8b-04f35faa67ec",
+        "lastOperation": "U",
+        "updatedAt": "2022-10-27T11:31:16.249Z",
+        "leasevisibilitycontracts": [
+          {
+            "id": 33,
+            "leaseVisibilityContractId": "57e3ebc4-e9a4-4035-ac82-acf327b9005e",
+            "equipmentLeaseContractId": "67e365a3-cf41-4a20-88a0-5edb9c7a5ea6",
+            "customerId": "a3834e9f-5d1e-4ccb-828a-cff6eaea945a",
+            "lastChangedBy": "system",
+            "createdAt": "2022-10-27T11:27:20.751Z",
+            "updatedAt": "2022-10-27T11:31:16.274Z",
+            "startAt": null,
+            "stopAt": null,
+            "isSameDatesAsLease": true,
+            "isSameDatesAsStatus": null,
+            "isActive": false,
+            "lastChangedByUserId": "5efc0ef4-c865-4758-8e8b-04f35faa67ec",
+            "lastOperation": "U"
+          }
+        ]
+      },
+      {
+        "id": 72,
+        "equipmentLeaseContractId": "19020363-f41b-41f8-ad22-e87b1f5bcace",
+        "equipmentId": "2fb3ecf1-e321-4d30-8397-f31e0cbd1eee",
+        "orderId": "HGTC-22-10-27-OWL-001",
+        "createdAt": "2022-10-27T11:31:50.096Z",
+        "active": true,
+        "lastChangedByUserId": "5efc0ef4-c865-4758-8e8b-04f35faa67ec",
+        "lastOperation": "C",
+        "updatedAt": "2022-10-27T11:31:50.096Z",
+        "leasevisibilitycontracts": [
+          {
+            "id": 34,
+            "leaseVisibilityContractId": "4a8af662-8698-46b3-bba8-f3c2243885a7",
+            "equipmentLeaseContractId": "19020363-f41b-41f8-ad22-e87b1f5bcace",
+            "customerId": "a3834e9f-5d1e-4ccb-828a-cff6eaea945a",
+            "lastChangedBy": "system",
+            "createdAt": "2022-10-27T11:31:50.118Z",
+            "updatedAt": "2022-10-27T11:31:50.118Z",
+            "startAt": null,
+            "stopAt": null,
+            "isSameDatesAsLease": true,
+            "isSameDatesAsStatus": null,
+            "isActive": true,
+            "lastChangedByUserId": "5efc0ef4-c865-4758-8e8b-04f35faa67ec",
+            "lastOperation": "C"
+          }
+        ]
+      }
+    ],
+    "equipmentleasestatuses": [
+      {
+        "id": 51,
+        "orderId": "HGTC-22-10-27-OWL-001",
+        "createdAt": "2022-10-27T12:06:41.642Z",
+        "orderStatus": "CREATED",
+        "contractStatus": "OWL",
+        "isCurrent": true,
+        "lastChangedByUserId": "aa23ed2b-1afc-462e-89e5-a13184227ca8",
+        "lastOperation": "C",
+        "updatedAt": "2022-10-27T12:06:41.642Z"
+      }
+    ]
+  },
+  {
+    "id": 32,
+    "orderId": "HGTC-22-10-28-SAL-001",
+    "createdAt": "2022-10-28T13:11:00.681Z",
+    "customerId": "a3834e9f-5d1e-4ccb-828a-cff6eaea945a",
+    "timePlaced": "2022-10-28T13:10:55.658Z",
+    "pickupLocation": "57906dab-8b40-4591-ad07-3462656c7af7",
+    "dropoffLocation": "d0b0294c-beaa-49b7-a651-451ad1bf5573",
+    "isDropoffLocationConfirmed": false,
+    "returnDate": "2022-10-28T13:10:33.930Z",
+    "executionDate": "2022-10-28T13:10:33.930Z",
+    "units": 1,
+    "customersBookingNumber": "2022",
+    "dropoffLocationActual": null,
+    "parentOrderId": null,
+    "lastChangedBy": "5efc0ef4-c865-4758-8e8b-04f35faa67ec",
+    "lastChangedByUserId": "5efc0ef4-c865-4758-8e8b-04f35faa67ec",
+    "lastOperation": "C",
+    "updatedAt": "2022-10-28T13:11:00.681Z",
+    "deletedAt": null,
+    "equipmentleasecontracts": [],
+    "equipmentleasestatuses": [
+      {
+        "id": 61,
+        "orderId": "HGTC-22-10-28-SAL-001",
+        "createdAt": "2022-10-28T13:11:01.891Z",
+        "orderStatus": "ACCEPTED",
+        "contractStatus": "SAL",
+        "isCurrent": true,
+        "lastChangedByUserId": "5efc0ef4-c865-4758-8e8b-04f35faa67ec",
+        "lastOperation": "C",
+        "updatedAt": "2022-10-28T13:11:01.891Z"
+      }
+    ]
+  },
+  {
+    "id": 34,
+    "orderId": "HGTC-22-10-28-SAL-002",
+    "createdAt": "2022-10-28T13:20:57.719Z",
+    "customerId": "a3834e9f-5d1e-4ccb-828a-cff6eaea945a",
+    "timePlaced": "2022-10-28T13:20:53.195Z",
+    "pickupLocation": "57906dab-8b40-4591-ad07-3462656c7af7",
+    "dropoffLocation": "d0b0294c-beaa-49b7-a651-451ad1bf5573",
+    "isDropoffLocationConfirmed": false,
+    "returnDate": "2022-11-01T00:00:00.000Z",
+    "executionDate": "2022-10-28T13:20:19.420Z",
+    "units": 22,
+    "customersBookingNumber": "2022",
+    "dropoffLocationActual": null,
+    "parentOrderId": null,
+    "lastChangedBy": "5efc0ef4-c865-4758-8e8b-04f35faa67ec",
+    "lastChangedByUserId": "5efc0ef4-c865-4758-8e8b-04f35faa67ec",
+    "lastOperation": "C",
+    "updatedAt": "2022-10-28T13:20:57.719Z",
+    "deletedAt": null,
+    "equipmentleasecontracts": [],
+    "equipmentleasestatuses": [
+      {
+        "id": 63,
+        "orderId": "HGTC-22-10-28-SAL-002",
+        "createdAt": "2022-10-28T13:20:58.888Z",
+        "orderStatus": "ACCEPTED",
+        "contractStatus": "SAL",
+        "isCurrent": true,
+        "lastChangedByUserId": "5efc0ef4-c865-4758-8e8b-04f35faa67ec",
+        "lastOperation": "C",
+        "updatedAt": "2022-10-28T13:20:58.888Z"
+      }
+    ]
+  },
+  {
+    "id": 35,
+    "orderId": "VALG-22-11-15-AEL-001",
+    "createdAt": "2022-10-29T12:26:14.491Z",
+    "customerId": "df2abcae-680d-4abf-a8e7-9432cfd85832",
+    "timePlaced": "2022-10-29T12:26:14.222Z",
+    "pickupLocation": "d0b0294c-beaa-49b7-a651-451ad1bf5573",
+    "dropoffLocation": "ace83ec7-be4a-4cc1-8a4c-69dc9973dd49",
+    "isDropoffLocationConfirmed": true,
+    "returnDate": "2022-12-31T00:00:35.000Z",
+    "executionDate": "2022-11-15T00:00:35.000Z",
+    "units": 3,
+    "customersBookingNumber": "cont_status",
+    "dropoffLocationActual": "ace83ec7-be4a-4cc1-8a4c-69dc9973dd49",
+    "parentOrderId": null,
+    "lastChangedBy": "aa23ed2b-1afc-462e-89e5-a13184227ca8",
+    "lastChangedByUserId": "aa23ed2b-1afc-462e-89e5-a13184227ca8",
+    "lastOperation": "U",
+    "updatedAt": "2022-10-29T12:27:37.781Z",
+    "deletedAt": null,
+    "equipmentleasecontracts": [
+      {
+        "id": 73,
+        "equipmentLeaseContractId": "b53312d7-c37d-4709-93b5-2caa48e9ec35",
+        "equipmentId": "94ca795f-97d5-4576-bb4e-5d32e5ced01d",
+        "orderId": "VALG-22-11-15-AEL-001",
+        "createdAt": "2022-10-29T12:28:24.510Z",
+        "active": true,
+        "lastChangedByUserId": "aa23ed2b-1afc-462e-89e5-a13184227ca8",
+        "lastOperation": "C",
+        "updatedAt": "2022-10-29T12:28:24.510Z",
+        "leasevisibilitycontracts": [
+          {
+            "id": 35,
+            "leaseVisibilityContractId": "401921b4-cec8-4773-a277-1cd39b1b2db2",
+            "equipmentLeaseContractId": "b53312d7-c37d-4709-93b5-2caa48e9ec35",
+            "customerId": "df2abcae-680d-4abf-a8e7-9432cfd85832",
+            "lastChangedBy": "system",
+            "createdAt": "2022-10-29T12:28:24.523Z",
+            "updatedAt": "2022-10-29T12:28:24.523Z",
+            "startAt": null,
+            "stopAt": null,
+            "isSameDatesAsLease": true,
+            "isSameDatesAsStatus": null,
+            "isActive": true,
+            "lastChangedByUserId": "aa23ed2b-1afc-462e-89e5-a13184227ca8",
+            "lastOperation": "C"
+          }
+        ]
+      },
+      {
+        "id": 75,
+        "equipmentLeaseContractId": "98664e36-928f-4151-98a8-af605cc77f0a",
+        "equipmentId": "56434945-1134-496d-9fd1-059be2d7fd28",
+        "orderId": "VALG-22-11-15-AEL-001",
+        "createdAt": "2022-10-29T13:00:23.995Z",
+        "active": true,
+        "lastChangedByUserId": "aa23ed2b-1afc-462e-89e5-a13184227ca8",
+        "lastOperation": "C",
+        "updatedAt": "2022-10-29T13:00:23.996Z",
+        "leasevisibilitycontracts": [
+          {
+            "id": 37,
+            "leaseVisibilityContractId": "9d329c4f-7136-46ad-9d21-a86528e85e83",
+            "equipmentLeaseContractId": "98664e36-928f-4151-98a8-af605cc77f0a",
+            "customerId": "df2abcae-680d-4abf-a8e7-9432cfd85832",
+            "lastChangedBy": "system",
+            "createdAt": "2022-10-29T13:00:24.007Z",
+            "updatedAt": "2022-10-29T13:00:24.007Z",
+            "startAt": null,
+            "stopAt": null,
+            "isSameDatesAsLease": true,
+            "isSameDatesAsStatus": null,
+            "isActive": true,
+            "lastChangedByUserId": "aa23ed2b-1afc-462e-89e5-a13184227ca8",
+            "lastOperation": "C"
+          }
+        ]
+      },
+      {
+        "id": 83,
+        "equipmentLeaseContractId": "a06e7a00-7169-4c19-ae16-d5ee3145f737",
+        "equipmentId": "3d9c6308-ce80-4c1e-bf1f-8bf44c65e7a9",
+        "orderId": "VALG-22-11-15-AEL-001",
+        "createdAt": "2022-10-29T14:11:30.333Z",
+        "active": true,
+        "lastChangedByUserId": "aa23ed2b-1afc-462e-89e5-a13184227ca8",
+        "lastOperation": "C",
+        "updatedAt": "2022-10-29T14:11:30.334Z",
+        "leasevisibilitycontracts": [
+          {
+            "id": 42,
+            "leaseVisibilityContractId": "4aa7e7ed-5b41-4dd7-8638-296f0d68ec52",
+            "equipmentLeaseContractId": "a06e7a00-7169-4c19-ae16-d5ee3145f737",
+            "customerId": "df2abcae-680d-4abf-a8e7-9432cfd85832",
+            "lastChangedBy": "system",
+            "createdAt": "2022-10-29T14:11:30.347Z",
+            "updatedAt": "2022-10-29T14:11:30.347Z",
+            "startAt": null,
+            "stopAt": null,
+            "isSameDatesAsLease": true,
+            "isSameDatesAsStatus": null,
+            "isActive": true,
+            "lastChangedByUserId": "aa23ed2b-1afc-462e-89e5-a13184227ca8",
+            "lastOperation": "C"
+          }
+        ]
+      }
+    ],
+    "equipmentleasestatuses": [
+      {
+        "id": 65,
+        "orderId": "VALG-22-11-15-AEL-001",
+        "createdAt": "2022-10-29T12:26:14.772Z",
+        "orderStatus": "ACCEPTED",
+        "contractStatus": "AEL",
+        "isCurrent": true,
+        "lastChangedByUserId": "aa23ed2b-1afc-462e-89e5-a13184227ca8",
+        "lastOperation": "C",
+        "updatedAt": "2022-10-29T12:26:14.772Z"
+      }
+    ]
+  },
+  {
+    "id": 36,
+    "orderId": "VALG-23-01-01-AEL-001",
+    "createdAt": "2022-10-29T12:58:29.942Z",
+    "customerId": "df2abcae-680d-4abf-a8e7-9432cfd85832",
+    "timePlaced": "2022-10-29T12:58:29.794Z",
+    "pickupLocation": "72f8e61a-698e-4a6c-80c1-d79459f4d134",
+    "dropoffLocation": "a3c53043-2517-4f8c-b315-00b5a29e4d1d",
+    "isDropoffLocationConfirmed": true,
+    "returnDate": "2023-01-31T00:00:50.000Z",
+    "executionDate": "2023-01-01T00:00:50.000Z",
+    "units": 2,
+    "customersBookingNumber": "cont_status",
+    "dropoffLocationActual": "a3c53043-2517-4f8c-b315-00b5a29e4d1d",
+    "parentOrderId": null,
+    "lastChangedBy": "aa23ed2b-1afc-462e-89e5-a13184227ca8",
+    "lastChangedByUserId": "aa23ed2b-1afc-462e-89e5-a13184227ca8",
+    "lastOperation": "C",
+    "updatedAt": "2022-10-29T12:58:29.942Z",
+    "deletedAt": null,
+    "equipmentleasecontracts": [
+      {
+        "id": 74,
+        "equipmentLeaseContractId": "5261e255-82f6-4d58-aec4-2f8f25591977",
+        "equipmentId": "56434945-1134-496d-9fd1-059be2d7fd28",
+        "orderId": "VALG-23-01-01-AEL-001",
+        "createdAt": "2022-10-29T12:59:49.589Z",
+        "active": true,
+        "lastChangedByUserId": "aa23ed2b-1afc-462e-89e5-a13184227ca8",
+        "lastOperation": "C",
+        "updatedAt": "2022-10-29T12:59:49.589Z",
+        "leasevisibilitycontracts": [
+          {
+            "id": 36,
+            "leaseVisibilityContractId": "211815d0-630c-4d44-9eb4-a4616cab39b5",
+            "equipmentLeaseContractId": "5261e255-82f6-4d58-aec4-2f8f25591977",
+            "customerId": "df2abcae-680d-4abf-a8e7-9432cfd85832",
+            "lastChangedBy": "system",
+            "createdAt": "2022-10-29T12:59:49.605Z",
+            "updatedAt": "2022-10-29T12:59:49.605Z",
+            "startAt": null,
+            "stopAt": null,
+            "isSameDatesAsLease": true,
+            "isSameDatesAsStatus": null,
+            "isActive": true,
+            "lastChangedByUserId": "aa23ed2b-1afc-462e-89e5-a13184227ca8",
+            "lastOperation": "C"
+          }
+        ]
+      },
+      {
+        "id": 85,
+        "equipmentLeaseContractId": "ce5d28e0-dedf-4285-b081-1953c2e39df2",
+        "equipmentId": "3e3250e3-cce5-475c-81a8-ced0ea3cbade",
+        "orderId": "VALG-23-01-01-AEL-001",
+        "createdAt": "2022-10-29T14:53:26.136Z",
+        "active": true,
+        "lastChangedByUserId": "aa23ed2b-1afc-462e-89e5-a13184227ca8",
+        "lastOperation": "C",
+        "updatedAt": "2022-10-29T14:53:26.136Z",
+        "leasevisibilitycontracts": [
+          {
+            "id": 44,
+            "leaseVisibilityContractId": "6b447987-5fb3-4826-be05-114be1a94e37",
+            "equipmentLeaseContractId": "ce5d28e0-dedf-4285-b081-1953c2e39df2",
+            "customerId": "df2abcae-680d-4abf-a8e7-9432cfd85832",
+            "lastChangedBy": "system",
+            "createdAt": "2022-10-29T14:53:26.149Z",
+            "updatedAt": "2022-10-29T14:53:26.149Z",
+            "startAt": null,
+            "stopAt": null,
+            "isSameDatesAsLease": true,
+            "isSameDatesAsStatus": null,
+            "isActive": true,
+            "lastChangedByUserId": "aa23ed2b-1afc-462e-89e5-a13184227ca8",
+            "lastOperation": "C"
+          }
+        ]
+      }
+    ],
+    "equipmentleasestatuses": [
+      {
+        "id": 67,
+        "orderId": "VALG-23-01-01-AEL-001",
+        "createdAt": "2022-10-29T12:58:30.173Z",
+        "orderStatus": "ACCEPTED",
+        "contractStatus": "AEL",
+        "isCurrent": true,
+        "lastChangedByUserId": "aa23ed2b-1afc-462e-89e5-a13184227ca8",
+        "lastOperation": "C",
+        "updatedAt": "2022-10-29T12:58:30.173Z"
+      }
+    ]
+  },
+  {
+    "id": 37,
+    "orderId": "VALG-22-12-01-AEL-002",
+    "createdAt": "2022-10-29T13:01:38.616Z",
+    "customerId": "df2abcae-680d-4abf-a8e7-9432cfd85832",
+    "timePlaced": "2022-10-29T13:01:38.504Z",
+    "pickupLocation": "d0b0294c-beaa-49b7-a651-451ad1bf5573",
+    "dropoffLocation": "8392b671-0e3a-48f7-b0be-226d34a2bb81",
+    "isDropoffLocationConfirmed": true,
+    "returnDate": "2022-12-31T00:00:14.000Z",
+    "executionDate": "2022-12-01T00:00:14.000Z",
+    "units": 4,
+    "customersBookingNumber": null,
+    "dropoffLocationActual": "8392b671-0e3a-48f7-b0be-226d34a2bb81",
+    "parentOrderId": null,
+    "lastChangedBy": "aa23ed2b-1afc-462e-89e5-a13184227ca8",
+    "lastChangedByUserId": "aa23ed2b-1afc-462e-89e5-a13184227ca8",
+    "lastOperation": "C",
+    "updatedAt": "2022-10-29T13:01:38.616Z",
+    "deletedAt": null,
+    "equipmentleasecontracts": [
+      {
+        "id": 76,
+        "equipmentLeaseContractId": "82a443af-1ee1-4aaa-aabb-fe5ae79bb4ba",
+        "equipmentId": "56434945-1134-496d-9fd1-059be2d7fd28",
+        "orderId": "VALG-22-12-01-AEL-002",
+        "createdAt": "2022-10-29T13:01:48.189Z",
+        "active": true,
+        "lastChangedByUserId": "aa23ed2b-1afc-462e-89e5-a13184227ca8",
+        "lastOperation": "C",
+        "updatedAt": "2022-10-29T13:01:48.189Z",
+        "leasevisibilitycontracts": [
+          {
+            "id": 38,
+            "leaseVisibilityContractId": "02acbbb2-64ea-4502-bef6-78a4605de65b",
+            "equipmentLeaseContractId": "82a443af-1ee1-4aaa-aabb-fe5ae79bb4ba",
+            "customerId": "df2abcae-680d-4abf-a8e7-9432cfd85832",
+            "lastChangedBy": "system",
+            "createdAt": "2022-10-29T13:01:48.201Z",
+            "updatedAt": "2022-10-29T13:01:48.201Z",
+            "startAt": null,
+            "stopAt": null,
+            "isSameDatesAsLease": true,
+            "isSameDatesAsStatus": null,
+            "isActive": true,
+            "lastChangedByUserId": "aa23ed2b-1afc-462e-89e5-a13184227ca8",
+            "lastOperation": "C"
+          }
+        ]
+      },
+      {
+        "id": 80,
+        "equipmentLeaseContractId": "16fdd23a-76bd-4774-a0e4-5882cf78c577",
+        "equipmentId": "3e3250e3-cce5-475c-81a8-ced0ea3cbade",
+        "orderId": "VALG-22-12-01-AEL-002",
+        "createdAt": "2022-10-29T14:03:19.374Z",
+        "active": true,
+        "lastChangedByUserId": "aa23ed2b-1afc-462e-89e5-a13184227ca8",
+        "lastOperation": "C",
+        "updatedAt": "2022-10-29T14:03:19.374Z",
+        "leasevisibilitycontracts": [
+          {
+            "id": 41,
+            "leaseVisibilityContractId": "d80a168b-d30c-47df-b0ac-890a19d02a08",
+            "equipmentLeaseContractId": "16fdd23a-76bd-4774-a0e4-5882cf78c577",
+            "customerId": "df2abcae-680d-4abf-a8e7-9432cfd85832",
+            "lastChangedBy": "system",
+            "createdAt": "2022-10-29T14:03:19.393Z",
+            "updatedAt": "2022-10-29T14:03:19.393Z",
+            "startAt": null,
+            "stopAt": null,
+            "isSameDatesAsLease": true,
+            "isSameDatesAsStatus": null,
+            "isActive": true,
+            "lastChangedByUserId": "aa23ed2b-1afc-462e-89e5-a13184227ca8",
+            "lastOperation": "C"
+          }
+        ]
+      }
+    ],
+    "equipmentleasestatuses": [
+      {
+        "id": 69,
+        "orderId": "VALG-22-12-01-AEL-002",
+        "createdAt": "2022-10-29T13:01:38.902Z",
+        "orderStatus": "ACCEPTED",
+        "contractStatus": "AEL",
+        "isCurrent": true,
+        "lastChangedByUserId": "aa23ed2b-1afc-462e-89e5-a13184227ca8",
+        "lastOperation": "C",
+        "updatedAt": "2022-10-29T13:01:38.902Z"
+      }
+    ]
+  },
+  {
+    "id": 38,
+    "orderId": "VALG-22-10-29-AEL-001",
+    "createdAt": "2022-10-29T13:38:44.765Z",
+    "customerId": "df2abcae-680d-4abf-a8e7-9432cfd85832",
+    "timePlaced": "2022-10-29T13:38:44.625Z",
+    "pickupLocation": "d0b0294c-beaa-49b7-a651-451ad1bf5573",
+    "dropoffLocation": "8392b671-0e3a-48f7-b0be-226d34a2bb81",
+    "isDropoffLocationConfirmed": true,
+    "returnDate": "2022-10-31T00:00:28.000Z",
+    "executionDate": "2022-10-29T23:00:28.000Z",
+    "units": 2,
+    "customersBookingNumber": "test_mnr_status",
+    "dropoffLocationActual": "8392b671-0e3a-48f7-b0be-226d34a2bb81",
+    "parentOrderId": null,
+    "lastChangedBy": "aa23ed2b-1afc-462e-89e5-a13184227ca8",
+    "lastChangedByUserId": "aa23ed2b-1afc-462e-89e5-a13184227ca8",
+    "lastOperation": "U",
+    "updatedAt": "2022-10-29T13:40:13.295Z",
+    "deletedAt": null,
+    "equipmentleasecontracts": [
+      {
+        "id": 78,
+        "equipmentLeaseContractId": "1fb253ab-a9c5-49b2-9a52-19fc8e502498",
+        "equipmentId": "3d9c6308-ce80-4c1e-bf1f-8bf44c65e7a9",
+        "orderId": "VALG-22-10-29-AEL-001",
+        "createdAt": "2022-10-29T13:49:27.703Z",
+        "active": false,
+        "lastChangedByUserId": "aa23ed2b-1afc-462e-89e5-a13184227ca8",
+        "lastOperation": "U",
+        "updatedAt": "2022-10-29T13:53:30.346Z",
+        "leasevisibilitycontracts": [
+          {
+            "id": 40,
+            "leaseVisibilityContractId": "6a5a04c7-b8c2-4845-89ef-931d2edc590a",
+            "equipmentLeaseContractId": "1fb253ab-a9c5-49b2-9a52-19fc8e502498",
+            "customerId": "df2abcae-680d-4abf-a8e7-9432cfd85832",
+            "lastChangedBy": "system",
+            "createdAt": "2022-10-29T13:49:27.718Z",
+            "updatedAt": "2022-10-29T13:53:30.360Z",
+            "startAt": null,
+            "stopAt": null,
+            "isSameDatesAsLease": true,
+            "isSameDatesAsStatus": null,
+            "isActive": false,
+            "lastChangedByUserId": "aa23ed2b-1afc-462e-89e5-a13184227ca8",
+            "lastOperation": "U"
+          }
+        ]
+      },
+      {
+        "id": 77,
+        "equipmentLeaseContractId": "de51bc62-c611-45bc-be43-a2dc0fc47728",
+        "equipmentId": "3e3250e3-cce5-475c-81a8-ced0ea3cbade",
+        "orderId": "VALG-22-10-29-AEL-001",
+        "createdAt": "2022-10-29T13:39:14.821Z",
+        "active": false,
+        "lastChangedByUserId": "aa23ed2b-1afc-462e-89e5-a13184227ca8",
+        "lastOperation": "U",
+        "updatedAt": "2022-10-29T13:53:33.128Z",
+        "leasevisibilitycontracts": [
+          {
+            "id": 39,
+            "leaseVisibilityContractId": "7c54594d-92f4-4028-8008-7ca4537ccbc6",
+            "equipmentLeaseContractId": "de51bc62-c611-45bc-be43-a2dc0fc47728",
+            "customerId": "df2abcae-680d-4abf-a8e7-9432cfd85832",
+            "lastChangedBy": "system",
+            "createdAt": "2022-10-29T13:39:14.900Z",
+            "updatedAt": "2022-10-29T13:53:33.146Z",
+            "startAt": null,
+            "stopAt": null,
+            "isSameDatesAsLease": true,
+            "isSameDatesAsStatus": null,
+            "isActive": false,
+            "lastChangedByUserId": "aa23ed2b-1afc-462e-89e5-a13184227ca8",
+            "lastOperation": "U"
+          }
+        ]
+      }
+    ],
+    "equipmentleasestatuses": [
+      {
+        "id": 71,
+        "orderId": "VALG-22-10-29-AEL-001",
+        "createdAt": "2022-10-29T13:38:45.022Z",
+        "orderStatus": "ACCEPTED",
+        "contractStatus": "AEL",
+        "isCurrent": true,
+        "lastChangedByUserId": "aa23ed2b-1afc-462e-89e5-a13184227ca8",
+        "lastOperation": "C",
+        "updatedAt": "2022-10-29T13:38:45.022Z"
+      }
+    ]
+  },
+  {
+    "id": 39,
+    "orderId": "VALG-22-10-29-AEL-002",
+    "createdAt": "2022-10-29T14:47:33.359Z",
+    "customerId": "df2abcae-680d-4abf-a8e7-9432cfd85832",
+    "timePlaced": "2022-10-29T14:47:33.198Z",
+    "pickupLocation": "d0b0294c-beaa-49b7-a651-451ad1bf5573",
+    "dropoffLocation": "72f8e61a-698e-4a6c-80c1-d79459f4d134",
+    "isDropoffLocationConfirmed": true,
+    "returnDate": "2022-11-02T00:00:14.000Z",
+    "executionDate": "2022-10-29T14:47:14.103Z",
+    "units": 3,
+    "customersBookingNumber": null,
+    "dropoffLocationActual": "72f8e61a-698e-4a6c-80c1-d79459f4d134",
+    "parentOrderId": null,
+    "lastChangedBy": "aa23ed2b-1afc-462e-89e5-a13184227ca8",
+    "lastChangedByUserId": "aa23ed2b-1afc-462e-89e5-a13184227ca8",
+    "lastOperation": "C",
+    "updatedAt": "2022-10-29T14:47:33.359Z",
+    "deletedAt": null,
+    "equipmentleasecontracts": [
+      {
+        "id": 84,
+        "equipmentLeaseContractId": "f5705bd5-0b0a-41d5-931d-97feca91ab66",
+        "equipmentId": "3e3250e3-cce5-475c-81a8-ced0ea3cbade",
+        "orderId": "VALG-22-10-29-AEL-002",
+        "createdAt": "2022-10-29T14:50:11.936Z",
+        "active": false,
+        "lastChangedByUserId": "aa23ed2b-1afc-462e-89e5-a13184227ca8",
+        "lastOperation": "U",
+        "updatedAt": "2022-10-29T14:53:06.456Z",
+        "leasevisibilitycontracts": [
+          {
+            "id": 43,
+            "leaseVisibilityContractId": "37a9c963-c2d2-4388-b128-d30972349e1d",
+            "equipmentLeaseContractId": "f5705bd5-0b0a-41d5-931d-97feca91ab66",
+            "customerId": "df2abcae-680d-4abf-a8e7-9432cfd85832",
+            "lastChangedBy": "system",
+            "createdAt": "2022-10-29T14:50:11.951Z",
+            "updatedAt": "2022-10-29T14:53:06.499Z",
+            "startAt": null,
+            "stopAt": null,
+            "isSameDatesAsLease": true,
+            "isSameDatesAsStatus": null,
+            "isActive": false,
+            "lastChangedByUserId": "aa23ed2b-1afc-462e-89e5-a13184227ca8",
+            "lastOperation": "U"
+          }
+        ]
+      }
+    ],
+    "equipmentleasestatuses": [
+      {
+        "id": 73,
+        "orderId": "VALG-22-10-29-AEL-002",
+        "createdAt": "2022-10-29T14:47:33.639Z",
+        "orderStatus": "ACCEPTED",
+        "contractStatus": "AEL",
+        "isCurrent": true,
+        "lastChangedByUserId": "aa23ed2b-1afc-462e-89e5-a13184227ca8",
+        "lastOperation": "C",
+        "updatedAt": "2022-10-29T14:47:33.639Z"
+      }
+    ]
+  }
+]

@@ -1,0 +1,214 @@
+[
+  {
+    "companyId": "a1c84a32-4be5-4740-87c4-0ff06574d617",
+    "name": "AelerCaas",
+    "code": "AECA",
+    "isArchived": false,
+    "createdBy": "customers-service",
+    "roles": [],
+    "subgroups": []
+  },
+  {
+    "companyId": "ab4955a9-8178-4ed6-b76d-3578a397a0c1",
+    "name": "Big butterflies",
+    "code": "BBBB",
+    "isArchived": false,
+    "createdBy": "customers-service",
+    "roles": [],
+    "subgroups": []
+  },
+  {
+    "companyId": "40cc6158-8684-44e7-902b-f8810f5e33f0",
+    "name": "Blabla",
+    "code": "BLAA",
+    "isArchived": false,
+    "createdBy": "customers-service",
+    "roles": [],
+    "subgroups": []
+  },
+  {
+    "companyId": "064e6bc2-5c4d-4cc3-b3b0-6d5b2d8a3bf0",
+    "name": "CocaCola",
+    "code": "COCA",
+    "isArchived": false,
+    "createdBy": "customers-service",
+    "roles": [],
+    "subgroups": []
+  },
+  {
+    "companyId": "be4ccb73-b7cd-4617-b3d1-37ecd618a4ba",
+    "name": "Golden Giant Tunas Ltd",
+    "code": "GGCL",
+    "isArchived": false,
+    "createdBy": "customers-service",
+    "roles": [],
+    "subgroups": []
+  },
+  {
+    "companyId": "6acf5379-b68c-4818-bf30-a050b7288537",
+    "name": "Hermes",
+    "code": "HERM",
+    "isArchived": false,
+    "createdBy": "customers-service",
+    "roles": [
+      "places:view:cities",
+      "control-tower",
+      "product-access-ct",
+      "places:view:countries"
+    ],
+    "subgroups": []
+  },
+  {
+    "companyId": "a3834e9f-5d1e-4ccb-828a-cff6eaea945a",
+    "name": "Hugo's Testing Company",
+    "code": "HGTC",
+    "isArchived": false,
+    "createdBy": "customers-service",
+    "roles": [
+      "places:view:cities",
+      "control-tower",
+      "places:view:ports",
+      "product-access-ct",
+      "places:view:countries"
+    ],
+    "subgroups": []
+  },
+  {
+    "companyId": "4513747b-0023-4cbb-9f5f-3cac4680facb",
+    "name": "Marianna and BRO",
+    "code": "BROO",
+    "isArchived": false,
+    "createdBy": "customers-service",
+    "roles": [
+      "places:view:cities",
+      "control-tower",
+      "places:view:ports",
+      "product-access-ct",
+      "places:view:countries"
+    ],
+    "subgroups": []
+  },
+  {
+    "companyId": "08f5349f-03bc-494b-ba48-20346cf67a11",
+    "name": "Salmon Inc",
+    "code": "SALI",
+    "isArchived": false,
+    "createdBy": "customers-service",
+    "roles": [
+      "places:view:cities",
+      "control-tower",
+      "product-access-ct",
+      "places:view:countries"
+    ],
+    "subgroups": []
+  },
+  {
+    "companyId": "f3f69a58-d36e-4550-9ee2-0414f544786f",
+    "name": "Structural",
+    "code": "STRU",
+    "isArchived": false,
+    "createdBy": "customers-service",
+    "roles": [
+      "places:view:cities",
+      "control-tower",
+      "places:view:ports",
+      "product-access-ct",
+      "places:view:countries"
+    ],
+    "subgroups": []
+  },
+  {
+    "companyId": "679a63e1-bf91-4a62-a4e7-91ce6aa562d1",
+    "name": "Test",
+    "code": "TEST",
+    "isArchived": false,
+    "createdBy": "customers-service",
+    "roles": [],
+    "subgroups": []
+  },
+  {
+    "companyId": "4de99448-0c48-43d4-a842-79efc7af9bb8",
+    "name": "Test company 0",
+    "code": "TEST0",
+    "isArchived": false,
+    "createdBy": "customers-service",
+    "roles": [],
+    "subgroups": []
+  },
+  {
+    "companyId": "df2abcae-680d-4abf-a8e7-9432cfd85832",
+    "name": "Val_testing",
+    "code": "VALG",
+    "isArchived": false,
+    "createdBy": "customers-service",
+    "roles": [
+      "places:view:cities",
+      "control-tower",
+      "places:view:ports",
+      "product-access-ct",
+      "places:view:countries"
+    ],
+    "subgroups": []
+  },
+  {
+    "companyId": "83ef280b-de98-49ec-8cba-417e310c1cdd",
+    "name": "comp-perm-1",
+    "code": "PER1",
+    "isArchived": false,
+    "createdBy": "customers-service",
+    "roles": [
+      "places:view:cities",
+      "control-tower",
+      "places:view:ports",
+      "product-access-ct",
+      "places:view:countries"
+    ],
+    "subgroups": []
+  },
+  {
+    "companyId": "e2abacc5-a7f9-4a24-ada0-aa465a884a47",
+    "name": "comp-perm-2",
+    "code": "PER2",
+    "isArchived": false,
+    "createdBy": "customers-service",
+    "roles": [
+      "places:view:cities",
+      "control-tower",
+      "places:view:ports",
+      "product-access-ct",
+      "places:view:countries"
+    ],
+    "subgroups": []
+  },
+  {
+    "companyId": "15d97f64-7757-42ed-9f04-28072ce311f6",
+    "name": "demo_company_for_exhibits",
+    "code": "DEMO",
+    "isArchived": false,
+    "createdBy": "customers-service",
+    "roles": [
+      "places:view:cities",
+      "ct-delete-moves",
+      "control-tower",
+      "places:view:ports",
+      "product-access-ct",
+      "places:view:countries"
+    ],
+    "subgroups": []
+  },
+  {
+    "companyId": "4e30910d-95bf-4110-9d78-207024e160bc",
+    "name": "test-roman",
+    "code": "TES0",
+    "isArchived": false,
+    "createdBy": "customers-service",
+    "roles": [
+      "places:view:cities",
+      "control-tower",
+      "places:view:ports",
+      "product-access-ct",
+      "places:view:countries"
+    ],
+    "subgroups": []
+  }
+]

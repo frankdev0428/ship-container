@@ -1,0 +1,3089 @@
+{
+  "swagger": "2.0",
+  "host": "localhost:3005",
+  "basePath": "/",
+  "schemes": [
+    "http"
+  ],
+  "info": {
+    "title": "Aeler demo",
+    "version": "1.0.0"
+  },
+  "tags": [],
+  "paths": {
+    "/addresses": {
+      "get": {
+        "summary": "filter Addresses",
+        "operationId": "getAddresses",
+        "parameters": [
+          {
+            "type": "string",
+            "description": "locationType",
+            "name": "name",
+            "in": "query"
+          }
+        ],
+        "tags": [
+          "addresses"
+        ],
+        "security": [
+          {
+            "jwt": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "schema": {
+              "$ref": "#/definitions/Model1"
+            },
+            "description": "The locations"
+          },
+          "400": {
+            "description": "Bad request",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "404": {
+            "description": "The country does not exist",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "500": {
+            "description": "Internal error",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "create an address",
+        "operationId": "postAddresses",
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/AddressInput"
+            }
+          }
+        ],
+        "tags": [
+          "addresses"
+        ],
+        "security": [
+          {
+            "jwt": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The address",
+            "schema": {
+              "$ref": "#/definitions/Address"
+            }
+          },
+          "400": {
+            "description": "Bad request",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "404": {
+            "description": "The address does not exist",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "500": {
+            "description": "Internal error",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          }
+        }
+      }
+    },
+    "/cities": {
+      "get": {
+        "summary": "filter Cities",
+        "operationId": "getCities",
+        "parameters": [
+          {
+            "type": "string",
+            "description": "locationType",
+            "name": "nameStartsWith",
+            "in": "query"
+          },
+          {
+            "type": "string",
+            "description": "countryId",
+            "name": "countryId",
+            "in": "query"
+          },
+          {
+            "type": "string",
+            "description": "cityId",
+            "name": "cityId",
+            "in": "query"
+          }
+        ],
+        "tags": [
+          "cities"
+        ],
+        "security": [
+          {
+            "jwt": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "schema": {
+              "$ref": "#/definitions/Model2"
+            },
+            "description": "The locations"
+          },
+          "400": {
+            "description": "Bad request",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "404": {
+            "description": "The city does not exist",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "500": {
+            "description": "Internal error",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "create a city",
+        "operationId": "postCities",
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/Model11"
+            }
+          }
+        ],
+        "tags": [
+          "cities"
+        ],
+        "security": [
+          {
+            "jwt": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The city",
+            "schema": {
+              "$ref": "#/definitions/City"
+            }
+          },
+          "400": {
+            "description": "Bad request",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "404": {
+            "description": "The city does not exist",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "500": {
+            "description": "Internal error",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          }
+        }
+      }
+    },
+    "/countries": {
+      "get": {
+        "summary": "filter countries",
+        "operationId": "getCountries",
+        "parameters": [
+          {
+            "type": "string",
+            "description": "nameIncludes",
+            "name": "nameIncludes",
+            "in": "query"
+          },
+          {
+            "type": "string",
+            "description": "countryId",
+            "name": "countryId",
+            "in": "query"
+          },
+          {
+            "type": "string",
+            "description": "code",
+            "name": "code",
+            "in": "query"
+          }
+        ],
+        "tags": [
+          "countries"
+        ],
+        "security": [
+          {
+            "jwt": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "schema": {
+              "$ref": "#/definitions/Model3"
+            },
+            "description": "The locations"
+          },
+          "400": {
+            "description": "Bad request",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "404": {
+            "description": "The country does not exist",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "500": {
+            "description": "Internal error",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "create a country",
+        "operationId": "postCountries",
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/CountryInput"
+            }
+          }
+        ],
+        "tags": [
+          "countries"
+        ],
+        "security": [
+          {
+            "jwt": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The country",
+            "schema": {
+              "$ref": "#/definitions/Country"
+            }
+          },
+          "400": {
+            "description": "Bad request",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "404": {
+            "description": "The country does not exist",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "500": {
+            "description": "Internal error",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          }
+        }
+      }
+    },
+    "/depots": {
+      "get": {
+        "summary": "filter Depots",
+        "operationId": "getDepots",
+        "parameters": [
+          {
+            "type": "string",
+            "description": "city ID",
+            "name": "cityId",
+            "in": "query"
+          },
+          {
+            "type": "string",
+            "description": "country ID",
+            "name": "countryId",
+            "in": "query"
+          },
+          {
+            "type": "string",
+            "description": "Name Starts With",
+            "name": "nameStartsWith",
+            "in": "query"
+          }
+        ],
+        "tags": [
+          "depots"
+        ],
+        "security": [
+          {
+            "jwt": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "schema": {
+              "$ref": "#/definitions/Model4"
+            },
+            "description": "The depots"
+          },
+          "400": {
+            "description": "Bad request",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "404": {
+            "description": "The depot does not exist",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "500": {
+            "description": "Internal error",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "create a depot",
+        "operationId": "postDepots",
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/DepotInput"
+            }
+          }
+        ],
+        "tags": [
+          "depots"
+        ],
+        "security": [
+          {
+            "jwt": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "schema": {
+              "$ref": "#/definitions/DepotWithLoc"
+            },
+            "description": "The depot"
+          },
+          "400": {
+            "description": "Bad request",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "404": {
+            "description": "The depot does not exist",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "500": {
+            "description": "Internal error",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          }
+        }
+      }
+    },
+    "/facilities": {
+      "get": {
+        "summary": "filter Facilitys",
+        "operationId": "getFacilities",
+        "parameters": [
+          {
+            "type": "string",
+            "description": "city ID",
+            "name": "cityId",
+            "in": "query"
+          },
+          {
+            "type": "string",
+            "description": "country ID",
+            "name": "countryId",
+            "in": "query"
+          },
+          {
+            "type": "string",
+            "description": "Name Starts With",
+            "name": "nameStartsWith",
+            "in": "query"
+          }
+        ],
+        "tags": [
+          "facilities"
+        ],
+        "security": [
+          {
+            "jwt": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "schema": {
+              "$ref": "#/definitions/Model5"
+            },
+            "description": "The facilities"
+          },
+          "400": {
+            "description": "Bad request",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "404": {
+            "description": "The facility does not exist",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "500": {
+            "description": "Internal error",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "create a facility",
+        "operationId": "postFacilities",
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/FacilityInput"
+            }
+          }
+        ],
+        "tags": [
+          "facilities"
+        ],
+        "security": [
+          {
+            "jwt": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "schema": {
+              "$ref": "#/definitions/FacilityWithLoc"
+            },
+            "description": "The facility"
+          },
+          "400": {
+            "description": "Bad request",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "500": {
+            "description": "Internal error",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          }
+        }
+      }
+    },
+    "/locations": {
+      "get": {
+        "summary": "filter locations",
+        "operationId": "getLocations",
+        "parameters": [
+          {
+            "type": "string",
+            "description": "locationType",
+            "name": "locationType",
+            "in": "query"
+          }
+        ],
+        "tags": [
+          "locations"
+        ],
+        "security": [
+          {
+            "jwt": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "schema": {
+              "$ref": "#/definitions/Model6"
+            },
+            "description": "The locations"
+          },
+          "400": {
+            "description": "Bad request",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "404": {
+            "description": "The location does not exist",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "500": {
+            "description": "Internal error",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "create location",
+        "operationId": "postLocations",
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/LocationInput"
+            }
+          }
+        ],
+        "tags": [
+          "locations"
+        ],
+        "security": [
+          {
+            "jwt": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The location",
+            "schema": {
+              "$ref": "#/definitions/Location"
+            }
+          },
+          "400": {
+            "description": "Bad request",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "404": {
+            "description": "The location does not exist",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "500": {
+            "description": "Internal error",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          }
+        }
+      }
+    },
+    "/ports": {
+      "get": {
+        "summary": "filter ports",
+        "operationId": "getPorts",
+        "parameters": [
+          {
+            "type": "string",
+            "description": "Port name",
+            "name": "name",
+            "in": "query"
+          },
+          {
+            "type": "string",
+            "description": "countryId",
+            "name": "countryId",
+            "in": "query"
+          },
+          {
+            "type": "string",
+            "description": "countryCode",
+            "name": "countryCode",
+            "in": "query"
+          },
+          {
+            "type": "string",
+            "description": "cityId",
+            "name": "cityId",
+            "in": "query"
+          },
+          {
+            "type": "string",
+            "description": "portId",
+            "name": "portId",
+            "in": "query"
+          },
+          {
+            "type": "string",
+            "description": "locode",
+            "name": "locode",
+            "in": "query"
+          }
+        ],
+        "tags": [
+          "ports"
+        ],
+        "security": [
+          {
+            "jwt": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "schema": {
+              "$ref": "#/definitions/Model7"
+            },
+            "description": "The locations"
+          },
+          "400": {
+            "description": "Bad request",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "404": {
+            "description": "The city does not exist",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "500": {
+            "description": "Internal error",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          }
+        }
+      }
+    },
+    "/depots/in-radius": {
+      "get": {
+        "summary": "filter depots by radius",
+        "operationId": "getDepotsInradius",
+        "parameters": [
+          {
+            "type": "number",
+            "description": "lat",
+            "name": "lat",
+            "in": "query",
+            "required": true
+          },
+          {
+            "type": "number",
+            "description": "lon",
+            "name": "lon",
+            "in": "query",
+            "required": true
+          },
+          {
+            "type": "number",
+            "description": "radius",
+            "name": "radius",
+            "in": "query",
+            "required": true
+          }
+        ],
+        "tags": [
+          "depots"
+        ],
+        "security": [
+          {
+            "jwt": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "schema": {
+              "$ref": "#/definitions/Model8"
+            },
+            "description": "The depots"
+          },
+          "400": {
+            "description": "Bad request",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "404": {
+            "description": "The depot does not exist",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "500": {
+            "description": "Internal error",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          }
+        }
+      }
+    },
+    "/depots/{depotId}": {
+      "get": {
+        "summary": "filter Depots",
+        "operationId": "getDepotsDepotid",
+        "parameters": [
+          {
+            "type": "string",
+            "description": "depot Id",
+            "name": "depotId",
+            "in": "path",
+            "required": true
+          }
+        ],
+        "tags": [
+          "depots"
+        ],
+        "security": [
+          {
+            "jwt": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "schema": {
+              "$ref": "#/definitions/DepotWithLoc"
+            },
+            "description": "The depots"
+          },
+          "400": {
+            "description": "Bad request",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "404": {
+            "description": "The depot does not exist",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "500": {
+            "description": "Internal error",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          }
+        }
+      }
+    },
+    "/facilities/in-radius": {
+      "get": {
+        "summary": "filter facilities by radius",
+        "operationId": "getFacilitiesInradius",
+        "parameters": [
+          {
+            "type": "number",
+            "description": "lat",
+            "name": "lat",
+            "in": "query",
+            "required": true
+          },
+          {
+            "type": "number",
+            "description": "lon",
+            "name": "lon",
+            "in": "query",
+            "required": true
+          },
+          {
+            "type": "number",
+            "description": "radius",
+            "name": "radius",
+            "in": "query",
+            "required": true
+          }
+        ],
+        "tags": [
+          "facilities"
+        ],
+        "security": [
+          {
+            "jwt": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "schema": {
+              "$ref": "#/definitions/Model9"
+            },
+            "description": "The facilities"
+          },
+          "400": {
+            "description": "Bad request",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "404": {
+            "description": "The facility does not exist",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "500": {
+            "description": "Internal error",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          }
+        }
+      }
+    },
+    "/facilities/{facilityId}": {
+      "get": {
+        "summary": "filter Facilitys",
+        "operationId": "getFacilitiesFacilityid",
+        "parameters": [
+          {
+            "type": "string",
+            "description": "facility Id",
+            "name": "facilityId",
+            "in": "path",
+            "required": true
+          }
+        ],
+        "tags": [
+          "facilities"
+        ],
+        "security": [
+          {
+            "jwt": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "schema": {
+              "$ref": "#/definitions/FacilityWithLoc"
+            },
+            "description": "The facilities"
+          },
+          "400": {
+            "description": "Bad request",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "404": {
+            "description": "The facility does not exist",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "500": {
+            "description": "Internal error",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          }
+        }
+      },
+      "patch": {
+        "summary": "patch facility",
+        "operationId": "patchFacilitiesFacilityid",
+        "parameters": [
+          {
+            "type": "string",
+            "description": "facility Id",
+            "name": "facilityId",
+            "in": "path",
+            "required": true
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/PatchFacilityInput"
+            }
+          }
+        ],
+        "tags": [
+          "facilities"
+        ],
+        "security": [
+          {
+            "jwt": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "schema": {
+              "$ref": "#/definitions/FacilityWithLoc"
+            },
+            "description": "The facility"
+          },
+          "400": {
+            "description": "Bad request",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "404": {
+            "description": "The facility does not exist",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "500": {
+            "description": "Internal error",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          }
+        }
+      },
+      "delete": {
+        "summary": "archive facility",
+        "operationId": "deleteFacilitiesFacilityid",
+        "parameters": [
+          {
+            "type": "string",
+            "description": "facility Id",
+            "name": "facilityId",
+            "in": "path",
+            "required": true
+          }
+        ],
+        "tags": [
+          "facilities"
+        ],
+        "security": [
+          {
+            "jwt": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "schema": {
+              "$ref": "#/definitions/Model12"
+            },
+            "description": "The archival status"
+          },
+          "400": {
+            "description": "Bad request",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "404": {
+            "description": "The facility does not exist",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "500": {
+            "description": "Internal error",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          }
+        }
+      }
+    },
+    "/locations/in-radius": {
+      "get": {
+        "summary": "filter locations by radius in meters",
+        "operationId": "getLocationsInradius",
+        "parameters": [
+          {
+            "type": "number",
+            "description": "lat",
+            "name": "lat",
+            "in": "query",
+            "required": true
+          },
+          {
+            "type": "number",
+            "description": "lon",
+            "name": "lon",
+            "in": "query",
+            "required": true
+          },
+          {
+            "type": "number",
+            "description": "radius",
+            "name": "radius",
+            "in": "query",
+            "required": true
+          }
+        ],
+        "tags": [
+          "locations"
+        ],
+        "security": [
+          {
+            "jwt": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "schema": {
+              "$ref": "#/definitions/Model6"
+            },
+            "description": "The locations"
+          },
+          "400": {
+            "description": "Bad request",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "404": {
+            "description": "The location does not exist",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "500": {
+            "description": "Internal error",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          }
+        }
+      }
+    },
+    "/ports/locode": {
+      "get": {
+        "summary": "Identify a port LOCODE from its name and other characteristics",
+        "operationId": "getPortsLocode",
+        "parameters": [
+          {
+            "type": "string",
+            "description": "Port name",
+            "name": "name",
+            "in": "query",
+            "required": true
+          },
+          {
+            "type": "string",
+            "description": "Port country code (2 letters ISO code)",
+            "name": "countryCode",
+            "in": "query"
+          }
+        ],
+        "tags": [
+          "ports"
+        ],
+        "security": [
+          {
+            "jwt": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "schema": {
+              "$ref": "#/definitions/Model10"
+            },
+            "description": "The port LOCODE"
+          },
+          "400": {
+            "description": "Bad request",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "404": {
+            "description": "The alert does not exist",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          },
+          "500": {
+            "description": "Internal error",
+            "schema": {
+              "$ref": "#/definitions/Failure"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "Address": {
+      "type": "object",
+      "description": "Address",
+      "properties": {
+        "addressId": {
+          "type": "string",
+          "description": "Address id",
+          "x-format": {
+            "guid": true
+          }
+        },
+        "cityId": {
+          "type": "string",
+          "description": "City Id",
+          "x-format": {
+            "guid": true
+          }
+        },
+        "countryId": {
+          "type": "string",
+          "description": "Country Id",
+          "x-format": {
+            "guid": true
+          }
+        },
+        "region": {
+          "type": "string",
+          "description": "all possible region names",
+          "enum": [
+            "Europe",
+            "Asia",
+            "South America",
+            "North America",
+            "Australasia",
+            "Antarctica"
+          ]
+        },
+        "name": {
+          "type": "string",
+          "description": "Location name"
+        },
+        "street": {
+          "type": "string",
+          "description": "Street"
+        },
+        "streetNumber": {
+          "type": "string",
+          "description": "Street number"
+        },
+        "floor": {
+          "type": "string",
+          "description": "Floor"
+        },
+        "postCode": {
+          "type": "string",
+          "description": "Post code"
+        },
+        "state": {
+          "type": "string",
+          "description": "State, region or county"
+        },
+        "zipCode": {
+          "type": "string",
+          "description": "ZIP code"
+        }
+      },
+      "required": [
+        "addressId",
+        "cityId",
+        "countryId",
+        "region"
+      ]
+    },
+    "Model1": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/Address"
+      }
+    },
+    "errors": {
+      "type": "array",
+      "description": "Error messages",
+      "items": {
+        "type": "string"
+      }
+    },
+    "Failure": {
+      "type": "object",
+      "description": "An error due to a wrong request or an internal error when processing the request",
+      "properties": {
+        "errors": {
+          "$ref": "#/definitions/errors"
+        }
+      },
+      "required": [
+        "errors"
+      ]
+    },
+    "coordinates": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "centerPoint": {
+      "type": "object",
+      "description": "center point",
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "Point"
+          ]
+        },
+        "coordinates": {
+          "$ref": "#/definitions/coordinates"
+        }
+      },
+      "required": [
+        "type"
+      ]
+    },
+    "City": {
+      "type": "object",
+      "description": "City",
+      "properties": {
+        "cityId": {
+          "type": "string",
+          "description": "city id",
+          "x-format": {
+            "guid": true
+          }
+        },
+        "name": {
+          "type": "string",
+          "description": "name"
+        },
+        "countryId": {
+          "type": "string",
+          "description": "location_country_code",
+          "x-format": {
+            "guid": true
+          }
+        },
+        "location_region_code": {
+          "type": "string",
+          "description": "location_region_code"
+        },
+        "centerPoint": {
+          "$ref": "#/definitions/centerPoint"
+        },
+        "identifiers_iso3": {
+          "type": "string",
+          "description": "identifiers_iso3"
+        },
+        "identifiers_iso5": {
+          "type": "string",
+          "description": "identifiers_iso5 un locode"
+        },
+        "identifiers_iata": {
+          "type": "string",
+          "description": "identifiers_iata"
+        },
+        "names_en": {
+          "type": "string",
+          "description": "names_en"
+        }
+      },
+      "required": [
+        "cityId",
+        "name"
+      ]
+    },
+    "Model2": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/City"
+      }
+    },
+    "Country": {
+      "type": "object",
+      "description": "CountryOptional",
+      "properties": {
+        "countryId": {
+          "type": "string",
+          "description": "country id",
+          "x-format": {
+            "guid": true
+          }
+        },
+        "name": {
+          "type": "string",
+          "description": "name"
+        },
+        "code": {
+          "type": "string",
+          "description": "all possible iso 2 letter country codes",
+          "enum": [
+            "AD",
+            "AE",
+            "AF",
+            "AG",
+            "AI",
+            "AL",
+            "AM",
+            "AO",
+            "AQ",
+            "AR",
+            "AS",
+            "AT",
+            "AU",
+            "AW",
+            "AX",
+            "AZ",
+            "BA",
+            "BB",
+            "BD",
+            "BE",
+            "BF",
+            "BG",
+            "BH",
+            "BI",
+            "BJ",
+            "BL",
+            "BM",
+            "BN",
+            "BO",
+            "BQ",
+            "BR",
+            "BS",
+            "BT",
+            "BV",
+            "BW",
+            "BY",
+            "BZ",
+            "CA",
+            "CC",
+            "CD",
+            "CF",
+            "CG",
+            "CH",
+            "CI",
+            "CK",
+            "CL",
+            "CM",
+            "CN",
+            "CO",
+            "CR",
+            "CU",
+            "CV",
+            "CW",
+            "CX",
+            "CY",
+            "CZ",
+            "DE",
+            "DJ",
+            "DK",
+            "DM",
+            "DO",
+            "DZ",
+            "EC",
+            "EE",
+            "EG",
+            "EH",
+            "ER",
+            "ES",
+            "ET",
+            "FI",
+            "FJ",
+            "FK",
+            "FM",
+            "FO",
+            "FR",
+            "GA",
+            "GB",
+            "GD",
+            "GE",
+            "GF",
+            "GG",
+            "GH",
+            "GI",
+            "GL",
+            "GM",
+            "GN",
+            "GP",
+            "GQ",
+            "GR",
+            "GS",
+            "GT",
+            "GU",
+            "GW",
+            "GY",
+            "HK",
+            "HM",
+            "HN",
+            "HR",
+            "HT",
+            "HU",
+            "ID",
+            "IE",
+            "IL",
+            "IM",
+            "IN",
+            "IO",
+            "IQ",
+            "IR",
+            "IS",
+            "IT",
+            "JE",
+            "JM",
+            "JO",
+            "JP",
+            "KE",
+            "KG",
+            "KH",
+            "KI",
+            "KM",
+            "KN",
+            "KP",
+            "KR",
+            "KW",
+            "KY",
+            "KZ",
+            "LA",
+            "LB",
+            "LC",
+            "LI",
+            "LK",
+            "LR",
+            "LS",
+            "LT",
+            "LU",
+            "LV",
+            "LY",
+            "MA",
+            "MC",
+            "MD",
+            "ME",
+            "MF",
+            "MG",
+            "MH",
+            "MK",
+            "ML",
+            "MM",
+            "MN",
+            "MO",
+            "MP",
+            "MQ",
+            "MR",
+            "MS",
+            "MT",
+            "MU",
+            "MV",
+            "MW",
+            "MX",
+            "MY",
+            "MZ",
+            "NA",
+            "NC",
+            "NE",
+            "NF",
+            "NG",
+            "NI",
+            "NL",
+            "NO",
+            "NP",
+            "NR",
+            "NU",
+            "NZ",
+            "OM",
+            "PA",
+            "PE",
+            "PF",
+            "PG",
+            "PH",
+            "PK",
+            "PL",
+            "PM",
+            "PN",
+            "PR",
+            "PS",
+            "PT",
+            "PW",
+            "PY",
+            "QA",
+            "RE",
+            "RO",
+            "RS",
+            "RU",
+            "RW",
+            "SA",
+            "SB",
+            "SC",
+            "SD",
+            "SE",
+            "SG",
+            "SH",
+            "SI",
+            "SJ",
+            "SK",
+            "SL",
+            "SM",
+            "SN",
+            "SO",
+            "SR",
+            "SS",
+            "ST",
+            "SV",
+            "SX",
+            "SY",
+            "SZ",
+            "TC",
+            "TD",
+            "TF",
+            "TG",
+            "TH",
+            "TJ",
+            "TK",
+            "TL",
+            "TM",
+            "TN",
+            "TO",
+            "TR",
+            "TT",
+            "TV",
+            "TW",
+            "TZ",
+            "UA",
+            "UG",
+            "UM",
+            "US",
+            "UY",
+            "UZ",
+            "VA",
+            "VC",
+            "VE",
+            "VG",
+            "VI",
+            "VN",
+            "VU",
+            "WF",
+            "WS",
+            "XK",
+            "YE",
+            "YT",
+            "ZA",
+            "ZM",
+            "ZW"
+          ]
+        },
+        "boundaries_north": {
+          "type": "number",
+          "description": "boundaries_north"
+        },
+        "boundaries_east": {
+          "type": "number",
+          "description": "boundaries_east"
+        },
+        "boundaries_south": {
+          "type": "number",
+          "description": "boundaries_south"
+        },
+        "boundaries_west": {
+          "type": "number",
+          "description": "boundaries_west"
+        },
+        "identifiers_iso_alpha2": {
+          "type": "string",
+          "description": "identifiers_iso_alpha2"
+        },
+        "identifiers_iso_alpha3": {
+          "type": "string",
+          "description": "identifiers_iso_alpha3"
+        },
+        "identifiers_iso_numeric": {
+          "type": "number",
+          "description": "identifiers_iso_numeric"
+        },
+        "identifiers_fips_alpha": {
+          "type": "string",
+          "description": "identifiers_fips_alpha"
+        },
+        "identifiers_geonames_id": {
+          "type": "number",
+          "description": "identifiers_geonames_id"
+        },
+        "economy_capital": {
+          "type": "string",
+          "description": "economy_capital"
+        },
+        "economy_languages": {
+          "type": "string",
+          "description": "economy_languages"
+        },
+        "economy_population": {
+          "type": "number",
+          "description": "economy_population"
+        },
+        "economy_area": {
+          "type": "number",
+          "description": "economy_area"
+        },
+        "economy_currencycode": {
+          "type": "string",
+          "description": "economy_currencyCode"
+        },
+        "location_continent_name": {
+          "type": "string",
+          "description": "location_continent_name"
+        },
+        "location_continent_code": {
+          "type": "string",
+          "description": "location_continent_code"
+        },
+        "centerPoint": {
+          "$ref": "#/definitions/centerPoint"
+        }
+      },
+      "required": [
+        "countryId",
+        "name",
+        "code"
+      ]
+    },
+    "Model3": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/Country"
+      }
+    },
+    "partnershipTypes": {
+      "type": "array",
+      "description": "partnership types",
+      "items": {
+        "type": "string",
+        "description": "types of possible partnership for depots",
+        "enum": [
+          "Storage",
+          "MnR",
+          "Haulage"
+        ]
+      }
+    },
+    "DepotCountry": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "code": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "name",
+        "code"
+      ]
+    },
+    "DepotCity": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "identifiers_iso5": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "name"
+      ]
+    },
+    "DepotAddress": {
+      "type": "object",
+      "properties": {
+        "region": {
+          "type": "string"
+        },
+        "country": {
+          "$ref": "#/definitions/DepotCountry"
+        },
+        "city": {
+          "$ref": "#/definitions/DepotCity"
+        },
+        "name": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "region",
+        "country",
+        "city"
+      ]
+    },
+    "DepotWithLoc": {
+      "type": "object",
+      "properties": {
+        "depotId": {
+          "type": "string",
+          "description": "CC-CCC-DDDD-NNN",
+          "x-format": {
+            "guid": true
+          }
+        },
+        "name": {
+          "type": "string",
+          "description": "Depot name"
+        },
+        "addressId": {
+          "type": "string",
+          "description": "address Id",
+          "x-format": {
+            "guid": true
+          }
+        },
+        "partnershipTypes": {
+          "$ref": "#/definitions/partnershipTypes"
+        },
+        "latestStatusId": {
+          "type": "string",
+          "description": "latest status"
+        },
+        "identifiers_bicId": {
+          "type": "string",
+          "description": "identifiers_bicId"
+        },
+        "identifiers_smdgId": {
+          "type": "string",
+          "description": "identifiers_smdgId"
+        },
+        "identifiers_imoId": {
+          "type": "string",
+          "description": "identifiers_imoId"
+        },
+        "operatorName": {
+          "type": "string",
+          "description": "Operator Name"
+        },
+        "operatorID": {
+          "type": "string",
+          "description": "Operator ID"
+        },
+        "charateristics_area": {
+          "type": "number",
+          "description": "area in squared meters"
+        },
+        "locationId": {
+          "type": "string",
+          "description": "location Id",
+          "x-format": {
+            "guid": true
+          }
+        },
+        "address": {
+          "$ref": "#/definitions/DepotAddress"
+        }
+      },
+      "required": [
+        "depotId",
+        "name",
+        "addressId",
+        "partnershipTypes"
+      ]
+    },
+    "Model4": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/DepotWithLoc"
+      }
+    },
+    "FacilityWithLoc": {
+      "type": "object",
+      "properties": {
+        "facilityId": {
+          "type": "string",
+          "description": "CC-CCC-DDDD-NNN",
+          "x-format": {
+            "guid": true
+          }
+        },
+        "name": {
+          "type": "string",
+          "description": "Facility name"
+        },
+        "code": {
+          "type": "string",
+          "description": "Facility code"
+        },
+        "type": {
+          "type": "string",
+          "description": "types of facilities",
+          "enum": [
+            "BOCR",
+            "CULO",
+            "COFS",
+            "COYA",
+            "DEPO",
+            "INTE",
+            "POTE",
+            "PBST"
+          ]
+        },
+        "addressId": {
+          "type": "string",
+          "description": "address Id",
+          "x-format": {
+            "guid": true
+          }
+        },
+        "latestStatusId": {
+          "type": "string",
+          "description": "latest status"
+        },
+        "identifiers_bicId": {
+          "type": "string",
+          "description": "identifiers_bicId"
+        },
+        "identifiers_smdgId": {
+          "type": "string",
+          "description": "identifiers_smdgId"
+        },
+        "identifiers_imoId": {
+          "type": "string",
+          "description": "identifiers_imoId"
+        },
+        "operatorName": {
+          "type": "string",
+          "description": "Operator Name"
+        },
+        "operatorID": {
+          "type": "string",
+          "description": "Operator ID"
+        },
+        "charateristics_area": {
+          "type": "number",
+          "description": "area in squared meters"
+        },
+        "locationId": {
+          "type": "string",
+          "description": "location Id",
+          "x-format": {
+            "guid": true
+          }
+        },
+        "partnershipTypes": {
+          "$ref": "#/definitions/partnershipTypes"
+        },
+        "address": {
+          "$ref": "#/definitions/DepotAddress"
+        }
+      },
+      "required": [
+        "facilityId",
+        "name",
+        "code",
+        "type",
+        "addressId"
+      ]
+    },
+    "Model5": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/FacilityWithLoc"
+      }
+    },
+    "point": {
+      "type": "object",
+      "description": "lon lat geopoint",
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "Point"
+          ]
+        },
+        "coordinates": {
+          "$ref": "#/definitions/coordinates"
+        }
+      },
+      "required": [
+        "type"
+      ]
+    },
+    "Location": {
+      "type": "object",
+      "description": "Location",
+      "properties": {
+        "locationId": {
+          "type": "string",
+          "description": "location id",
+          "x-format": {
+            "guid": true
+          }
+        },
+        "point": {
+          "$ref": "#/definitions/point"
+        },
+        "locationType": {
+          "type": "string",
+          "description": "what does the location represent"
+        }
+      },
+      "required": [
+        "locationId",
+        "point"
+      ]
+    },
+    "Model6": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/Location"
+      }
+    },
+    "location": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "Point"
+          ]
+        },
+        "coordinates": {
+          "$ref": "#/definitions/coordinates"
+        }
+      },
+      "required": [
+        "type"
+      ]
+    },
+    "PublicPort": {
+      "type": "object",
+      "properties": {
+        "portId": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "location": {
+          "$ref": "#/definitions/location"
+        },
+        "locode": {
+          "type": "string"
+        },
+        "cityId": {
+          "type": "string"
+        },
+        "countryId": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "portId",
+        "name"
+      ]
+    },
+    "Model7": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/PublicPort"
+      }
+    },
+    "Depot": {
+      "type": "object",
+      "description": "Depot",
+      "properties": {
+        "depotId": {
+          "type": "string",
+          "description": "CC-CCC-DDDD-NNN",
+          "x-format": {
+            "guid": true
+          }
+        },
+        "name": {
+          "type": "string",
+          "description": "Depot name"
+        },
+        "addressId": {
+          "type": "string",
+          "description": "address Id",
+          "x-format": {
+            "guid": true
+          }
+        },
+        "partnershipTypes": {
+          "$ref": "#/definitions/partnershipTypes"
+        },
+        "latestStatusId": {
+          "type": "string",
+          "description": "latest status"
+        },
+        "identifiers_bicId": {
+          "type": "string",
+          "description": "identifiers_bicId"
+        },
+        "identifiers_smdgId": {
+          "type": "string",
+          "description": "identifiers_smdgId"
+        },
+        "identifiers_imoId": {
+          "type": "string",
+          "description": "identifiers_imoId"
+        },
+        "operatorName": {
+          "type": "string",
+          "description": "Operator Name"
+        },
+        "operatorID": {
+          "type": "string",
+          "description": "Operator ID"
+        },
+        "charateristics_area": {
+          "type": "number",
+          "description": "area in squared meters"
+        },
+        "locationId": {
+          "type": "string",
+          "description": "location Id",
+          "x-format": {
+            "guid": true
+          }
+        }
+      },
+      "required": [
+        "depotId",
+        "name",
+        "addressId",
+        "partnershipTypes"
+      ]
+    },
+    "Model8": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/Depot"
+      }
+    },
+    "Facility": {
+      "type": "object",
+      "description": "Facility",
+      "properties": {
+        "facilityId": {
+          "type": "string",
+          "description": "CC-CCC-DDDD-NNN",
+          "x-format": {
+            "guid": true
+          }
+        },
+        "name": {
+          "type": "string",
+          "description": "Facility name"
+        },
+        "code": {
+          "type": "string",
+          "description": "Facility code"
+        },
+        "type": {
+          "type": "string",
+          "description": "types of facilities",
+          "enum": [
+            "BOCR",
+            "CULO",
+            "COFS",
+            "COYA",
+            "DEPO",
+            "INTE",
+            "POTE",
+            "PBST"
+          ]
+        },
+        "addressId": {
+          "type": "string",
+          "description": "address Id",
+          "x-format": {
+            "guid": true
+          }
+        },
+        "latestStatusId": {
+          "type": "string",
+          "description": "latest status"
+        },
+        "identifiers_bicId": {
+          "type": "string",
+          "description": "identifiers_bicId"
+        },
+        "identifiers_smdgId": {
+          "type": "string",
+          "description": "identifiers_smdgId"
+        },
+        "identifiers_imoId": {
+          "type": "string",
+          "description": "identifiers_imoId"
+        },
+        "operatorName": {
+          "type": "string",
+          "description": "Operator Name"
+        },
+        "operatorID": {
+          "type": "string",
+          "description": "Operator ID"
+        },
+        "charateristics_area": {
+          "type": "number",
+          "description": "area in squared meters"
+        },
+        "locationId": {
+          "type": "string",
+          "description": "location Id",
+          "x-format": {
+            "guid": true
+          }
+        },
+        "partnershipTypes": {
+          "$ref": "#/definitions/partnershipTypes"
+        }
+      },
+      "required": [
+        "facilityId",
+        "name",
+        "code",
+        "type",
+        "addressId"
+      ]
+    },
+    "Model9": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/Facility"
+      }
+    },
+    "Model10": {
+      "type": "object",
+      "properties": {
+        "locode": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "locode"
+      ]
+    },
+    "AddressInputOptional": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Location name"
+        },
+        "street": {
+          "type": "string",
+          "description": "Street"
+        },
+        "streetNumber": {
+          "type": "string",
+          "description": "Street number"
+        },
+        "floor": {
+          "type": "string",
+          "description": "Floor"
+        },
+        "postCode": {
+          "type": "string",
+          "description": "Post code"
+        },
+        "stateRegion": {
+          "type": "string",
+          "description": "State, region or county"
+        },
+        "zipCode": {
+          "type": "string",
+          "description": "ZIP code"
+        }
+      }
+    },
+    "AddressInput": {
+      "type": "object",
+      "properties": {
+        "cityId": {
+          "type": "string",
+          "description": "City Id"
+        },
+        "countryId": {
+          "type": "string",
+          "description": "Country Id"
+        },
+        "region": {
+          "type": "string",
+          "description": "all possible region names",
+          "enum": [
+            "Europe",
+            "Asia",
+            "South America",
+            "North America",
+            "Australasia",
+            "Antarctica"
+          ]
+        },
+        "optional": {
+          "$ref": "#/definitions/AddressInputOptional"
+        }
+      },
+      "required": [
+        "cityId",
+        "countryId",
+        "region"
+      ]
+    },
+    "CityInput": {
+      "type": "object",
+      "properties": {
+        "countryId": {
+          "type": "string",
+          "description": "location_country_code"
+        },
+        "location_region_code": {
+          "type": "string",
+          "description": "location_region_code"
+        },
+        "location_geometry_type": {
+          "type": "string",
+          "description": "location_geometry_type"
+        },
+        "location_geometry_coordinates": {
+          "type": "string",
+          "description": "location_geometry_coordinates"
+        },
+        "identifiers_iso3": {
+          "type": "string",
+          "description": "identifiers_iso3"
+        },
+        "identifiers_iso5": {
+          "type": "string",
+          "description": "identifiers_iso5"
+        },
+        "identifiers_iata": {
+          "type": "string",
+          "description": "identifiers_iata"
+        },
+        "names_en": {
+          "type": "string",
+          "description": "names_en"
+        }
+      }
+    },
+    "Model11": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "name"
+        },
+        "optional": {
+          "$ref": "#/definitions/CityInput"
+        }
+      },
+      "required": [
+        "name"
+      ]
+    },
+    "CountryInputOptional": {
+      "type": "object",
+      "description": "CountryInputOptional",
+      "properties": {
+        "boundaries_north": {
+          "type": "number",
+          "description": "boundaries_north"
+        },
+        "boundaries_east": {
+          "type": "number",
+          "description": "boundaries_east"
+        },
+        "boundaries_south": {
+          "type": "number",
+          "description": "boundaries_south"
+        },
+        "boundaries_west": {
+          "type": "number",
+          "description": "boundaries_west"
+        },
+        "identifiers_iso_alpha2": {
+          "type": "string",
+          "description": "identifiers_iso_alpha2"
+        },
+        "identifiers_iso_alpha3": {
+          "type": "string",
+          "description": "identifiers_iso_alpha3"
+        },
+        "identifiers_iso_numeric": {
+          "type": "number",
+          "description": "identifiers_iso_numeric"
+        },
+        "identifiers_fips_alpha": {
+          "type": "string",
+          "description": "identifiers_fips_alpha"
+        },
+        "identifiers_geonames_id": {
+          "type": "number",
+          "description": "identifiers_geonames_id"
+        },
+        "economy_capital": {
+          "type": "string",
+          "description": "economy_capital"
+        },
+        "economy_languages": {
+          "type": "string",
+          "description": "economy_languages"
+        },
+        "economy_population": {
+          "type": "number",
+          "description": "economy_population"
+        },
+        "economy_area": {
+          "type": "number",
+          "description": "economy_area"
+        },
+        "economy_currencycode": {
+          "type": "string",
+          "description": "economy_currencyCode"
+        },
+        "location_continent_name": {
+          "type": "string",
+          "description": "location_continent_name"
+        },
+        "location_continent_code": {
+          "type": "string",
+          "description": "location_continent_code"
+        }
+      }
+    },
+    "CountryInput": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "name"
+        },
+        "code": {
+          "type": "string",
+          "description": "all possible iso 2 letter country codes",
+          "enum": [
+            "AD",
+            "AE",
+            "AF",
+            "AG",
+            "AI",
+            "AL",
+            "AM",
+            "AO",
+            "AQ",
+            "AR",
+            "AS",
+            "AT",
+            "AU",
+            "AW",
+            "AX",
+            "AZ",
+            "BA",
+            "BB",
+            "BD",
+            "BE",
+            "BF",
+            "BG",
+            "BH",
+            "BI",
+            "BJ",
+            "BL",
+            "BM",
+            "BN",
+            "BO",
+            "BQ",
+            "BR",
+            "BS",
+            "BT",
+            "BV",
+            "BW",
+            "BY",
+            "BZ",
+            "CA",
+            "CC",
+            "CD",
+            "CF",
+            "CG",
+            "CH",
+            "CI",
+            "CK",
+            "CL",
+            "CM",
+            "CN",
+            "CO",
+            "CR",
+            "CU",
+            "CV",
+            "CW",
+            "CX",
+            "CY",
+            "CZ",
+            "DE",
+            "DJ",
+            "DK",
+            "DM",
+            "DO",
+            "DZ",
+            "EC",
+            "EE",
+            "EG",
+            "EH",
+            "ER",
+            "ES",
+            "ET",
+            "FI",
+            "FJ",
+            "FK",
+            "FM",
+            "FO",
+            "FR",
+            "GA",
+            "GB",
+            "GD",
+            "GE",
+            "GF",
+            "GG",
+            "GH",
+            "GI",
+            "GL",
+            "GM",
+            "GN",
+            "GP",
+            "GQ",
+            "GR",
+            "GS",
+            "GT",
+            "GU",
+            "GW",
+            "GY",
+            "HK",
+            "HM",
+            "HN",
+            "HR",
+            "HT",
+            "HU",
+            "ID",
+            "IE",
+            "IL",
+            "IM",
+            "IN",
+            "IO",
+            "IQ",
+            "IR",
+            "IS",
+            "IT",
+            "JE",
+            "JM",
+            "JO",
+            "JP",
+            "KE",
+            "KG",
+            "KH",
+            "KI",
+            "KM",
+            "KN",
+            "KP",
+            "KR",
+            "KW",
+            "KY",
+            "KZ",
+            "LA",
+            "LB",
+            "LC",
+            "LI",
+            "LK",
+            "LR",
+            "LS",
+            "LT",
+            "LU",
+            "LV",
+            "LY",
+            "MA",
+            "MC",
+            "MD",
+            "ME",
+            "MF",
+            "MG",
+            "MH",
+            "MK",
+            "ML",
+            "MM",
+            "MN",
+            "MO",
+            "MP",
+            "MQ",
+            "MR",
+            "MS",
+            "MT",
+            "MU",
+            "MV",
+            "MW",
+            "MX",
+            "MY",
+            "MZ",
+            "NA",
+            "NC",
+            "NE",
+            "NF",
+            "NG",
+            "NI",
+            "NL",
+            "NO",
+            "NP",
+            "NR",
+            "NU",
+            "NZ",
+            "OM",
+            "PA",
+            "PE",
+            "PF",
+            "PG",
+            "PH",
+            "PK",
+            "PL",
+            "PM",
+            "PN",
+            "PR",
+            "PS",
+            "PT",
+            "PW",
+            "PY",
+            "QA",
+            "RE",
+            "RO",
+            "RS",
+            "RU",
+            "RW",
+            "SA",
+            "SB",
+            "SC",
+            "SD",
+            "SE",
+            "SG",
+            "SH",
+            "SI",
+            "SJ",
+            "SK",
+            "SL",
+            "SM",
+            "SN",
+            "SO",
+            "SR",
+            "SS",
+            "ST",
+            "SV",
+            "SX",
+            "SY",
+            "SZ",
+            "TC",
+            "TD",
+            "TF",
+            "TG",
+            "TH",
+            "TJ",
+            "TK",
+            "TL",
+            "TM",
+            "TN",
+            "TO",
+            "TR",
+            "TT",
+            "TV",
+            "TW",
+            "TZ",
+            "UA",
+            "UG",
+            "UM",
+            "US",
+            "UY",
+            "UZ",
+            "VA",
+            "VC",
+            "VE",
+            "VG",
+            "VI",
+            "VN",
+            "VU",
+            "WF",
+            "WS",
+            "XK",
+            "YE",
+            "YT",
+            "ZA",
+            "ZM",
+            "ZW"
+          ]
+        },
+        "optional": {
+          "$ref": "#/definitions/CountryInputOptional"
+        }
+      },
+      "required": [
+        "name",
+        "code"
+      ]
+    },
+    "DepotInputOptional": {
+      "type": "object",
+      "description": "DepotInputOptional",
+      "properties": {
+        "locationId": {
+          "type": "string",
+          "description": "location Id"
+        }
+      }
+    },
+    "DepotInput": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Depot name"
+        },
+        "addressId": {
+          "type": "string",
+          "description": "address id"
+        },
+        "partnershipTypes": {
+          "$ref": "#/definitions/partnershipTypes"
+        },
+        "optional": {
+          "$ref": "#/definitions/DepotInputOptional"
+        }
+      },
+      "required": [
+        "name",
+        "addressId",
+        "partnershipTypes"
+      ]
+    },
+    "FacilityInputOptional": {
+      "type": "object",
+      "description": "FacilityInputOptional",
+      "properties": {
+        "locationId": {
+          "type": "string",
+          "description": "location Id"
+        },
+        "operatorName": {
+          "type": "string",
+          "description": "name of operating company"
+        }
+      }
+    },
+    "FacilityInput": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Facility name"
+        },
+        "code": {
+          "type": "string",
+          "description": "4 letter code for company/name"
+        },
+        "addressId": {
+          "type": "string",
+          "description": "address id"
+        },
+        "partnershipTypes": {
+          "$ref": "#/definitions/partnershipTypes"
+        },
+        "type": {
+          "type": "string",
+          "description": "types of facilities",
+          "enum": [
+            "BOCR",
+            "CULO",
+            "COFS",
+            "COYA",
+            "DEPO",
+            "INTE",
+            "POTE",
+            "PBST"
+          ]
+        },
+        "optional": {
+          "$ref": "#/definitions/FacilityInputOptional"
+        }
+      },
+      "required": [
+        "name",
+        "code",
+        "addressId",
+        "partnershipTypes",
+        "type"
+      ]
+    },
+    "LocationInputOptional": {
+      "type": "object",
+      "properties": {
+        "locationType": {
+          "type": "string",
+          "description": "what does the location represent"
+        }
+      }
+    },
+    "LocationInput": {
+      "type": "object",
+      "properties": {
+        "lat": {
+          "type": "number",
+          "description": "Latitude in degrees",
+          "minimum": -90,
+          "maximum": 90
+        },
+        "lon": {
+          "type": "number",
+          "description": "Longitude in degrees",
+          "minimum": -180,
+          "maximum": 180
+        },
+        "optional": {
+          "$ref": "#/definitions/LocationInputOptional"
+        }
+      },
+      "required": [
+        "lat",
+        "lon"
+      ]
+    },
+    "PatchFacilityInput": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Facility name"
+        },
+        "code": {
+          "type": "string",
+          "description": "4 letter code for company/name"
+        },
+        "addressId": {
+          "type": "string",
+          "description": "address id"
+        },
+        "partnershipTypes": {
+          "$ref": "#/definitions/partnershipTypes"
+        },
+        "type": {
+          "type": "string",
+          "description": "types of facilities",
+          "enum": [
+            "BOCR",
+            "CULO",
+            "COFS",
+            "COYA",
+            "DEPO",
+            "INTE",
+            "POTE",
+            "PBST"
+          ]
+        },
+        "optional": {
+          "$ref": "#/definitions/FacilityInputOptional"
+        }
+      }
+    },
+    "Model12": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "the id"
+        }
+      },
+      "required": [
+        "id"
+      ]
+    }
+  },
+  "securityDefinitions": {
+    "jwt": {
+      "type": "apiKey",
+      "name": "Authorization",
+      "in": "header"
+    }
+  },
+  "security": [
+    {
+      "jwt": []
+    }
+  ]
+}

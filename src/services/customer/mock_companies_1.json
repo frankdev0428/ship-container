@@ -1,0 +1,74 @@
+[
+  {
+    "companyId": "a3ae729e-eafc-4bbd-a572-77ce657ad001",
+    "name": "Aeler1",
+    "code": "AE1",
+    "isArchived": false,
+    "createdBy": "customers-service",
+    "roles": [],
+    "subgroups": []
+  },
+  {
+    "companyId": "b353af6c-fc40-4429-be56-4c5a6669a0c8",
+    "name": "Chanel",
+    "code": "CHNL",
+    "isArchived": false,
+    "createdBy": "customers-service",
+    "roles": [],
+    "subgroups": []
+  },
+  {
+    "companyId": "96b815f5-243b-495c-8655-ba3df458e312",
+    "name": "bomb llc",
+    "code": "ASDF",
+    "isArchived": false,
+    "createdBy": "customers-service",
+    "roles": [],
+    "subgroups": []
+  },
+  {
+    "companyId": "dcc0dd7c-fa03-40d4-83b4-2561297b0ac7",
+    "name": "bombalicious II llc",
+    "code": "ASDF",
+    "isArchived": false,
+    "createdBy": "customers-service",
+    "roles": [],
+    "subgroups": []
+  },
+  {
+    "companyId": "1b4e0b2a-a38d-4ce7-b2d3-e6efd9026ea5",
+    "name": "bombalicious llc",
+    "code": "ASDF",
+    "isArchived": false,
+    "createdBy": "customers-service",
+    "roles": [],
+    "subgroups": []
+  },
+  {
+    "companyId": "63dfe8fb-f73a-43cc-b6f8-5624e3b2190e",
+    "name": "boom inc",
+    "code": "ASDF",
+    "isArchived": false,
+    "createdBy": "customers-service",
+    "roles": [],
+    "subgroups": []
+  },
+  {
+    "companyId": "b38e082e-75fe-4f73-bd16-72c07b5d1c69",
+    "name": "gouzebla",
+    "code": "GBL1",
+    "isArchived": false,
+    "createdBy": "customers-service",
+    "roles": [],
+    "subgroups": []
+  },
+  {
+    "companyId": "15d97f64-7757-42ed-9f04-28072ce311f6",
+    "name": "some_demo_company",
+    "code": "DEMO",
+    "isArchived": false,
+    "createdBy": "customers-service",
+    "roles": [],
+    "subgroups": []
+  }
+]

@@ -1,0 +1,16 @@
+.openapi-generator-ignore
+apis/BoardsApi.ts
+apis/index.ts
+index.ts
+models/Events.ts
+models/ExtendedBoard.ts
+models/Failure.ts
+models/Location.ts
+models/Model2.ts
+models/MostEventUpdatedAt.ts
+models/MostLocationUpdatedAt.ts
+models/MostSensorsUpdatedAt.ts
+models/Sensors.ts
+models/Values.ts
+models/index.ts
+runtime.ts

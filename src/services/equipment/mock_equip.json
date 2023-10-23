@@ -1,0 +1,723 @@
+[
+  {
+    "equipmentId": "7b64b9c6-7f2b-4504-8ff4-d566622b3d56",
+    "aelerContainerId": "MRKU0915650",
+    "currentStatus": {
+      "status": "ALLOCATED",
+      "validFromActual": null,
+      "validFromPlanned": "2022-06-01T00:00:00.000Z",
+      "validToActual": null,
+      "validToPlanned": "2022-08-31T00:00:00.000Z",
+      "isActive": true,
+      "equipmentLeaseContractId": "63f1222f-6836-4658-bba6-6bccb7a428e0",
+      "statusId": "d569457d-1ebb-48d0-aa61-3b53ac66fafd",
+      "locationStartPlanned": "d0b0294c-beaa-49b7-a651-451ad1bf5573",
+      "locationStartActual": null,
+      "locationStopPlanned": "ace83ec7-be4a-4cc1-8a4c-69dc9973dd49",
+      "locationStopActual": null,
+      "reason": null
+    },
+    "currentLocation": {
+      "locationId": "ace83ec7-be4a-4cc1-8a4c-69dc9973dd49"
+    },
+    "currentLease": {
+      "contractId": "63f1222f-6836-4658-bba6-6bccb7a428e0",
+      "orderId": "AECA-22-06-01-AEL-001",
+      "customerId": "a1c84a32-4be5-4740-87c4-0ff06574d617",
+      "timePlaced": "2022-07-20T16:04:31.205Z",
+      "pickupLocation": "d0b0294c-beaa-49b7-a651-451ad1bf5573",
+      "dropoffLocation": "ace83ec7-be4a-4cc1-8a4c-69dc9973dd49",
+      "returnDate": "2022-08-31T00:00:00.000Z",
+      "executionDate": "2022-06-01T00:00:00.000Z",
+      "units": 1,
+      "orderStatus": "ACCEPTED",
+      "contractStatus": "AEL"
+    },
+    "futureStatuses": [],
+    "blockingStatuses": [
+      {
+        "status": "PRODUCTION",
+        "validFromActual": null,
+        "validFromPlanned": "2022-05-01T00:00:00.000Z",
+        "validToActual": "2022-05-01T00:00:00.000Z",
+        "validToPlanned": "2022-05-01T00:00:00.000Z",
+        "isActive": true,
+        "equipmentLeaseContractId": null,
+        "statusId": "e8dd8189-0055-43c4-b814-1503f8f32715",
+        "locationStartPlanned": "d0b0294c-beaa-49b7-a651-451ad1bf5573",
+        "locationStartActual": null,
+        "locationStopPlanned": "d0b0294c-beaa-49b7-a651-451ad1bf5573",
+        "locationStopActual": "d0b0294c-beaa-49b7-a651-451ad1bf5573",
+        "reason": null
+      },
+      {
+        "status": "ALLOCATED",
+        "validFromActual": null,
+        "validFromPlanned": "2022-06-01T00:00:00.000Z",
+        "validToActual": null,
+        "validToPlanned": "2022-08-31T00:00:00.000Z",
+        "isActive": true,
+        "equipmentLeaseContractId": "63f1222f-6836-4658-bba6-6bccb7a428e0",
+        "statusId": "d569457d-1ebb-48d0-aa61-3b53ac66fafd",
+        "locationStartPlanned": "d0b0294c-beaa-49b7-a651-451ad1bf5573",
+        "locationStartActual": null,
+        "locationStopPlanned": "ace83ec7-be4a-4cc1-8a4c-69dc9973dd49",
+        "locationStopActual": null,
+        "reason": null
+      }
+    ],
+    "container": {
+      "id": 1,
+      "containerId": "MRKU0915650",
+      "characteristics_size": "20ft",
+      "characteristics_type": "NORMAL",
+      "containerVersion": "1",
+      "characteristics_maxPayload": "1",
+      "characteristics_builtYear": "2022",
+      "updatedAt": "2022-07-20T16:04:13.590Z",
+      "createdAt": "2022-07-20T16:04:13.590Z",
+      "volume": 0,
+      "characteristics_tare": 1,
+      "inspectionDate": "2022-05-01T00:00:00.000Z",
+      "cscCertNo": "1",
+      "cscCertDate": "2022-05-01T00:00:00.000Z",
+      "characteristics_grade": "",
+      "cscCertLink": null,
+      "electronicsCharging": false,
+      "insurance": "",
+      "insuranceDate": null,
+      "cameraExt": false,
+      "cameraInt": false,
+      "lastChangedBy": "582b81d1-9261-45bb-8b22-2ac0dd2f5d22",
+      "floorType": "",
+      "doorType": "",
+      "containerpanelprofiles": [
+        {
+          "id": 1,
+          "panelProfileId": "9c510c9c-b91e-43e2-807d-415d590ea2c3",
+          "containerId": "MRKU0915650",
+          "createdAt": "2022-07-20T16:04:14.365Z",
+          "leftPanel": "",
+          "rightPanel": "",
+          "roofPanel": "",
+          "endPanel": "",
+          "updatedAt": "2022-07-20T16:04:14.365Z"
+        }
+      ],
+      "containersensorsprofiles": [
+        {
+          "id": 1,
+          "containerId": "MRKU0915650",
+          "sensorsProfileId": "285db58b-c9c0-4c0e-8c61-bd08e58dc127",
+          "createdAt": "2022-07-20T16:04:14.363Z",
+          "aelerBoardId": "",
+          "kizyBoardId": "",
+          "nexxiotBoardId": "",
+          "source": "aeler",
+          "updatedAt": "2022-07-20T16:04:14.363Z",
+          "dateFittedAeler": null,
+          "dateFittedKizy": null,
+          "dateFittedNexxiot": null
+        }
+      ],
+      "containerboardpairingprofiles": [
+        {
+          "boardPairingProfileId": "idTest",
+          "containerId": "containerIdTest",
+          "boardId": "boardIdTest",
+          "boardSource": "aeler",
+          "createdAt": "2022-07-20T16:04:13.590Z",
+          "updatedAt": "2022-07-20T16:04:13.590Z",
+          "installDate": "2022-07-20T16:04:13.590Z",
+          "removalDate": "2022-07-20T16:04:13.590Z",
+          "installComments": "installComments",
+          "removalComments": "removalComments",
+          "installTechnicianId": "installTechnicianId",
+          "removalTechnicianId": "removalTechnicianId",
+          "installLocationId": "",
+          "removalLocationId": "",
+          "installLocationName": "",
+          "removalLocationName": ""
+        }
+      ]
+    }
+  },
+  {
+    "equipmentId": "ec947a58-ceec-4f41-864a-e40833180fae",
+    "aelerContainerId": "PONU1936812",
+    "currentStatus": {
+      "status": "ALLOCATED",
+      "validFromActual": null,
+      "validFromPlanned": "2022-06-01T00:00:00.000Z",
+      "validToActual": null,
+      "validToPlanned": "2022-08-31T00:00:00.000Z",
+      "isActive": true,
+      "equipmentLeaseContractId": "e403972d-8064-47f1-9c0a-5943610422af",
+      "statusId": "22545c6b-f38f-4a34-aa17-610a0c15b73e",
+      "locationStartPlanned": "d0b0294c-beaa-49b7-a651-451ad1bf5573",
+      "locationStartActual": null,
+      "locationStopPlanned": "ace83ec7-be4a-4cc1-8a4c-69dc9973dd49",
+      "locationStopActual": null,
+      "reason": null
+    },
+    "currentLocation": {
+      "locationId": "ace83ec7-be4a-4cc1-8a4c-69dc9973dd49"
+    },
+    "currentLease": {
+      "contractId": "e403972d-8064-47f1-9c0a-5943610422af",
+      "orderId": "AECA-22-06-01-AEL-001",
+      "customerId": "a1c84a32-4be5-4740-87c4-0ff06574d617",
+      "timePlaced": "2022-07-20T16:04:31.205Z",
+      "pickupLocation": "d0b0294c-beaa-49b7-a651-451ad1bf5573",
+      "dropoffLocation": "ace83ec7-be4a-4cc1-8a4c-69dc9973dd49",
+      "returnDate": "2022-08-31T00:00:00.000Z",
+      "executionDate": "2022-06-01T00:00:00.000Z",
+      "units": 1,
+      "orderStatus": "ACCEPTED",
+      "contractStatus": "AEL"
+    },
+    "futureStatuses": [],
+    "blockingStatuses": [
+      {
+        "status": "PRODUCTION",
+        "validFromActual": null,
+        "validFromPlanned": "2022-05-01T00:00:00.000Z",
+        "validToActual": "2022-05-01T00:00:00.000Z",
+        "validToPlanned": "2022-05-01T00:00:00.000Z",
+        "isActive": true,
+        "equipmentLeaseContractId": null,
+        "statusId": "12a629a3-9267-43f1-afd2-c259864d8994",
+        "locationStartPlanned": "d0b0294c-beaa-49b7-a651-451ad1bf5573",
+        "locationStartActual": null,
+        "locationStopPlanned": "d0b0294c-beaa-49b7-a651-451ad1bf5573",
+        "locationStopActual": "d0b0294c-beaa-49b7-a651-451ad1bf5573",
+        "reason": null
+      },
+      {
+        "status": "ALLOCATED",
+        "validFromActual": null,
+        "validFromPlanned": "2022-06-01T00:00:00.000Z",
+        "validToActual": null,
+        "validToPlanned": "2022-08-31T00:00:00.000Z",
+        "isActive": true,
+        "equipmentLeaseContractId": "e403972d-8064-47f1-9c0a-5943610422af",
+        "statusId": "22545c6b-f38f-4a34-aa17-610a0c15b73e",
+        "locationStartPlanned": "d0b0294c-beaa-49b7-a651-451ad1bf5573",
+        "locationStartActual": null,
+        "locationStopPlanned": "ace83ec7-be4a-4cc1-8a4c-69dc9973dd49",
+        "locationStopActual": null,
+        "reason": null
+      }
+    ],
+    "container": {
+      "id": 2,
+      "containerId": "PONU1936812",
+      "characteristics_size": "20ft",
+      "characteristics_type": "NORMAL",
+      "containerVersion": "1",
+      "characteristics_maxPayload": "1",
+      "characteristics_builtYear": "2022",
+      "updatedAt": "2022-07-20T16:10:11.180Z",
+      "createdAt": "2022-07-20T16:10:11.180Z",
+      "volume": 0,
+      "characteristics_tare": 1,
+      "inspectionDate": "2022-05-01T00:00:00.000Z",
+      "cscCertNo": "1",
+      "cscCertDate": "2022-05-01T00:00:00.000Z",
+      "characteristics_grade": "",
+      "cscCertLink": null,
+      "electronicsCharging": false,
+      "insurance": "",
+      "insuranceDate": null,
+      "cameraExt": false,
+      "cameraInt": false,
+      "lastChangedBy": "582b81d1-9261-45bb-8b22-2ac0dd2f5d22",
+      "floorType": "",
+      "doorType": "",
+      "containerpanelprofiles": [
+        {
+          "id": 2,
+          "panelProfileId": "badd5cd7-c8a4-4872-813f-43aa77f0279a",
+          "containerId": "PONU1936812",
+          "createdAt": "2022-07-20T16:10:11.584Z",
+          "leftPanel": "",
+          "rightPanel": "",
+          "roofPanel": "",
+          "endPanel": "",
+          "updatedAt": "2022-07-20T16:10:11.585Z"
+        }
+      ],
+      "containersensorsprofiles": [
+        {
+          "id": 2,
+          "containerId": "PONU1936812",
+          "sensorsProfileId": "4c6716ea-0944-46b9-9c6a-ab7cf6c7b807",
+          "createdAt": "2022-07-20T16:10:11.605Z",
+          "aelerBoardId": "",
+          "kizyBoardId": "",
+          "nexxiotBoardId": "",
+          "source": "aeler",
+          "updatedAt": "2022-07-20T16:10:11.606Z",
+          "dateFittedAeler": null,
+          "dateFittedKizy": null,
+          "dateFittedNexxiot": null
+        }
+      ],
+      "containerboardpairingprofiles": [
+        {
+          "boardPairingProfileId": "idTest",
+          "containerId": "containerIdTest",
+          "boardId": "boardIdTest",
+          "boardSource": "aeler",
+          "createdAt": "2022-07-20T16:04:13.590Z",
+          "updatedAt": "2022-07-20T16:04:13.590Z",
+          "installDate": "2022-07-20T16:04:13.590Z",
+          "removalDate": "2022-07-20T16:04:13.590Z",
+          "installComments": "installComments",
+          "removalComments": "removalComments",
+          "installTechnicianId": "installTechnicianId",
+          "removalTechnicianId": "removalTechnicianId",
+          "installLocationId": "",
+          "removalLocationId": "",
+          "installLocationName": "",
+          "removalLocationName": ""
+        }
+      ]
+    }
+  },
+  {
+    "equipmentId": "c3327e00-ecfd-4cf5-b006-e1e1129f8422",
+    "aelerContainerId": "CAVU0001000",
+    "currentStatus": {
+      "status": "AVAILABLE",
+      "validFromActual": "2022-06-10T00:00:00.000Z",
+      "validFromPlanned": "2022-06-09T00:00:00.000Z",
+      "isActive": true,
+      "equipmentLeaseContractId": null,
+      "statusId": "bc12149f-c318-4474-9726-63adb49ccd28",
+      "locationStartPlanned": "d0b0294c-beaa-49b7-a651-451ad1bf5573",
+      "locationStartActual": null,
+      "locationStopPlanned": "d0b0294c-beaa-49b7-a651-451ad1bf5573",
+      "locationStopActual": "d0b0294c-beaa-49b7-a651-451ad1bf5573",
+      "reason": null
+    },
+    "currentLocation": {
+      "locationId": "d0b0294c-beaa-49b7-a651-451ad1bf5573"
+    },
+    "currentLease": {
+      "contractId": "43fddad5-d125-49cd-8780-a56f216f2883",
+      "orderId": "AECA-22-06-01-AEL-001",
+      "customerId": "a1c84a32-4be5-4740-87c4-0ff06574d617",
+      "timePlaced": "2022-07-20T16:04:31.205Z",
+      "pickupLocation": "d0b0294c-beaa-49b7-a651-451ad1bf5573",
+      "dropoffLocation": "ace83ec7-be4a-4cc1-8a4c-69dc9973dd49",
+      "returnDate": "2022-08-31T00:00:00.000Z",
+      "executionDate": "2022-06-01T00:00:00.000Z",
+      "units": 1,
+      "orderStatus": "ACCEPTED",
+      "contractStatus": "AEL"
+    },
+    "futureStatuses": [],
+    "blockingStatuses": [
+      {
+        "status": "ALLOCATED",
+        "validFromActual": null,
+        "validFromPlanned": "2022-06-01T00:00:00.000Z",
+        "validToActual": null,
+        "validToPlanned": "2022-08-31T00:00:00.000Z",
+        "isActive": true,
+        "equipmentLeaseContractId": "43fddad5-d125-49cd-8780-a56f216f2883",
+        "statusId": "550cbd59-bb5b-4408-829d-c61b7635fb09",
+        "locationStartPlanned": "d0b0294c-beaa-49b7-a651-451ad1bf5573",
+        "locationStartActual": null,
+        "locationStopPlanned": "ace83ec7-be4a-4cc1-8a4c-69dc9973dd49",
+        "locationStopActual": null,
+        "reason": null
+      },
+      {
+        "status": "PRODUCTION",
+        "validFromActual": null,
+        "validFromPlanned": "2022-06-09T00:00:00.000Z",
+        "validToActual": "2022-06-10T00:00:00.000Z",
+        "validToPlanned": "2022-06-09T00:00:00.000Z",
+        "isActive": true,
+        "equipmentLeaseContractId": null,
+        "statusId": "bc12149f-c318-4474-9726-63adb49ccd28",
+        "locationStartPlanned": "d0b0294c-beaa-49b7-a651-451ad1bf5573",
+        "locationStartActual": null,
+        "locationStopPlanned": "d0b0294c-beaa-49b7-a651-451ad1bf5573",
+        "locationStopActual": "d0b0294c-beaa-49b7-a651-451ad1bf5573",
+        "reason": null
+      }
+    ],
+    "container": {
+      "id": 5,
+      "containerId": "CAVU0001000",
+      "characteristics_size": "20ft",
+      "characteristics_type": "NORMAL",
+      "containerVersion": "1",
+      "characteristics_maxPayload": "1",
+      "characteristics_builtYear": "2022",
+      "updatedAt": "2022-08-05T16:01:38.374Z",
+      "createdAt": "2022-08-05T16:01:38.374Z",
+      "volume": 1,
+      "characteristics_tare": 1,
+      "inspectionDate": "2022-06-09T00:00:00.000Z",
+      "cscCertNo": "1",
+      "cscCertDate": "2022-06-01T00:00:00.000Z",
+      "characteristics_grade": "",
+      "cscCertLink": null,
+      "electronicsCharging": false,
+      "insurance": "",
+      "insuranceDate": null,
+      "cameraExt": false,
+      "cameraInt": false,
+      "lastChangedBy": "2ecc3895-c41d-4cfd-ac40-0cb9dba703ff",
+      "floorType": "",
+      "doorType": "",
+      "containerpanelprofiles": [
+        {
+          "id": 5,
+          "panelProfileId": "9c17ed1c-327f-4c81-8052-71b9bc1ff97c",
+          "containerId": "CAVU0001000",
+          "createdAt": "2022-08-05T16:01:38.895Z",
+          "leftPanel": "",
+          "rightPanel": "",
+          "roofPanel": "",
+          "endPanel": "",
+          "updatedAt": "2022-08-05T16:01:38.895Z"
+        }
+      ],
+      "containersensorsprofiles": [
+        {
+          "id": 5,
+          "containerId": "CAVU0001000",
+          "sensorsProfileId": "969b5527-c970-453b-9a23-ebe8eba4dff8",
+          "createdAt": "2022-08-05T16:01:38.925Z",
+          "aelerBoardId": "aeler-dev-1651084562",
+          "kizyBoardId": "",
+          "nexxiotBoardId": "",
+          "source": "aeler",
+          "updatedAt": "2022-08-05T16:01:38.925Z",
+          "dateFittedAeler": "2022-07-21T00:00:00.000Z",
+          "dateFittedKizy": null,
+          "dateFittedNexxiot": null
+        }
+      ],
+      "containerboardpairingprofiles": [
+        {
+          "boardPairingProfileId": "idTest",
+          "containerId": "containerIdTest",
+          "boardId": "boardIdTest",
+          "boardSource": "aeler",
+          "createdAt": "2022-07-20T16:04:13.590Z",
+          "updatedAt": "2022-07-20T16:04:13.590Z",
+          "installDate": "2022-07-20T16:04:13.590Z",
+          "removalDate": "2022-07-20T16:04:13.590Z",
+          "installComments": "installComments",
+          "removalComments": "removalComments",
+          "installTechnicianId": "installTechnicianId",
+          "removalTechnicianId": "removalTechnicianId",
+          "installLocationId": "installLocationIdTest",
+          "removalLocationId": "removalLocationIdTest",
+          "installLocationName": "installLocationNameTest",
+          "removalLocationName": "removalLocationNameTest"
+        }
+      ]
+    }
+  },
+  {
+    "equipmentId": "1ea3c2a6-4be8-45e9-83bc-fa18034e12ae",
+    "aelerContainerId": "FM306",
+    "currentStatus": {
+      "status": "AVAILABLE",
+      "validFromActual": "2022-07-29T00:00:00.000Z",
+      "validFromPlanned": "2022-07-29T00:00:00.000Z",
+      "isActive": true,
+      "equipmentLeaseContractId": "0d0c89a2-0265-43bc-a2a0-c97d58f3338b",
+      "statusId": "370c1e00-1090-468b-8ab7-59d3b19dce16",
+      "locationStartPlanned": "d0b0294c-beaa-49b7-a651-451ad1bf5573",
+      "locationStartActual": null,
+      "locationStopPlanned": "d0b0294c-beaa-49b7-a651-451ad1bf5573",
+      "locationStopActual": "d0b0294c-beaa-49b7-a651-451ad1bf5573",
+      "reason": null
+    },
+    "currentLocation": {
+      "locationId": "d0b0294c-beaa-49b7-a651-451ad1bf5573"
+    },
+    "futureStatuses": [],
+    "blockingStatuses": [
+      {
+        "status": "PRODUCTION",
+        "validFromActual": null,
+        "validFromPlanned": "2022-07-21T12:37:42.788Z",
+        "validToActual": "2022-07-21T12:37:42.788Z",
+        "validToPlanned": "2022-07-21T12:37:42.788Z",
+        "isActive": true,
+        "equipmentLeaseContractId": null,
+        "statusId": "8ecc6502-b9a2-4a00-80d0-ee423fec707e",
+        "locationStartPlanned": "d0b0294c-beaa-49b7-a651-451ad1bf5573",
+        "locationStartActual": null,
+        "locationStopPlanned": "d0b0294c-beaa-49b7-a651-451ad1bf5573",
+        "locationStopActual": "d0b0294c-beaa-49b7-a651-451ad1bf5573",
+        "reason": null
+      },
+      {
+        "status": "ALLOCATED",
+        "validFromActual": "2022-07-26T00:00:00.000Z",
+        "validFromPlanned": "2022-07-26T00:00:00.000Z",
+        "validToActual": "2022-07-29T00:00:00.000Z",
+        "validToPlanned": "2022-07-29T00:00:00.000Z",
+        "isActive": true,
+        "equipmentLeaseContractId": "0d0c89a2-0265-43bc-a2a0-c97d58f3338b",
+        "statusId": "370c1e00-1090-468b-8ab7-59d3b19dce16",
+        "locationStartPlanned": "d0b0294c-beaa-49b7-a651-451ad1bf5573",
+        "locationStartActual": null,
+        "locationStopPlanned": "d0b0294c-beaa-49b7-a651-451ad1bf5573",
+        "locationStopActual": "d0b0294c-beaa-49b7-a651-451ad1bf5573",
+        "reason": null
+      }
+    ],
+    "container": {
+      "id": 3,
+      "containerId": "FM306",
+      "characteristics_size": "20ft",
+      "characteristics_type": "NORMAL",
+      "containerVersion": "1",
+      "characteristics_maxPayload": "1",
+      "characteristics_builtYear": "2022",
+      "updatedAt": "2022-07-21T12:46:13.266Z",
+      "createdAt": "2022-07-21T12:46:13.266Z",
+      "volume": 1,
+      "characteristics_tare": 1,
+      "inspectionDate": "2022-07-21T12:37:42.788Z",
+      "cscCertNo": "123",
+      "cscCertDate": "2022-07-21T12:37:42.788Z",
+      "characteristics_grade": "",
+      "cscCertLink": "",
+      "electronicsCharging": false,
+      "insurance": "",
+      "insuranceDate": null,
+      "cameraExt": false,
+      "cameraInt": false,
+      "lastChangedBy": "5efc0ef4-c865-4758-8e8b-04f35faa67ec",
+      "floorType": "",
+      "doorType": "",
+      "containerpanelprofiles": [
+        {
+          "id": 3,
+          "panelProfileId": "86f724ea-88b4-4aff-8feb-e1bf032a5711",
+          "containerId": "FM306",
+          "createdAt": "2022-07-21T12:46:14.364Z",
+          "leftPanel": "",
+          "rightPanel": "",
+          "roofPanel": "",
+          "endPanel": "",
+          "updatedAt": "2022-07-21T12:46:14.364Z"
+        }
+      ],
+      "containersensorsprofiles": [
+        {
+          "id": 3,
+          "containerId": "FM306",
+          "sensorsProfileId": "b5285b60-44ef-4bea-a30f-6f9af7123e6c",
+          "createdAt": "2022-07-21T12:46:14.366Z",
+          "aelerBoardId": "",
+          "kizyBoardId": "",
+          "nexxiotBoardId": "e7e63956-41f2-4db5-9577-b48cd2563540",
+          "source": "nexxiot",
+          "updatedAt": "2022-07-21T12:46:14.366Z",
+          "dateFittedAeler": null,
+          "dateFittedKizy": null,
+          "dateFittedNexxiot": "2022-07-21T00:00:00.000Z"
+        }
+      ],
+      "containerboardpairingprofiles": [
+        {
+          "boardPairingProfileId": "idTest",
+          "containerId": "containerIdTest",
+          "boardId": "boardIdTest",
+          "boardSource": "aeler",
+          "createdAt": "2022-07-20T16:04:13.590Z",
+          "updatedAt": "2022-07-20T16:04:13.590Z",
+          "installDate": "2022-07-20T16:04:13.590Z",
+          "removalDate": "2022-07-20T16:04:13.590Z",
+          "installComments": "installComments",
+          "removalComments": "removalComments",
+          "installTechnicianId": "installTechnicianId",
+          "removalTechnicianId": "removalTechnicianId",
+          "installLocationId": "",
+          "removalLocationId": "",
+          "installLocationName": "",
+          "removalLocationName": ""
+        }
+      ]
+    }
+  },
+  {
+    "equipmentId": "f84eb174-2de4-4a92-9181-2889a1f6a37e",
+    "aelerContainerId": "FM292",
+    "currentStatus": {
+      "status": "AVAILABLE",
+      "validFromActual": "2022-07-22T15:41:56.990Z",
+      "validFromPlanned": "2022-07-22T15:41:56.990Z",
+      "isActive": true,
+      "equipmentLeaseContractId": null,
+      "statusId": "414bb5da-d5db-4c34-b062-c2b7dc0cfe4c",
+      "locationStartPlanned": "d0b0294c-beaa-49b7-a651-451ad1bf5573",
+      "locationStartActual": null,
+      "locationStopPlanned": "d0b0294c-beaa-49b7-a651-451ad1bf5573",
+      "locationStopActual": "d0b0294c-beaa-49b7-a651-451ad1bf5573",
+      "reason": null
+    },
+    "currentLocation": {
+      "locationId": "d0b0294c-beaa-49b7-a651-451ad1bf5573"
+    },
+    "futureStatuses": [],
+    "blockingStatuses": [
+      {
+        "status": "PRODUCTION",
+        "validFromActual": null,
+        "validFromPlanned": "2022-07-22T15:41:56.990Z",
+        "validToActual": "2022-07-22T15:41:56.990Z",
+        "validToPlanned": "2022-07-22T15:41:56.990Z",
+        "isActive": true,
+        "equipmentLeaseContractId": null,
+        "statusId": "414bb5da-d5db-4c34-b062-c2b7dc0cfe4c",
+        "locationStartPlanned": "d0b0294c-beaa-49b7-a651-451ad1bf5573",
+        "locationStartActual": null,
+        "locationStopPlanned": "d0b0294c-beaa-49b7-a651-451ad1bf5573",
+        "locationStopActual": "d0b0294c-beaa-49b7-a651-451ad1bf5573",
+        "reason": null
+      }
+    ],
+    "container": {
+      "id": 4,
+      "containerId": "FM292",
+      "characteristics_size": "20ft",
+      "characteristics_type": "NORMAL",
+      "containerVersion": "1",
+      "characteristics_maxPayload": "1",
+      "characteristics_builtYear": "2022",
+      "updatedAt": "2022-07-22T15:42:41.321Z",
+      "createdAt": "2022-07-22T15:42:41.321Z",
+      "volume": 1,
+      "characteristics_tare": 1,
+      "inspectionDate": "2022-07-22T15:41:56.990Z",
+      "cscCertNo": "1991",
+      "cscCertDate": "2022-07-22T15:41:56.990Z",
+      "characteristics_grade": "",
+      "cscCertLink": null,
+      "electronicsCharging": false,
+      "insurance": "",
+      "insuranceDate": null,
+      "cameraExt": false,
+      "cameraInt": false,
+      "lastChangedBy": "5efc0ef4-c865-4758-8e8b-04f35faa67ec",
+      "floorType": "",
+      "doorType": "",
+      "containerpanelprofiles": [
+        {
+          "id": 4,
+          "panelProfileId": "25bea424-970b-4720-85ab-3742e882ddc2",
+          "containerId": "FM292",
+          "createdAt": "2022-07-22T15:42:41.954Z",
+          "leftPanel": "",
+          "rightPanel": "",
+          "roofPanel": "",
+          "endPanel": "",
+          "updatedAt": "2022-07-22T15:42:41.954Z"
+        }
+      ],
+      "containersensorsprofiles": [
+        {
+          "id": 4,
+          "containerId": "FM292",
+          "sensorsProfileId": "cb8a3f81-c0f4-4231-baae-a0be1920b06b",
+          "createdAt": "2022-07-22T15:42:41.957Z",
+          "aelerBoardId": "",
+          "kizyBoardId": "",
+          "nexxiotBoardId": "",
+          "source": "aeler",
+          "updatedAt": "2022-07-22T15:42:41.957Z",
+          "dateFittedAeler": null,
+          "dateFittedKizy": null,
+          "dateFittedNexxiot": null
+        }
+      ],
+      "containerboardpairingprofiles": [
+        {
+          "boardPairingProfileId": "idTest",
+          "containerId": "containerIdTest",
+          "boardId": "boardIdTest",
+          "boardSource": "aeler",
+          "createdAt": "2022-07-20T16:04:13.590Z",
+          "updatedAt": "2022-07-20T16:04:13.590Z",
+          "installDate": "2022-07-20T16:04:13.590Z",
+          "removalDate": "2022-07-20T16:04:13.590Z",
+          "installComments": "installComments",
+          "removalComments": "removalComments",
+          "installTechnicianId": "installTechnicianId",
+          "removalTechnicianId": "removalTechnicianId",
+          "installLocationId": "",
+          "removalLocationId": "",
+          "installLocationName": "",
+          "removalLocationName": ""
+        }
+      ]
+    }
+  },
+  {
+    "equipmentId": "9900a399-b99f-4c55-a37d-2ff523b762ce",
+    "aelerContainerId": "containerC1",
+    "blockingStatuses": [],
+    "container": {
+      "id": 6,
+      "containerId": "containerC1",
+      "characteristics_size": "20ft",
+      "characteristics_type": "REEFER",
+      "containerVersion": "1.0",
+      "characteristics_maxPayload": "2500kg",
+      "characteristics_builtYear": "2000",
+      "updatedAt": "2022-08-11T17:54:25.844Z",
+      "createdAt": "2022-08-11T17:54:25.844Z",
+      "volume": 199,
+      "characteristics_tare": 120,
+      "inspectionDate": null,
+      "cscCertNo": null,
+      "cscCertDate": null,
+      "characteristics_grade": null,
+      "cscCertLink": null,
+      "electronicsCharging": null,
+      "insurance": null,
+      "insuranceDate": null,
+      "cameraExt": null,
+      "cameraInt": null,
+      "lastChangedBy": "c2f72101-0cd9-49af-b5e2-acaf14e8a041",
+      "floorType": null,
+      "doorType": null,
+      "containerpanelprofiles": [],
+      "containersensorsprofiles": [],
+      "containerboardpairingprofiles": [
+        {
+          "boardPairingProfileId": "idTest",
+          "containerId": "containerIdTest",
+          "boardId": "boardIdTest",
+          "boardSource": "aeler",
+          "createdAt": "2022-07-20T16:04:13.590Z",
+          "updatedAt": "2022-07-20T16:04:13.590Z",
+          "installDate": "2022-07-20T16:04:13.590Z",
+          "removalDate": "2022-07-20T16:04:13.590Z",
+          "installComments": "installComments",
+          "removalComments": "removalComments",
+          "installTechnicianId": "installTechnicianId",
+          "removalTechnicianId": "removalTechnicianId",
+          "installLocationId": "",
+          "removalLocationId": "",
+          "installLocationName": "",
+          "removalLocationName": ""
+        }
+      ]
+    }
+  }
+]

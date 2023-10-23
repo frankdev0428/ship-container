@@ -1,0 +1,444 @@
+[
+  {
+    "id": 3,
+    "facilityId": "d0b0294c-beaa-49b7-a651-451ad1bf5573",
+    "name": "Bollore Logistics",
+    "code": "FR-LEH-BOLL-001",
+    "type": "DEPO",
+    "addressId": "c1dee3f3-ad02-47ee-919f-3f807406ddf1",
+    "latestStatusId": null,
+    "identifiers_bicId": null,
+    "identifiers_smdgId": null,
+    "identifiers_imoId": null,
+    "operatorName": null,
+    "operatorID": null,
+    "charateristics_area": null,
+    "locationId": null,
+    "partnershipTypes": [
+      "Storage"
+    ],
+    "createdAt": "2022-03-04T10:40:33.866Z",
+    "updatedAt": "2022-03-04T10:40:33.866Z",
+    "deletedAt": null,
+    "address": {
+      "name": "PLPN 2 - Port 5051 Voie des Tadornes BP 112 76430 Oudalle Sandouville 76051 Le Havre Cedex France",
+      "region": "Europe",
+      "country": {
+        "name": "France",
+        "code": "FR"
+      },
+      "city": {
+        "name": "Le Havre",
+        "identifiers_iso5": "FRLEH"
+      }
+    }
+  },
+  {
+    "id": 4,
+    "facilityId": "a3c53043-2517-4f8c-b315-00b5a29e4d1d",
+    "name": "Eng Kong Container Agencies",
+    "code": "SG-SIN-EKCA-001",
+    "type": "DEPO",
+    "addressId": "348abb50-5c72-4846-b67d-12e7cb78d8ca",
+    "latestStatusId": null,
+    "identifiers_bicId": null,
+    "identifiers_smdgId": null,
+    "identifiers_imoId": null,
+    "operatorName": null,
+    "operatorID": null,
+    "charateristics_area": null,
+    "locationId": null,
+    "partnershipTypes": [
+      "Storage"
+    ],
+    "createdAt": "2022-03-04T10:44:48.541Z",
+    "updatedAt": "2022-03-04T10:44:48.541Z",
+    "deletedAt": null,
+    "address": {
+      "name": "15 Tuas Avenue 11 Singapore, 639081",
+      "region": "Asia",
+      "country": {
+        "name": "Singapore",
+        "code": "SG"
+      },
+      "city": {
+        "name": "Singapore",
+        "identifiers_iso5": "SGSIN"
+      }
+    }
+  },
+  {
+    "id": 6,
+    "facilityId": "57906dab-8b40-4591-ad07-3462656c7af7",
+    "name": "Spinelli Srl",
+    "code": "IT-AKA-SPIN-001",
+    "type": "DEPO",
+    "addressId": "958fa104-3a63-4155-ba93-eb71297caa4f",
+    "latestStatusId": null,
+    "identifiers_bicId": null,
+    "identifiers_smdgId": null,
+    "identifiers_imoId": null,
+    "operatorName": null,
+    "operatorID": null,
+    "charateristics_area": null,
+    "locationId": null,
+    "partnershipTypes": [
+      "Storage"
+    ],
+    "createdAt": "2022-03-04T10:50:30.431Z",
+    "updatedAt": "2022-03-04T10:50:30.431Z",
+    "deletedAt": null,
+    "address": {
+      "name": "13, Via Don Luigi Sturzo 20010 Arluno (MI)",
+      "region": "Europe",
+      "country": {
+        "name": "Italy",
+        "code": "IT"
+      },
+      "city": {
+        "name": "Arluno",
+        "identifiers_iso5": "ITAKA"
+      }
+    }
+  },
+  {
+    "id": 5,
+    "facilityId": "ac565cc3-4121-4c55-9db9-477dd8a78860",
+    "name": "CS&R (Container Storage & Repair)",
+    "code": "IE-ORK-CSAR-001",
+    "type": "DEPO",
+    "addressId": "053c765b-6770-48af-98a6-e5b810ba3169",
+    "latestStatusId": null,
+    "identifiers_bicId": null,
+    "identifiers_smdgId": null,
+    "identifiers_imoId": null,
+    "operatorName": null,
+    "operatorID": null,
+    "charateristics_area": null,
+    "locationId": null,
+    "partnershipTypes": [
+      "Storage"
+    ],
+    "createdAt": "2022-03-04T10:47:15.503Z",
+    "updatedAt": "2022-03-04T10:47:15.503Z",
+    "deletedAt": null,
+    "address": {
+      "name": "Yard 24 Tivoli Industrial Estate Tivoli, T23 HE03 Cork",
+      "region": "Europe",
+      "country": {
+        "name": "Ireland",
+        "code": "IE"
+      },
+      "city": {
+        "name": "Cork",
+        "identifiers_iso5": "IEORK"
+      }
+    }
+  },
+  {
+    "id": 9,
+    "facilityId": "5f3af1ee-6c70-4930-a0d7-bd8f592306cc",
+    "name": "CPL Logistiics GmbH & Co KG Bremen",
+    "code": "DE-BRE-CPLB-001",
+    "type": "DEPO",
+    "addressId": "1a106391-9eea-4c2c-9bf1-91ff0a6c392b",
+    "latestStatusId": null,
+    "identifiers_bicId": null,
+    "identifiers_smdgId": null,
+    "identifiers_imoId": null,
+    "operatorName": null,
+    "operatorID": null,
+    "charateristics_area": null,
+    "locationId": null,
+    "partnershipTypes": [
+      "Storage"
+    ],
+    "createdAt": "2022-03-04T10:57:18.139Z",
+    "updatedAt": "2022-03-04T10:57:18.139Z",
+    "deletedAt": null,
+    "address": {
+      "name": "Eduard-Suling-Straße Schuppen 17 28217 Bremen",
+      "region": "Europe",
+      "country": {
+        "name": "Germany",
+        "code": "DE"
+      },
+      "city": {
+        "name": "Bremen",
+        "identifiers_iso5": "DEBRE"
+      }
+    }
+  },
+  {
+    "id": 10,
+    "facilityId": "8392b671-0e3a-48f7-b0be-226d34a2bb81",
+    "name": "Medrepair N.V. (MSC Terminal) Doel",
+    "code": "BE-DEL-MEDR-001",
+    "type": "DEPO",
+    "addressId": "a5a96279-ab26-40be-a177-ad7d2f3b353d",
+    "latestStatusId": null,
+    "identifiers_bicId": null,
+    "identifiers_smdgId": null,
+    "identifiers_imoId": null,
+    "operatorName": null,
+    "operatorID": null,
+    "charateristics_area": null,
+    "locationId": null,
+    "partnershipTypes": [
+      "Storage"
+    ],
+    "createdAt": "2022-03-04T10:59:09.197Z",
+    "updatedAt": "2022-03-04T10:59:09.197Z",
+    "deletedAt": null,
+    "address": {
+      "name": "Haven 1624, Sint-Antoniusweg, 9130 Doel (Beveren), Belgium",
+      "region": "Europe",
+      "country": {
+        "name": "Belgium",
+        "code": "BE"
+      },
+      "city": {
+        "name": "Doel",
+        "identifiers_iso5": "BEDEL"
+      }
+    }
+  },
+  {
+    "id": 11,
+    "facilityId": "ace83ec7-be4a-4cc1-8a4c-69dc9973dd49",
+    "name": "Beldeport Limani",
+    "code": "TR-DLV-BELD-001",
+    "type": "DEPO",
+    "addressId": "52ba0c69-a48c-4e6b-abae-b571f2c9d501",
+    "latestStatusId": null,
+    "identifiers_bicId": null,
+    "identifiers_smdgId": null,
+    "identifiers_imoId": null,
+    "operatorName": null,
+    "operatorID": null,
+    "charateristics_area": null,
+    "locationId": null,
+    "partnershipTypes": [
+      "Storage"
+    ],
+    "createdAt": "2022-03-04T11:00:45.195Z",
+    "updatedAt": "2022-03-04T11:00:45.195Z",
+    "deletedAt": null,
+    "address": {
+      "name": "Diliskelesi Mah. Liman Cad. 13/8 41455, Dilovası/Kocaeli",
+      "region": "Europe",
+      "country": {
+        "name": "Turkey",
+        "code": "TR"
+      },
+      "city": {
+        "name": "Dilovasi",
+        "identifiers_iso5": "TRDLV"
+      }
+    }
+  },
+  {
+    "id": 12,
+    "facilityId": "72f8e61a-698e-4a6c-80c1-d79459f4d134",
+    "name": "Container Terminal Enns",
+    "code": "AT-ENA-CTEN-001",
+    "type": "DEPO",
+    "addressId": "54a91a32-86e6-4253-9810-9bdd1a8b2b54",
+    "latestStatusId": null,
+    "identifiers_bicId": null,
+    "identifiers_smdgId": null,
+    "identifiers_imoId": null,
+    "operatorName": null,
+    "operatorID": null,
+    "charateristics_area": null,
+    "locationId": null,
+    "partnershipTypes": [
+      "Storage"
+    ],
+    "createdAt": "2022-03-04T11:02:03.643Z",
+    "updatedAt": "2022-03-04T11:02:03.643Z",
+    "deletedAt": null,
+    "address": {
+      "name": "Ennshafenstraße 45 A-4470 Enns",
+      "region": "Europe",
+      "country": {
+        "name": "Austria",
+        "code": "AT"
+      },
+      "city": {
+        "name": "Enns",
+        "identifiers_iso5": "ATENA"
+      }
+    }
+  },
+  {
+    "id": 13,
+    "facilityId": "fb472357-6024-455b-82e2-ece43ed26bd8",
+    "name": "Metrans Kontener Kft",
+    "code": "HU-BUD-METK-001",
+    "type": "DEPO",
+    "addressId": "e1172b2c-0586-4e74-81a3-cc4943760b81",
+    "latestStatusId": null,
+    "identifiers_bicId": null,
+    "identifiers_smdgId": null,
+    "identifiers_imoId": null,
+    "operatorName": null,
+    "operatorID": null,
+    "charateristics_area": null,
+    "locationId": null,
+    "partnershipTypes": [
+      "Storage"
+    ],
+    "createdAt": "2022-03-04T11:03:12.218Z",
+    "updatedAt": "2022-03-04T11:03:12.218Z",
+    "deletedAt": null,
+    "address": {
+      "name": "Salak utca 1-39. H-1211 Budapest",
+      "region": "Europe",
+      "country": {
+        "name": "Hungary",
+        "code": "HU"
+      },
+      "city": {
+        "name": "Budapest",
+        "identifiers_iso5": "HUBUD"
+      }
+    }
+  },
+  {
+    "id": 14,
+    "facilityId": "49a3fbbe-703b-43ea-bff6-71cadfa357a2",
+    "name": "PCL Container Services Ltd. Hong Kong",
+    "code": "HK-HKG-PCLH-001",
+    "type": "DEPO",
+    "addressId": "19c0eb9e-a80d-4547-87fa-9e307a68a4e6",
+    "latestStatusId": null,
+    "identifiers_bicId": null,
+    "identifiers_smdgId": null,
+    "identifiers_imoId": null,
+    "operatorName": null,
+    "operatorID": null,
+    "charateristics_area": null,
+    "locationId": null,
+    "partnershipTypes": [
+      "Storage"
+    ],
+    "createdAt": "2022-03-04T11:05:52.455Z",
+    "updatedAt": "2022-03-04T11:05:52.455Z",
+    "deletedAt": null,
+    "address": {
+      "name": "NO. 3897 Container Port Road South  Kwai Chung , New Territories HK.",
+      "region": "Asia",
+      "country": {
+        "name": "Hong Kong",
+        "code": "HK"
+      },
+      "city": {
+        "name": "Hong Kong",
+        "identifiers_iso5": "HKHKG"
+      }
+    }
+  },
+  {
+    "id": 2,
+    "facilityId": "bac7d79e-bcbe-49d3-a121-3ca479e5f589",
+    "name": "CCSC (Cargo & Container Service Centre) Rotterdam",
+    "code": "NL-RTM-CCSC-001",
+    "type": "DEPO",
+    "addressId": "e4a9c3b6-fd5a-4fb9-8d76-07d72cfe890a",
+    "latestStatusId": null,
+    "identifiers_bicId": null,
+    "identifiers_smdgId": null,
+    "identifiers_imoId": null,
+    "operatorName": null,
+    "operatorID": null,
+    "charateristics_area": null,
+    "locationId": null,
+    "partnershipTypes": [
+      "Storage"
+    ],
+    "createdAt": "2022-03-04T10:30:51.527Z",
+    "updatedAt": "2022-03-04T10:30:51.527Z",
+    "deletedAt": null,
+    "address": {
+      "name": "Portnr. 5036 Nieuwesluigweg 200",
+      "region": "Europe",
+      "country": {
+        "name": "Netherlands",
+        "code": "NL"
+      },
+      "city": {
+        "name": "Rotterdam",
+        "identifiers_iso5": "NLRTM"
+      }
+    }
+  },
+  {
+    "id": 15,
+    "facilityId": "bdecc06e-ebeb-4b85-802f-ffe0be5109d8",
+    "name": "Comaxel - Goldap",
+    "code": "PL-GDP-CAXL-001",
+    "type": "DEPO",
+    "addressId": "a4f579fd-3229-46d9-94fb-54ca52eb02fe",
+    "latestStatusId": null,
+    "identifiers_bicId": null,
+    "identifiers_smdgId": null,
+    "identifiers_imoId": null,
+    "operatorName": null,
+    "operatorID": null,
+    "charateristics_area": null,
+    "locationId": null,
+    "partnershipTypes": [
+      "Storage"
+    ],
+    "createdAt": "2022-03-04T11:17:11.577Z",
+    "updatedAt": "2022-03-04T11:17:11.577Z",
+    "deletedAt": null,
+    "address": {
+      "name": "Niedrzwica, ul. Ekonomiczna 14  19-500 Goldap  Poland  Nip/Vat No. PL8471613321",
+      "region": "Europe",
+      "country": {
+        "name": "Poland",
+        "code": "PL"
+      },
+      "city": {
+        "name": "Goldap",
+        "identifiers_iso5": "PLGDP"
+      }
+    }
+  },
+  {
+    "id": 8,
+    "facilityId": "44039d51-7754-4230-a450-2f99e292e1e6",
+    "name": "CCSC (Cargo & Container Service Centre) Belgium",
+    "code": "BE-ANR-CCSC-001",
+    "type": "DEPO",
+    "addressId": "155616a4-7cdb-421c-a785-c794c86a924e",
+    "latestStatusId": null,
+    "identifiers_bicId": null,
+    "identifiers_smdgId": null,
+    "identifiers_imoId": null,
+    "operatorName": null,
+    "operatorID": null,
+    "charateristics_area": null,
+    "locationId": null,
+    "partnershipTypes": [
+      "Storage"
+    ],
+    "createdAt": "2022-03-04T10:54:52.235Z",
+    "updatedAt": "2022-10-12T14:17:21.709Z",
+    "deletedAt": null,
+    "address": {
+      "name": "CCSC Port of Antwerp Quaynr. 101 – 123 Haminastraat 15 2030 Antwerp (BE)",
+      "region": "Europe",
+      "country": {
+        "name": "Belgium",
+        "code": "BE"
+      },
+      "city": {
+        "name": "Antwerpen",
+        "identifiers_iso5": "BEANR"
+      }
+    }
+  }
+]

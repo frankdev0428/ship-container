@@ -1,0 +1,21 @@
+:root {
+  --B900-Brand: #3a5896;
+  --B900-Dark: #003068;
+  --B900-Light: #6c85c7;
+  --B500-Temperature: #55abf3;
+  --N900-text: #2b303a;
+  --N500-unselected: #68748d;
+  --N150-disabled: #c4c9d4;
+  --N75: #e1e3e9;
+  --N30-table_bg: #f4f5f8;
+  --N30: #f4f5f8;
+  --N15: #f9f9fb;
+  --N0-white: #ffffff;
+  --S400-Secondary: #e7e247;
+  --S400-Dark: #b2b000;
+  --CC-High_risk-dark: #9e0d0a;
+  --CC-High_risk: #d64933;
+  --CC-Risk-dark: #c56b00;
+  --CC-Risk: #fa8e1e;
+  --CC-No_Risk: #698d3c;
+}
